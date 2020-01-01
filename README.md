@@ -7,7 +7,7 @@
 Camber Racing
 </h1>
 <p align="center">
-The source of Camber Racing website, crafted with &hearts; by SRMKZILLA. 
+The source for Camber Racing website, crafted with &hearts; by SRMKZILLA. 
 </p>
 <p align="center">
     <img src="https://img.shields.io/badge/author-SRMKZILLA-orange" alt="author SRMKZILLA"/>
