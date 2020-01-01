@@ -4,10 +4,10 @@
   <img alt="Logo" src="https://raw.githubusercontent.com/srm-kzilla/SRMKZILLA-v-2.0/master/assets/img/kzilla-black.png" width="100" />
 </div>
 <h1 align="center">
-srmkzilla.net - v2
+Camber Racing
 </h1>
 <p align="center">
-The second iteration of <a href="https://srmkzilla.net" target="_blank">srmkzilla.net</a> crafted with &hearts; by SRMKZILLA. 
+The source of Camber Racing website, crafted with &hearts; by SRMKZILLA. 
 </p>
 <p align="center">
     <img src="https://img.shields.io/badge/author-SRMKZILLA-orange" alt="author SRMKZILLA"/>
