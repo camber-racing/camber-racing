@@ -2,6 +2,9 @@
 @import "_variables";
 @import "global";
 
-body{
-    position: relative;
+div.kz-hero{
+    .svg-shape{
+        -webkit-clip-path: url(#kz-hero-curve);
+        clip-path: url(#kz-hero-curve);
+    }
 }

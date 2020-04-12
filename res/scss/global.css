@@ -10,7 +10,20 @@ nav.navbar {
   -webkit-box-shadow: 0 8px 6px -6px black;
           box-shadow: 0 8px 6px -6px black;
   background-color: white;
-  border-radius: 10px;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+nav.navbar .kz-nav-blur {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  background-color: whitesmoke;
+  -webkit-filter: blur(5px);
+          filter: blur(5px);
 }
 
 nav.navbar a.navbar-brand img {
@@ -31,6 +44,7 @@ nav.navbar div ul.navbar-nav a.nav-link {
 
 nav.navbar div ul.navbar-nav a.nav-link span {
   position: relative;
+  padding: 4px 0px;
   z-index: 2;
 }
 
@@ -40,7 +54,7 @@ nav.navbar div ul.navbar-nav a.nav-link span::before {
   position: absolute;
   width: 0;
   height: 100%;
-  background-color: blue;
+  background-color: #2ab7ca;
   opacity: 0.5;
   z-index: 1;
 }
@@ -51,7 +65,7 @@ nav.navbar div ul.navbar-nav a.nav-link:hover span::before {
   display: inline-block;
   width: 30%;
   opacity: 0.5;
-  background-color: blue;
+  background-color: #2ab7ca;
   transition: 0.2s ease;
   -webkit-transition: 0.2s ease;
   z-index: 1;
