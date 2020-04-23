@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Camber Racing SRM | HOME</title>
     <!--CSS Links-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.1/css/swiper.min.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <link rel="stylesheet" href="res/css/global.css" >
     <link rel="stylesheet" href="res/css/index.css" >
@@ -15,6 +16,36 @@
     <style type="text/css">
         html{overflow-x: hidden;}
         .jumbotron{ padding: 2rem 1rem; }
+        .swiper-slide {
+            height: 350px !important;
+            width: 60vw;
+            margin: 50px;
+            box-shadow: 0 0 15px #222;
+            cursor: pointer;
+        }
+        .swiper-slide > img {
+            position: absolute;
+            left: 75%;
+            transform: translateX(-50%);
+            height: 350px !important;
+            width:200px;
+        }
+        .swiper-slide > p {
+            margin: auto 0;
+        }
+        .awards > div > div > div{
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+        }
+        .sponsors img{
+          width: 40px;
+          height: 40px;
+          border-radius: 50%;
+          box-shadow: 0 0 5px rgba(0,0,0,0.6);
+          margin: 20px;
+
+        }
     </style>
 </head>
 <body>
@@ -158,10 +189,111 @@
       <div style="text-align: center;">
         <button id="newsbtn-less" class="btn btn-primary">Show Less</button>
       </div>
+  </div>
 
+  <br><br><br>
+  <div class="build" style="height: 600px;">
+    <h1 style="text-align: center;">What We Build</h1>
+    
+    <div class="swiper-container">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide row">
+          <p class="col-lg-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae ea, corporis 
+          libero maxime at omnis, ab eveniet et illum esse amet cumque. Temporibus dolorum, eveniet
+          dolores dicta debitis pariatur provident!</p>
+          <img src="./res/img/logos/camberBg.jpg">
+        </div>
+        <div class="swiper-slide row">
+          <p class="col-lg-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae ea, corporis 
+          libero maxime at omnis, ab eveniet et illum esse amet cumque. Temporibus dolorum, eveniet
+          dolores dicta debitis pariatur provident!</p>
+          <img src="./res/img/logos/camberBg.jpg">
+        </div>
+        <div class="swiper-slide row">
+          <p class="col-lg-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae ea, corporis 
+          libero maxime at omnis, ab eveniet et illum esse amet cumque. Temporibus dolorum, eveniet
+          dolores dicta debitis pariatur provident!</p>
+          <img src="./res/img/logos/camberBg.jpg">
+        </div>
+        <div class="swiper-slide row">
+          <p class="col-lg-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae ea, corporis 
+          libero maxime at omnis, ab eveniet et illum esse amet cumque. Temporibus dolorum, eveniet
+          dolores dicta debitis pariatur provident!</p>
+          <img src="./res/img/logos/camberBg.jpg">
+        </div>
+                
+      </div>
+      <div class="swiper-pagination"></div>
+    </div>
 
   </div>
+
+  <div class="awards">
+    <h1 style="text-align: center;">Awards</h1>
+    <div class="container">
+      <div class="row">
+          <div class="col-lg-6"> 
+          <img class="col-lg-12" src="https://image.shutterstock.com/image-vector/award-ribbon-vector-design-260nw-1211184427.jpg">
+          </div>
+          <div class="col-lg-6" style="text-align: center;padding: 0 auto;">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odio id voluptate veniam nisi quo sint ad velit adipisci, rerum inventore incidunt. Dolor aut saepe ducimus vero beatae veniam, voluptate fugiat. 
+          </div>
+          <div class="col-lg-6" style="text-align: center;padding: 100px;">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odio id voluptate veniam nisi quo sint ad velit adipisci, rerum inventore incidunt. Dolor aut saepe ducimus vero beatae veniam, voluptate fugiat. 
+          </div>
+          <div class="col-lg-6"> 
+          <img class="col-lg-12" src="https://image.shutterstock.com/image-vector/award-ribbon-vector-design-260nw-1211184427.jpg">
+          </div>
+          <div class="col-lg-6"> 
+          <img class="col-lg-12" src="https://image.shutterstock.com/image-vector/award-ribbon-vector-design-260nw-1211184427.jpg">
+          </div>
+          <div class="col-lg-6" style="text-align: center;padding: 100px;">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odio id voluptate veniam nisi quo sint ad velit adipisci, rerum inventore incidunt. Dolor aut saepe ducimus vero beatae veniam, voluptate fugiat. 
+          </div>
+          <div class="col-lg-6" style="text-align: center;padding: 100px;">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odio id voluptate veniam nisi quo sint ad velit adipisci, rerum inventore incidunt. Dolor aut saepe ducimus vero beatae veniam, voluptate fugiat. 
+          </div>
+          <div class="col-lg-6"> 
+          <img class="col-lg-12" src="https://image.shutterstock.com/image-vector/award-ribbon-vector-design-260nw-1211184427.jpg">
+          </div>
+          
+      </div>
+    </div> 
+  </div>
    
+
+  <div class="sponsors">
+    <h1 style="text-align:center;">Our Sponsors</h1>
+    <marquee direction="right" height="100px" align='middle'>
+    <div style="display: flex;justify-content: center;width: 100vw;flex-wrap: wrap;">
+    <img src="./res/img/sponsors/MathWorks.png">
+    <img src="./res/img/sponsors/MathWorks.png">
+    <img src="./res/img/sponsors/MathWorks.png">
+    <img src="./res/img/sponsors/MathWorks.png">
+    <img src="./res/img/sponsors/MathWorks.png">
+    <img src="./res/img/sponsors/MathWorks.png">
+    <img src="./res/img/sponsors/MathWorks.png">
+    <img src="./res/img/sponsors/MathWorks.png">
+    <img src="./res/img/sponsors/MathWorks.png">
+    <img src="./res/img/sponsors/MathWorks.png">
+    <img src="./res/img/sponsors/MathWorks.png">
+    <img src="./res/img/sponsors/MathWorks.png">
+    <img src="./res/img/sponsors/MathWorks.png">
+    <img src="./res/img/sponsors/MathWorks.png">
+    <img src="./res/img/sponsors/MathWorks.png">
+    <img src="./res/img/sponsors/MathWorks.png">
+    <img src="./res/img/sponsors/MathWorks.png">
+    <img src="./res/img/sponsors/MathWorks.png">
+    <img src="./res/img/sponsors/MathWorks.png">
+    <img src="./res/img/sponsors/MathWorks.png">
+    <img src="./res/img/sponsors/MathWorks.png">
+    <img src="./res/img/sponsors/MathWorks.png">
+    <img src="./res/img/sponsors/MathWorks.png">
+    <img src="./res/img/sponsors/MathWorks.png">
+    <img src="./res/img/sponsors/MathWorks.png">
+    <img src="./res/img/sponsors/MathWorks.png">
+    </div>
+    </marquee>
+  </div>
+
+
+
 
     <!-- <section class="container-fluid">
         <div class="kz-hero">
@@ -179,8 +311,10 @@
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
-
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.1/js/swiper.min.js"></script>
+    
     <script type="text/javascript">
+        
         let a = $('#news');
         let b = $('#newsbtn');
         let c = $('#newsbtn-less');
@@ -194,6 +328,31 @@
             b.css('display','');
             a.css('max-height',b.offset().top-a.offset().top+40);
         });
+
+
+        var swiper = new Swiper('.swiper-container', {
+          speed:1000,
+          effect: 'coverflow',
+          grabCursor: true,
+          centeredSlides: true,
+          slidesPerView: 'auto',
+          loop: true,
+          coverflowEffect: {
+              rotate: 10,
+              stretch: 0,
+              depth: 100,
+              modifier: 1,
+              slideShadows : true,
+          },
+          pagination: {
+              el: '.swiper-pagination',
+          },
+          autoplay: {
+              delay: 5000,
+              disableOnInteraction: false
+          },
+        });
+
 
 
         
