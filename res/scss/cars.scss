@@ -1,0 +1,15 @@
+@import "global";
+@import "index";
+
+section.cars-hero {
+    div.carousel {
+        div.carousel-inner {
+            div.carousel-item {
+                img {
+                    width: 100%;
+                    height: 90vh;
+                }
+            }
+        }
+    }
+}
