@@ -71,6 +71,12 @@ nav.navbar div ul.navbar-nav a.nav-link:hover span::before {
   z-index: 1;
 }
 
+.red-builder{
+  color: red;
+  font-weight: 600;
+  text-decoration: underline;
+}
+
 /*# sourceMappingURL=global.css.map */
 
 /*# sourceMappingURL=global.css.map */

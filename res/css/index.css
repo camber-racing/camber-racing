@@ -1,5 +1,10 @@
 @import url("https://fonts.googleapis.com/css?family=Montserrat:400,700,900&display=swap");
 @import url("https://fonts.googleapis.com/css?family=Montserrat:400,700,900&display=swap");
+
+html{
+  overflow-x: hidden;
+}
+
 * {
   font-family: "Montserrat";
   margin: 0;
@@ -65,8 +70,8 @@ nav.navbar div ul.navbar-nav a.nav-link:hover span::before {
   height: 100%;
   display: inline-block;
   width: 30%;
-  opacity: 0.5;
-  background-color: #2ab7ca;
+  opacity: 0.7;
+  background-color: #ff0000;
   transition: 0.2s ease;
   -webkit-transition: 0.2s ease;
   z-index: 1;
@@ -75,6 +80,141 @@ nav.navbar div ul.navbar-nav a.nav-link:hover span::before {
 div.kz-hero .svg-shape {
   -webkit-clip-path: url(#kz-hero-curve);
   clip-path: url(#kz-hero-curve);
+}
+
+.jumbotron{ 
+  padding: 2rem 1rem; 
+  color: white;
+  letter-spacing: 0.05rem;
+}
+
+.swiper-slide {
+  height: 350px !important;
+  width: 60vw;
+  margin: 50px;
+  box-shadow: 0 0 15px #222;
+    cursor: pointer;
+}
+.swiper-slide > img {
+    position: absolute;
+    left: 75%;
+    transform: translateX(-50%);
+    height: 350px !important;
+    width:200px;
+}
+.swiper-slide > p {
+    margin: auto 0;
+}
+.awards > div > div > div{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.awards img{
+  clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+}
+.award-img-div{
+  filter: drop-shadow(-1px 6px 3px rgba(50, 50, 0, 0.5));    
+}
+.sponsors img{
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  box-shadow: 0 0 5px rgba(0,0,0,0.6);
+  margin: 10px;
+}
+.clip-svg {
+  width: 0;
+  height: 0;
+}
+
+.img-clip-block {
+  font-family: 'Cuprum', sans-serif;
+  margin: 20px 0;
+}
+
+.img-clip-row {
+  text-align: center;
+}
+
+.img-clip-row:first-of-type .img-clip-wrap {
+  background-position: top;
+}
+
+.img-clip-row:nth-of-type(2) .img-clip-wrap:nth-of-type(odd) {
+  background-position: left;
+}
+
+.img-clip-row:nth-of-type(2) .img-clip-wrap:nth-of-type(even) {
+  background-position: right;
+}
+
+.img-clip-row:last-of-type .img-clip-wrap {
+  background-position: bottom;
+}
+
+.img-clip-wrap {
+  width: 300px; 
+  height: 300px; 
+  background-image: url("../img/awards/award.png"); 
+  background-repeat: no-repeat;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  position: relative;
+  -webkit-clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+  clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+  clip-path: url("#clip-diamond-demo");
+}
+
+.overlay {
+  background: rgba(171, 147, 116, 0.8);
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  pointer-events: none;
+  -webkit-transition: all 0.3s linear;
+  transition: all 0.3s linear;
+}
+
+.overlay-content {
+  color: rgba(255, 255, 255, 0.4);
+  font-weight: 400;
+  font-size: 180%;
+  text-transform: uppercase;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -ms-transform: translateX(-50%) translateY(-50%);
+  -webkit-transform: translateX(-50%) translateY(-50%);
+  transform: translateX(-50%) translateY(-50%);
+  text-shadow: 1px 1px 2px rgba(0,0,0,0.1);
+}
+
+.img-clip-wrap:hover .overlay {
+  -webkit-transition: all 0.4s ease-in;
+  transition: all 0.4s ease-in;
+  background: none;
+}
+
+.img-clip-img {
+  display: block;
+}
+
+@media only screen and (min-width: 650px) {
+  .img-clip-row {
+    margin-top: -154px;
+  }
+
+  .img-clip-row:first-of-type {
+    margin-top: auto;
+  }
+
+  .img-clip-wrap {
+    display: inline-block;
+  }
 }
 
 /*# sourceMappingURL=index.css.map */
