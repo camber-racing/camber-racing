@@ -82,6 +82,19 @@ div.kz-hero .svg-shape {
   clip-path: url(#kz-hero-curve);
 }
 
+.landing{
+  box-sizing: border-box;
+  padding-top: 6%;
+  min-height: 80vh;
+}
+.absolute-order{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+
+
 .jumbotron{ 
   padding: 2rem 1rem; 
   color: white;
@@ -97,13 +110,20 @@ div.kz-hero .svg-shape {
 }
 .swiper-slide > img {
     position: absolute;
-    left: 75%;
-    transform: translateX(-50%);
-    height: 350px !important;
-    width:200px;
+    left: 0%;
+    top: 0%;
+    width: 100%;
+    height: 100%;
 }
 .swiper-slide > p {
-    margin: auto 0;
+  position: absolute;
+  top: 2%;
+  right: 2%;
+  font-size: 30px;
+  color: white;
+  text-shadow: 0 0 5px black;
+  font-weight: bold;
+  z-index: 2;
 }
 .awards > div > div > div{
   display: flex;
@@ -116,6 +136,12 @@ div.kz-hero .svg-shape {
 .award-img-div{
   filter: drop-shadow(-1px 6px 3px rgba(50, 50, 0, 0.5));    
 }
+.text-middle-force{
+  text-align: center;
+  padding: 100px;
+}
+
+
 .sponsors img{
   width: 80px;
   height: 80px;
@@ -216,6 +242,59 @@ div.kz-hero .svg-shape {
     display: inline-block;
   }
 }
+
+
+.sponsors-test{
+  height: 300px;
+  text-align: center;
+}
+
+.sponsors-test img {
+  display: block;
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  margin: 20px;
+  box-shadow: 0 0 7px black;
+}
+
+.sponsors-test section {
+  width: 100%;
+  overflow: hidden;
+}
+
+.sponsors-test article {
+  display: flex;
+  width: 200%;
+  animation: bannermove 20s linear infinite;
+}
+
+.sponsors-test div {
+  width: 100%;
+}
+
+.sponsors-test ul {
+  display: flex;
+  list-style-type: none;
+  padding-left: 0;
+  margin: 0;
+}
+
+.sponsors-test li {
+  width: 100%;
+}
+@keyframes "bannermove" {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+
+
+
 
 /*# sourceMappingURL=index.css.map */
 
