@@ -2,74 +2,86 @@
 @import "_fonts";
 
 * {
-    font-family: "Montserrat";
-    margin: 0;
-    padding: 0;
+  font-family: "Montserrat";
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  box-sizing: border-box;
+}
+
+nav.navbar {
+  position: relative;
+  box-shadow: 0 8px 6px -6px black;
+  background-color: white;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+
+  .kz-nav-blur {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    background-color: whitesmoke;
+    filter: blur(5px);
   }
 
-  nav.navbar{
-    position: relative;
-    box-shadow: 0 8px 6px -6px black;
-    background-color: white;
-    border-bottom-left-radius: 10px;
-    border-bottom-right-radius: 10px;
-    .kz-nav-blur{
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      z-index: -1;
-      background-color: whitesmoke;
-      filter: blur(5px);
+  a.navbar-brand {
+    img {
+      width: 104px;
+      height: auto;
     }
-    a.navbar-brand{
-      img{
-        width: 104px;
-        height: auto;
+  }
+
+  div {
+    ul.navbar-nav {
+      li.nav-item {
+        padding: 0px 8px;
       }
-    }
-    div{
-      ul.navbar-nav{
-        li.nav-item{
-          padding: 0px 8px;
-        }
-        a.nav-link{
-          font-weight: 600;
+
+      a.nav-link {
+        font-weight: 600;
+        position: relative;
+        transition: 0.2s ease;
+        -webkit-transition: 0.2s ease;
+
+        span {
           position: relative;
-          transition: 0.2s ease;
-          -webkit-transition: 0.2s ease;
-          span{
-            position: relative;
-            padding: 4px 0px;
-            z-index: 2;
-            &::before{
+          padding: 4px 0px;
+          z-index: 2;
+
+          &::before {
+            content: "";
+            display: inline-block;
+            position: absolute;
+            width: 0;
+            height: 100%;
+            background-color: $blue-jeans;
+            opacity: 0.5;
+            z-index: 1;
+          }
+        }
+
+        &:hover {
+          span {
+            &::before {
               content: "";
-              display: inline-block;
-              position: absolute;
-              width: 0;
               height: 100%;
-              background-color: $blue-jeans;
+              display: inline-block;
+              width: 30%;
               opacity: 0.5;
+              background-color: $blue-jeans;
+              transition: 0.2s ease;
+              -webkit-transition: 0.2s ease;
               z-index: 1;
             }
           }
-          &:hover{
-            span{
-              &::before{
-                content: "";
-                height: 100%;
-                display: inline-block;
-                width: 30%;
-                opacity: 0.5;
-                background-color: $blue-jeans;
-                transition: 0.2s ease;
-          -webkit-transition: 0.2s ease;
-          z-index: 1;
-              }
-            }
-          }
         }
       }
     }
   }
+}

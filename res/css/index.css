@@ -3,12 +3,28 @@ div.kz-hero .svg-shape {
   clip-path: url(#kz-hero-curve);
 }
 
-.landing{
+html,
+body {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+nav.navbar {
+  position: relative;
+  -webkit-box-shadow: 0 8px 6px -6px black;
+  box-shadow: 0 8px 6px -6px black;
+  background-color: white;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+.landing {
   box-sizing: border-box;
   padding-top: 6%;
   min-height: 80vh;
 }
-.absolute-order{
+
+.absolute-order {
   position: absolute;
   top: 0;
   left: 0;
@@ -16,8 +32,8 @@ div.kz-hero .svg-shape {
 }
 
 
-.jumbotron{ 
-  padding: 2rem 1rem; 
+.jumbotron {
+  padding: 2rem 1rem;
   color: white;
   letter-spacing: 0.05rem;
 }
@@ -27,16 +43,18 @@ div.kz-hero .svg-shape {
   width: 60vw;
   margin: 50px;
   box-shadow: 0 0 15px #222;
-    cursor: pointer;
+  cursor: pointer;
 }
-.swiper-slide > img {
-    position: absolute;
-    left: 0%;
-    top: 0%;
-    width: 100%;
-    height: 100%;
+
+.swiper-slide>img {
+  position: absolute;
+  left: 0%;
+  top: 0%;
+  width: 100%;
+  height: 100%;
 }
-.swiper-slide > p {
+
+.swiper-slide>p {
   position: absolute;
   top: 2%;
   right: 2%;
@@ -46,30 +64,35 @@ div.kz-hero .svg-shape {
   font-weight: bold;
   z-index: 2;
 }
-.awards > div > div > div{
+
+.awards>div>div>div {
   display: flex;
   flex-direction: column;
   justify-content: center;
 }
-.awards img{
+
+.awards img {
   clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
 }
-.award-img-div{
-  filter: drop-shadow(-1px 6px 3px rgba(50, 50, 0, 0.5));    
+
+.award-img-div {
+  filter: drop-shadow(-1px 6px 3px rgba(50, 50, 0, 0.5));
 }
-.text-middle-force{
+
+.text-middle-force {
   text-align: center;
   padding: 100px;
 }
 
 
-.sponsors img{
+.sponsors img {
   width: 80px;
   height: 80px;
   border-radius: 50%;
-  box-shadow: 0 0 5px rgba(0,0,0,0.6);
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.6);
   margin: 10px;
 }
+
 .clip-svg {
   width: 0;
   height: 0;
@@ -104,9 +127,9 @@ div.kz-hero .svg-shape {
 }
 
 .img-clip-wrap {
-  width: 200px; 
-  height: 200px; 
-  background-image: url("../img/awards/award2.jpg"); 
+  width: 200px;
+  height: 200px;
+  background-image: url("../img/awards/award2.jpg");
   background-repeat: no-repeat;
   margin-left: auto;
   margin-right: auto;
@@ -140,7 +163,7 @@ div.kz-hero .svg-shape {
   -ms-transform: translateX(-50%) translateY(-50%);
   -webkit-transform: translateX(-50%) translateY(-50%);
   transform: translateX(-50%) translateY(-50%);
-  text-shadow: 1px 1px 2px rgba(0,0,0,0.1);
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
 }
 
 .img-clip-wrap:hover .overlay {
@@ -167,7 +190,7 @@ div.kz-hero .svg-shape {
   }
 }
 
-.sponsors-test{
+.sponsors-test {
   margin-top: 200px;
   height: 300px;
   text-align: center;
@@ -207,10 +230,12 @@ div.kz-hero .svg-shape {
 .sponsors-test li {
   width: 100%;
 }
-@keyframes "bannermove" {
+
+@keyframes bannermove {
   0% {
     transform: translateX(0);
   }
+
   100% {
     transform: translateX(-50%);
   }

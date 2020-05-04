@@ -11,6 +11,12 @@ html{
   padding: 0;
 }
 
+html,
+body {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
 nav.navbar {
   position: relative;
   -webkit-box-shadow: 0 8px 6px -6px black;
