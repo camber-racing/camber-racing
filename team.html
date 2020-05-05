@@ -1219,8 +1219,11 @@
             }
           ];
           team.forEach(member => {
-            $(`.${member.year}`).append(`<img src="./res/img/Team-Camber/team${member.year}/${member.name}.jpg">`);
-          })  
+            $(`.${member.year}`).append(`<img src="./res/img/Team-Camber/team${member.year}/${member.name}.jpg" 
+              data-toggle="tooltip" data-placement="top" title="${member.name}">`);
+          });  
+          $('[data-toggle="tooltip"]').tooltip();
+
           console.log(team);
         </script>
     </body>
