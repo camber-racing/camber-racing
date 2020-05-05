@@ -1,10 +1,4 @@
 @import url("https://fonts.googleapis.com/css?family=Montserrat:400,700,900&display=swap");
-@import url("https://fonts.googleapis.com/css?family=Montserrat:400,700,900&display=swap");
-
-html{
-  overflow-x: hidden;
-}
-
 * {
   font-family: "Montserrat";
   margin: 0;
@@ -76,17 +70,11 @@ nav.navbar div ul.navbar-nav a.nav-link:hover span::before {
   height: 100%;
   display: inline-block;
   width: 30%;
-  opacity: 0.7;
-  background-color: #ff0000;
+  opacity: 0.5;
+  background-color: #2ab7ca;
   transition: 0.2s ease;
   -webkit-transition: 0.2s ease;
   z-index: 1;
-}
-
-.red-builder{
-  color: red;
-  font-weight: 600;
-  text-decoration: underline;
 }
 
 /*# sourceMappingURL=global.css.map */
