@@ -92,12 +92,88 @@ footer.camber-footer {
   text-align: center;
   padding: 20px;
   padding-bottom: 0px;
-  background-color: #252423;
+  background-image: linear-gradient(to bottom, rgba(245, 246, 252, 0.52), rgba(37, 36, 35, 0.93)), url("../img/cars/CR_X.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
   color: #ffffff;
 }
 footer.camber-footer hr {
   border-top: 1px solid red;
   margin: auto 100px;
+}
+footer.camber-footer div.row h5 {
+  font-weight: 800;
+  font-size: 32px;
+  color: transparent;
+  -webkit-text-fill-color: transparent;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: white;
+}
+footer.camber-footer div.row h6 {
+  border-bottom: 1px solid red;
+  font-weight: 700;
+}
+footer.camber-footer div.row ul {
+  list-style: none;
+}
+footer.camber-footer div.row ul li {
+  color: white;
+  opacity: 0.8;
+}
+footer.camber-footer div.row ul li a {
+  text-decoration: none;
+  color: white;
+  font-size: 0.9rem;
+}
+footer.camber-footer div.row ul li a span:hover {
+  color: red;
+  border-bottom: 1px dashed red;
+}
+footer.camber-footer div.row div.footer-nav-links {
+  width: fit-content;
+  text-align: left;
+}
+footer.camber-footer div.row div.footer-contact-us {
+  width: fit-content;
+  text-align: right;
+}
+footer.camber-footer div.row div.footer-contact-us ul li a:hover i {
+  color: red;
+}
+footer.camber-footer div.row div.footer-contact-us ul li i {
+  padding: 0px 5px;
+}
+footer.camber-footer div.row div.footer-contact-us ul li i:hover {
+  color: red;
+}
+footer.camber-footer div.row div.social-media-icon {
+  text-align: right;
+  padding: 5px 0px;
+}
+footer.camber-footer div.row div.social-media-icon a {
+  text-decoration: none;
+  color: #ffffff;
+  padding: 5px;
+}
+footer.camber-footer div.row div.social-media-icon a i {
+  font-size: 24px;
+}
+footer.camber-footer div.row div.social-media-icon a i:hover {
+  color: red;
+}
+footer.camber-footer div.hr-below {
+  margin: auto 100px;
+}
+footer.camber-footer div.hr-below div.copyright {
+  text-align: left;
+}
+footer.camber-footer small span {
+  font-size: 14px;
+  color: red;
+}
+footer.camber-footer small a {
+  text-decoration: none;
 }
 
 section.aboutus {

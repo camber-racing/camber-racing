@@ -111,11 +111,123 @@ footer.camber-footer {
   text-align: center;
   padding: 20px;
   padding-bottom: 0px;
-  background-color: #252423;
+  background-image:
+    linear-gradient(to bottom, rgba(245, 246, 252, 0.52), rgba(37, 36, 35, 0.93)),
+    url('../img/cars/CR_X.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  // background-color: #252423;
   color: #ffffff;
 
   hr {
     border-top: 1px solid red;
     margin: auto 100px;
+  }
+
+  div.row {
+    h5 {
+      font-weight: 800;
+      font-size: 32px;
+      color: transparent;
+      -webkit-text-fill-color: transparent;
+      -webkit-text-stroke-width: 1px;
+      -webkit-text-stroke-color: white;
+    }
+
+    h6 {
+      border-bottom: 1px solid red;
+      font-weight: 700;
+    }
+
+    ul {
+      list-style: none;
+
+      li {
+        color: white;
+        opacity: 0.8;
+
+        a {
+          text-decoration: none;
+          color: white;
+          font-size: 0.9rem;
+
+          span {
+            &:hover {
+              color: red;
+              border-bottom: 1px dashed red;
+            }
+          }
+        }
+      }
+    }
+
+    div.footer-nav-links {
+      width: fit-content;
+      text-align: left;
+    }
+
+    div.footer-contact-us {
+      width: fit-content;
+      text-align: right;
+
+      ul {
+        li {
+          a {
+            &:hover {
+              i {
+                color: red;
+              }
+            }
+          }
+
+          i {
+            padding: 0px 5px;
+
+            &:hover {
+              color: red;
+            }
+          }
+        }
+      }
+    }
+
+    div.social-media-icon {
+      text-align: right;
+      padding: 5px 0px;
+
+      a {
+        text-decoration: none;
+        color: #ffffff;
+        padding: 5px;
+
+        i {
+          font-size: 24px;
+
+          &:hover {
+            color: red;
+          }
+        }
+      }
+    }
+  }
+
+  div.hr-below {
+    margin: auto 100px;
+
+    div.copyright {
+      text-align: left;
+    }
+  }
+
+  small {
+    span {
+      font-size: 14px;
+      color: red;
+    }
+
+    a {
+      text-decoration: none;
+    }
   }
 }
