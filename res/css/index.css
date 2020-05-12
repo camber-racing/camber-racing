@@ -8,19 +8,21 @@
 
 html,
 body {
-  -webkit-box-sizing: border-box;
   box-sizing: border-box;
+}
+
+.ml-mr-auto {
+  margin-left: auto;
+  margin-right: auto;
 }
 
 nav.navbar {
   position: relative;
-  -webkit-box-shadow: 0 8px 6px -6px black;
   box-shadow: 0 8px 6px -6px black;
   background-color: white;
   border-bottom-left-radius: 10px;
   border-bottom-right-radius: 10px;
 }
-
 nav.navbar .kz-nav-blur {
   position: absolute;
   top: 0;
@@ -29,32 +31,26 @@ nav.navbar .kz-nav-blur {
   height: 100%;
   z-index: -1;
   background-color: whitesmoke;
-  -webkit-filter: blur(5px);
   filter: blur(5px);
 }
-
 nav.navbar a.navbar-brand img {
   width: 104px;
   height: auto;
 }
-
 nav.navbar div ul.navbar-nav li.nav-item {
   padding: 0px 8px;
 }
-
 nav.navbar div ul.navbar-nav a.nav-link {
   font-weight: 600;
   position: relative;
   transition: 0.2s ease;
   -webkit-transition: 0.2s ease;
 }
-
 nav.navbar div ul.navbar-nav a.nav-link span {
   position: relative;
   padding: 4px 0px;
   z-index: 2;
 }
-
 nav.navbar div ul.navbar-nav a.nav-link span::before {
   content: "";
   display: inline-block;
@@ -65,7 +61,6 @@ nav.navbar div ul.navbar-nav a.nav-link span::before {
   opacity: 0.5;
   z-index: 1;
 }
-
 nav.navbar div ul.navbar-nav a.nav-link:hover span::before {
   content: "";
   height: 100%;
@@ -78,11 +73,36 @@ nav.navbar div ul.navbar-nav a.nav-link:hover span::before {
   z-index: 1;
 }
 
+h2.camber-title {
+  font-size: 48px;
+  font-weight: 800;
+  color: black;
+  margin: 30px auto;
+  -webkit-text-fill-color: white;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: black;
+}
+h2.camber-title span {
+  color: black;
+  -webkit-text-fill-color: black;
+}
+
+footer.camber-footer {
+  margin-top: 100px;
+  text-align: center;
+  padding: 20px;
+  padding-bottom: 0px;
+  background-color: #252423;
+  color: #ffffff;
+}
+footer.camber-footer hr {
+  border-top: 1px solid red;
+  margin: auto 100px;
+}
+
 div.kz-hero .svg-shape {
   -webkit-clip-path: url(#kz-hero-curve);
   clip-path: url(#kz-hero-curve);
 }
-
-/*# sourceMappingURL=index.css.map */
 
 /*# sourceMappingURL=index.css.map */

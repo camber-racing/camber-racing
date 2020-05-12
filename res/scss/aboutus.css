@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css?family=Montserrat:400,700,900&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Montserrat:400,700,900&display=swap");
 * {
   font-family: "Montserrat";
   margin: 0;
@@ -9,11 +10,6 @@ html,
 body {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-}
-
-.ml-mr-auto {
-  margin-left: auto;
-  margin-right: auto;
 }
 
 nav.navbar {
@@ -97,17 +93,12 @@ h2.camber-title span {
   -webkit-text-fill-color: black;
 }
 
-footer.camber-footer {
+section.aboutus {
   margin-top: 100px;
-  text-align: center;
-  padding: 20px;
-  padding-bottom: 0px;
-  background-color: #252423;
-  color: #ffffff;
 }
 
-footer.camber-footer hr {
-  border-top: 1px solid red;
-  margin: auto 100px;
+section.aboutus div.aboutus-row div.aboutus-row-img img {
+  width: 80%;
+  height: auto;
 }
-/*# sourceMappingURL=global.css.map */
+/*# sourceMappingURL=aboutus.css.map */

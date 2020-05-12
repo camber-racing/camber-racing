@@ -385,6 +385,18 @@ section.car-items {
                         width: 50%;
                         z-index: 1;
                     }
+
+                    div.modal {
+                        div.modal-content {
+                            div.modal-body {
+                                div.modal-pill-section {
+                                    span.badge {
+                                        font-size: 0.6rem !important;
+                                    }
+                                }
+                            }
+                        }
+                    }
                 }
 
             }
@@ -432,6 +444,21 @@ section.car-items {
                         float: right;
                         z-index: 1;
                     }
+
+                    div.modal {
+                        div.modal-content {
+                            div.modal-body {
+                                div.modal-pill-section {
+                                    span.badge {
+                                        font-size: 0.6rem !important;
+                                    }
+                                }
+                            }
+                        }
+                    }
+
+
+
                 }
 
             }

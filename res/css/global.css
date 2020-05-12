@@ -11,6 +11,11 @@ body {
   box-sizing: border-box;
 }
 
+.ml-mr-auto {
+  margin-left: auto;
+  margin-right: auto;
+}
+
 nav.navbar {
   position: relative;
   -webkit-box-shadow: 0 8px 6px -6px black;
@@ -75,6 +80,35 @@ nav.navbar div ul.navbar-nav a.nav-link:hover span::before {
   transition: 0.2s ease;
   -webkit-transition: 0.2s ease;
   z-index: 1;
+}
+
+h2.camber-title {
+  font-size: 48px;
+  font-weight: 800;
+  color: black;
+  margin: 30px auto;
+  -webkit-text-fill-color: white;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: black;
+}
+
+h2.camber-title span {
+  color: black;
+  -webkit-text-fill-color: black;
+}
+
+footer.camber-footer {
+  margin-top: 100px;
+  text-align: center;
+  padding: 20px;
+  padding-bottom: 0px;
+  background-color: #252423;
+  color: #ffffff;
+}
+
+footer.camber-footer hr {
+  border-top: 1px solid red;
+  margin: auto 100px;
 }
 
 /*# sourceMappingURL=global.css.map */

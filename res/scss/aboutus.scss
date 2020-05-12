@@ -1,0 +1,15 @@
+@import "_fonts";
+@import "global";
+
+section.aboutus {
+    margin-top: 100px;
+
+    div.aboutus-row {
+        div.aboutus-row-img {
+            img {
+                width: 80%;
+                height: auto;
+            }
+        }
+    }
+}

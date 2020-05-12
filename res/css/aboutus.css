@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css?family=Montserrat:400,700,900&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Montserrat:400,700,900&display=swap");
 * {
   font-family: "Montserrat";
   margin: 0;
@@ -7,8 +8,7 @@
 
 html,
 body {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 .ml-mr-auto {
@@ -18,13 +18,11 @@ body {
 
 nav.navbar {
   position: relative;
-  -webkit-box-shadow: 0 8px 6px -6px black;
-          box-shadow: 0 8px 6px -6px black;
+  box-shadow: 0 8px 6px -6px black;
   background-color: white;
   border-bottom-left-radius: 10px;
   border-bottom-right-radius: 10px;
 }
-
 nav.navbar .kz-nav-blur {
   position: absolute;
   top: 0;
@@ -33,32 +31,26 @@ nav.navbar .kz-nav-blur {
   height: 100%;
   z-index: -1;
   background-color: whitesmoke;
-  -webkit-filter: blur(5px);
-          filter: blur(5px);
+  filter: blur(5px);
 }
-
 nav.navbar a.navbar-brand img {
   width: 104px;
   height: auto;
 }
-
 nav.navbar div ul.navbar-nav li.nav-item {
   padding: 0px 8px;
 }
-
 nav.navbar div ul.navbar-nav a.nav-link {
   font-weight: 600;
   position: relative;
   transition: 0.2s ease;
   -webkit-transition: 0.2s ease;
 }
-
 nav.navbar div ul.navbar-nav a.nav-link span {
   position: relative;
   padding: 4px 0px;
   z-index: 2;
 }
-
 nav.navbar div ul.navbar-nav a.nav-link span::before {
   content: "";
   display: inline-block;
@@ -69,7 +61,6 @@ nav.navbar div ul.navbar-nav a.nav-link span::before {
   opacity: 0.5;
   z-index: 1;
 }
-
 nav.navbar div ul.navbar-nav a.nav-link:hover span::before {
   content: "";
   height: 100%;
@@ -91,7 +82,6 @@ h2.camber-title {
   -webkit-text-stroke-width: 1px;
   -webkit-text-stroke-color: black;
 }
-
 h2.camber-title span {
   color: black;
   -webkit-text-fill-color: black;
@@ -105,9 +95,17 @@ footer.camber-footer {
   background-color: #252423;
   color: #ffffff;
 }
-
 footer.camber-footer hr {
   border-top: 1px solid red;
   margin: auto 100px;
 }
-/*# sourceMappingURL=global.css.map */
+
+section.aboutus {
+  margin-top: 100px;
+}
+section.aboutus div.aboutus-row div.aboutus-row-img img {
+  width: 80%;
+  height: auto;
+}
+
+/*# sourceMappingURL=aboutus.css.map */
