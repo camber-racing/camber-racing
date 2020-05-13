@@ -107,12 +107,12 @@ h2.camber-title {
 }
 
 footer.camber-footer {
-  margin-top: 100px;
+  margin-top: 50px;
   text-align: center;
   padding: 20px;
   padding-bottom: 0px;
   background-image:
-    linear-gradient(to bottom, rgba(245, 246, 252, 0.52), rgba(37, 36, 35, 0.93)),
+    linear-gradient(to bottom, rgba(17, 17, 17, 0.801), rgba(10, 10, 10, 0.966)),
     url('../img/cars/CR_X.jpg');
   background-position: center;
   background-repeat: no-repeat;
@@ -133,6 +133,12 @@ footer.camber-footer {
       -webkit-text-fill-color: transparent;
       -webkit-text-stroke-width: 1px;
       -webkit-text-stroke-color: white;
+
+      span {
+        color: white;
+        -webkit-text-fill-color: white;
+        -webkit-text-stroke-width: 0px;
+      }
     }
 
     h6 {
@@ -228,6 +234,64 @@ footer.camber-footer {
 
     a {
       text-decoration: none;
+    }
+  }
+}
+
+@media (max-width:576px) {
+  footer.camber-footer {
+    overflow: hidden;
+    padding: 5px;
+    padding-bottom: 0px;
+
+    hr {
+      margin: auto 10px;
+    }
+
+    div.row {
+      h5 {
+        font-weight: 700;
+        font-size: 28px;
+      }
+    }
+
+    div.footer-nav-links {
+      text-align: center !important;
+    }
+
+    div.footer-contact-us {
+      text-align: center !important;
+
+      ul {
+        li {
+          i {
+            padding: 0px 2px;
+            font-size: 8px;
+          }
+        }
+      }
+    }
+
+    div.social-media-icon {
+      i {
+        font-size: 8px;
+      }
+    }
+
+    div.hr-below {
+      margin: auto 10px;
+    }
+
+    div.copyright {
+      width: fit-content;
+
+      small {
+        font-size: 9px;
+      }
+    }
+
+    div.social {
+      width: fit-content;
     }
   }
 }

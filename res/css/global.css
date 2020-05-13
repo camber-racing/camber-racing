@@ -98,12 +98,12 @@ h2.camber-title span {
 }
 
 footer.camber-footer {
-  margin-top: 100px;
+  margin-top: 50px;
   text-align: center;
   padding: 20px;
   padding-bottom: 0px;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(245, 246, 252, 0.52)), to(rgba(37, 36, 35, 0.93))), url("../img/cars/CR_X.jpg");
-  background-image: linear-gradient(to bottom, rgba(245, 246, 252, 0.52), rgba(37, 36, 35, 0.93)), url("../img/cars/CR_X.jpg");
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(17, 17, 17, 0.801)), to(rgba(10, 10, 10, 0.966))), url("../img/cars/CR_X.jpg");
+  background-image: linear-gradient(to bottom, rgba(17, 17, 17, 0.801), rgba(10, 10, 10, 0.966)), url("../img/cars/CR_X.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -122,6 +122,12 @@ footer.camber-footer div.row h5 {
   -webkit-text-fill-color: transparent;
   -webkit-text-stroke-width: 1px;
   -webkit-text-stroke-color: white;
+}
+
+footer.camber-footer div.row h5 span {
+  color: white;
+  -webkit-text-fill-color: white;
+  -webkit-text-stroke-width: 0px;
 }
 
 footer.camber-footer div.row h6 {
@@ -211,6 +217,59 @@ footer.camber-footer small a {
   text-decoration: none;
 }
 
+@media (max-width: 576px) {
+  footer.camber-footer {
+    overflow: hidden;
+    padding: 5px;
+    padding-bottom: 0px;
+  }
+
+  footer.camber-footer hr {
+    margin: auto 10px;
+  }
+
+  footer.camber-footer div.row h5 {
+    font-weight: 700;
+    font-size: 28px;
+  }
+
+  footer.camber-footer div.footer-nav-links {
+    text-align: center !important;
+  }
+
+  footer.camber-footer div.footer-contact-us {
+    text-align: center !important;
+  }
+
+  footer.camber-footer div.footer-contact-us ul li i {
+    padding: 0px 2px;
+    font-size: 8px;
+  }
+
+  footer.camber-footer div.social-media-icon i {
+    font-size: 8px;
+  }
+
+  footer.camber-footer div.hr-below {
+    margin: auto 10px;
+  }
+
+  footer.camber-footer div.copyright {
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+  }
+
+  footer.camber-footer div.copyright small {
+    font-size: 9px;
+  }
+
+  footer.camber-footer div.social {
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+  }
+}
 /*# sourceMappingURL=global.css.map */
 
 /*# sourceMappingURL=global.css.map */

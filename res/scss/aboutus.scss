@@ -13,3 +13,28 @@ section.aboutus {
         }
     }
 }
+
+section.contact-form {
+
+    div.contact-form-content {
+        #map {
+            width: 100%;
+            height: 100%;
+        }
+    }
+}
+
+@media (max-width:576px) {
+    section.contact-form {
+        div.contact-form-content {
+            #map {
+                width: 100%;
+                height: 300px;
+            }
+
+            form {
+                padding: 10px 0px;
+            }
+        }
+    }
+}
