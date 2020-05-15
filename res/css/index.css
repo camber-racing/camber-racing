@@ -66,8 +66,18 @@ div.kz-hero .svg-shape {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    font-size: 10px;
+    font-size: 17px;
 }
+
+.awards>div{
+    padding: 0px;
+}
+.awards >div > div{
+    margin-bottom: 100px;
+
+}
+
+
 
 .awards img {
     clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
@@ -111,22 +121,22 @@ div.kz-hero .svg-shape {
 
 .img-clip-row:nth-of-type(2) .img-clip-wrap:nth-of-type(odd) {
     background-position: left;
-    top: 100px;
+    top: 50px;
 }
 
 .img-clip-row:nth-of-type(2) .img-clip-wrap:nth-of-type(even) {
     background-position: right;
-    top: 100px;
+    top: 50px;
 }
 
 .img-clip-row:last-of-type .img-clip-wrap {
     background-position: bottom;
-    top: 150px;
+    top: 100px;
 }
 
 .img-clip-wrap {
-    width: 100px;
-    height: 100px;
+    width: 200px;
+    height: 200px;
     background-image: url("../img/awards/award2.jpg");
     background-repeat: no-repeat;
     margin-left: auto;
