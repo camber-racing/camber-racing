@@ -28,11 +28,26 @@ div.kz-hero .svg-shape {
     width: 100%;
 }
 
+.heading {
+    text-align: center;
+    font-size: 48px;
+    font-weight: 800;
+    color: black;
+    -webkit-text-fill-color: white;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: black;
+}
+.heading > span {
+    color: black;
+    -webkit-text-fill-color: black;
+}
+
 
 .jumbotron {
+    margin: 5px;
+    margin-bottom: 35px;
     padding: 2rem 1rem;
     color: white;
-    letter-spacing: 0.05rem;
 }
 
 .swiper-slide {
@@ -199,7 +214,6 @@ div.kz-hero .svg-shape {
 }
 
 .sponsors-test {
-    margin-top: 200px;
     text-align: center;
 }
 
@@ -246,4 +260,28 @@ div.kz-hero .svg-shape {
     100% {
         transform: translateX(-50%);
     }
+}
+
+.news-option-flex{
+    text-align: right;
+    justify-content: space-between;
+    flex-direction: column;
+    display: flex;
+}
+
+@media only screen and (max-width: 600px) {
+  .text-middle-force {
+    padding: 13px;
+    text-align: center;
+  }
+  .swiper-slide{
+    width: 85vw;
+  }
+  .news-option-flex{
+    flex-direction: row-reverse;
+    justify-content: space-between;
+  }
+  .news-option-flex > span{
+    font-size:30px !important;
+  }
 }
