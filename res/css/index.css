@@ -199,7 +199,7 @@ div.kz-hero .svg-shape {
     display: block;
 }
 
-@media only screen and (min-width: 200px) {
+@media only screen and (min-width: 405px) {
     .img-clip-row {
         margin-top: -154px;
     }
@@ -210,6 +210,9 @@ div.kz-hero .svg-shape {
 
     .img-clip-wrap {
         display: inline-block;
+    }
+    .img-clip-row:nth-of-type(2) {
+        min-width: 405px;
     }
 }
 

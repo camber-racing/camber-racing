@@ -12,6 +12,20 @@
   <link rel="stylesheet" href="res/css/global.css">
 
   <style type="text/css">
+    .heading {
+      text-align: center;
+      font-size: 48px;
+      font-weight: 800;
+      color: black;
+      -webkit-text-fill-color: white;
+      -webkit-text-stroke-width: 1px;
+      -webkit-text-stroke-color: black;
+    }
+    .heading > span {
+      color: black;
+      -webkit-text-fill-color: black;
+    }
+
     .imgContainer {
       display: flex;
       flex-wrap: wrap;
@@ -36,11 +50,51 @@
     .tab-content .active {
       display: block !IMPORTANT;
     }
-    .speak-text{
+    .speaker-box{
+      margin: 13px 35px 13px 35px;
+      padding: 7px;
+      box-sizing: border-box;
+      display: flex;
       box-shadow: 0 0 5px gray;
-      padding-bottom: 20px;
+      border-radius: 75px;
+    }
+    .speaker-box:nth-of-type(even) {
+        flex-direction: row-reverse;
+        text-align: right;
+    }
+
+    .speaker-img{
+      border-radius: 51%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 0;
+    }
+    .speaker-img > img{
+      box-shadow: 0 0 5px gray;
+      width: 151px;
+      border-radius: 51%;
+      margin-right: 5px;
+    }
+    .speaker-text{
+      padding: 13px;
       margin-bottom: 15px;
     }
+    @media only screen and (max-width: 600px) {
+      .speaker-box {
+        flex-direction: column;
+        padding-top: 19px;
+      }      
+      .speaker-box:nth-of-type(even) {
+        flex-direction: column;
+        text-align: center;
+        padding-top: 19px;
+      }
+      .speaker-img > img{
+        width: 199px;
+      }
+    }
+    
   </style>
 </head>
 
@@ -76,61 +130,53 @@
       </ul>
     </div>
   </nav>
-  <br>
+  <br><br>
 
-
-<div class="container">
-  <div class="speak-text row" style="padding-top: 30px;">
-    <div class="col-md-2">
-      <img src="res/img/Team-Camber/dr.martin.jpg"
-        style="box-shadow: 0 0 2px black;" 
-        width="100%" height="100%">
+  <h1 class="heading">Message from the <span>Leads</span></h1>
+  <div class="speaker-box">
+    <div class="speaker-img">
+        <img src="res/img/Team-Camber/dr.martin.jpg"> 
     </div>
-    <div class="col-md-10">
-        <p>"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur laborum molestiae quia qui quasi, ratione, incidunt, facere atque aut quae ullam nam blanditiis laboriosam doloremque voluptatum mollitia nostrum nihil."</p>
-        <span>Faculty head</span>
-        <br>
-        <span>DR Martin</span>
-    </div>
+    <div class="speaker-text">
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Natus sit quaerat esse nihil numquam, distinctio beatae. Accusantium atque saepe quo vero iste nulla id, consequuntur iusto nostrum placeat harum distinctio.
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Natus sit quaerat esse nihil numquam, distinctio beatae. Accusantium atque saepe quo vero iste nulla id, consequuntur iusto nostrum placeat harum distinctio.
+      <br>
+      <b>Professor</b>
+    </div>  
   </div>
-
-  <div class="speak-text row" style="padding-top: 30px;">
-    <div class="col-md-2">
-      <img src="res/img/Team-Camber/dr.martin.jpg"
-        style="box-shadow: 0 0 2px black;" 
-        width="100%" height="100%">
+  <div class="speaker-box">
+    <div class="speaker-img">
+        <img src="res/img/Team-Camber/dr.martin.jpg"> 
     </div>
-    <div class="col-md-10">
-        <p>"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur laborum molestiae quia qui quasi, ratione, incidunt, facere atque aut quae ullam nam blanditiis laboriosam doloremque voluptatum mollitia nostrum nihil."</p>
-        <span>Faculty head</span>
-        <br>
-        <span>DR Martin</span>
-    </div>
+    <div class="speaker-text">
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Natus sit quaerat esse nihil numquam, distinctio beatae. Accusantium atque saepe quo vero iste nulla id, consequuntur iusto nostrum placeat harum distinctio.
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Natus sit quaerat esse nihil numquam, distinctio beatae. Accusantium atque saepe quo vero iste nulla id, consequuntur iusto nostrum placeat harum distinctio.
+      <br>
+      <b>Professor</b>
+    </div>  
   </div>
-
-  <div class="speak-text row" style="padding-top: 30px;">
-    <div class="col-md-2">
-      <img src="res/img/Team-Camber/dr.martin.jpg"
-        style="box-shadow: 0 0 2px black;" 
-        width="100%" height="100%">
+  <div class="speaker-box">
+    <div class="speaker-img">
+        <img src="res/img/Team-Camber/dr.martin.jpg"> 
     </div>
-    <div class="col-md-10">
-        <p>"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur laborum molestiae quia qui quasi, ratione, incidunt, facere atque aut quae ullam nam blanditiis laboriosam doloremque voluptatum mollitia nostrum nihil."</p>
-        <span>Faculty head</span>
-        <br>
-        <span>DR Martin</span>
-    </div>
+    <div class="speaker-text">
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Natus sit quaerat esse nihil numquam, distinctio beatae. Accusantium atque saepe quo vero iste nulla id, consequuntur iusto nostrum placeat harum distinctio.
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Natus sit quaerat esse nihil numquam, distinctio beatae. Accusantium atque saepe quo vero iste nulla id, consequuntur iusto nostrum placeat harum distinctio.
+      <br>
+      <b>Professor</b>
+    </div>  
   </div>
-</div>
+  <br><br>
 
-  <h1 style="text-align: center;"><span class='red-builder'>O</span>ur Team</h1>
+  <h1 class="heading">Our <span>Team</span></h1>
   <div class="imgContainer 2020"></div>
+  <br><br>
 
 
 
   <ul class="nav nav-pills nav-justified">
     <li class="nav-item">
-      <a class="nav-link active" data-toggle="pill" href="#img-2019">2019</a>
+      <a class="nav-link" data-toggle="pill" href="#img-2019">2019</a>
     </li>
     <li class="nav-item">
       <a class="nav-link" data-toggle="pill" href="#img-2018">2018</a>
@@ -159,43 +205,44 @@
   </ul>
 
   <div class="tab-content">
-    <div id="img-2019" class="tab-pane active fade in">
-      <h3>2019 Team</h3>
+    <div id="img-2019" class="tab-pane fade in">
+      <h1 class="heading">2019 <span>Team</span></h1>
       <div class="imgContainer 2019"></div>
     </div>
     <div id="img-2018" class="tab-pane fade in">
-      <h3>2018 Team</h3>
+      <h1 class="heading">2018 <span>Team</span></h1>
       <div class="imgContainer 2018"></div>
     </div>
     <div id="img-2017" class="tab-pane fade in">
-      <h3>2017 Team</h3>
+      <h1 class="heading">2017 <span>Team</span></h1>
       <div class="imgContainer 2017"></div>
     </div>
     <div id="img-2016" class="tab-pane fade in">
-      <h3>2016 Team</h3>
+      <h1 class="heading">2016 <span>Team</span></h1>
       <div class="imgContainer 2016"></div>
     </div>
     <div id="img-2015" class="tab-pane fade in">
-      <h3>2015 Team</h3>
+      <h1 class="heading">2015 <span>Team</span></h1>
       <div class="imgContainer 2015"></div>
     </div>
     <div id="img-2014" class="tab-pane fade in">
-      <h3>2014 Team</h3>
+      <h1 class="heading">2014 <span>Team</span></h1>
       <div class="imgContainer 2014"></div>
     </div>
     <div id="img-2013" class="tab-pane fade in">
-      <h3>2013 Team</h3>
+      <h1 class="heading">2013 <span>Team</span></h1>
       <div class="imgContainer 2013"></div>
     </div>
     <div id="img-2012" class="tab-pane fade in">
-      <h3>2012 Team</h3>
+      <h1 class="heading">2012 <span>Team</span></h1>
       <div class="imgContainer 2012"></div>
     </div>
     <div id="img-2011" class="tab-pane fade in">
-      <h3>2011 Team</h3>
+      <h1 class="heading">2011 <span>Team</span></h1>
       <div class="imgContainer 2011"></div>
     </div>
   </div>
+  <br><br>
 
   <footer class="camber-footer container-fluid">
     <div class="row text-center">
