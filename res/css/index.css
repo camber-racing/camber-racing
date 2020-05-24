@@ -44,12 +44,16 @@ div.kz-hero .svg-shape {
     -webkit-text-fill-color: black;
 }
 
-
 .jumbotron {
     margin: 5px;
     margin-bottom: 35px;
     padding: 2rem 1rem;
     color: white;
+    font-size: 15px;
+}
+
+.jumbotron button{
+    font-size: 15px;
 }
 
 .swiper-slide {
@@ -84,6 +88,7 @@ div.kz-hero .svg-shape {
     flex-direction: column;
     justify-content: center;
     font-size: 17px;
+    max-height: 100vw;
 }
 
 .awards>div {
@@ -202,10 +207,6 @@ div.kz-hero .svg-shape {
     display: block;
 }
 
-.awards .text-middle-force {
-    margin-top: 105px;
-}
-
 @media only screen and (min-width: 105px) {
     .img-clip-row {
         margin-top: -154px;
@@ -222,9 +223,23 @@ div.kz-hero .svg-shape {
     .img-clip-row:nth-of-type(2) {
         min-width: 405px;
     }
+
+
 }
 
-@media only screen and (max-width: 405px) {
+
+.cliped-vid{
+    clip-path: polygon(3% 1%, 100% 0, 100% 100%, 12% 100%);
+}
+
+@media only screen and (max-width: 555px) {
+    .cliped-vid{
+        clip-path: polygon(0% 0%, 100% 0, 100% 100%, 0% 100%);
+    }
+}
+
+@media only screen and (max-width: 415px) {
+    
     .img-clip-row {
         margin-top: -154px;
     }
@@ -234,14 +249,31 @@ div.kz-hero .svg-shape {
     }
 
     .img-clip-wrap {
-        /*display: inline-block;*/
         max-width: 100%;
+        transform: scale(.7,.7);
     }
 
     .img-clip-row:nth-of-type(2) {
         min-width: 405px;
         position: relative;
         left: calc((100vw - 420px)/2);
+    }
+
+    /*.img-clip-row:first-of-type .img-clip-wrap {
+    }*/
+
+    .img-clip-row:nth-of-type(2) .img-clip-wrap:nth-of-type(odd) {
+        top: 25px;
+        left: 25px;
+    }
+
+    .img-clip-row:nth-of-type(2) .img-clip-wrap:nth-of-type(even) {
+        top: 25px;
+        left: -25px;
+    }
+
+    .img-clip-row:last-of-type .img-clip-wrap {
+        top: 51px;
     }
 }
 

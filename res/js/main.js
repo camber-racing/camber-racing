@@ -51,4 +51,7 @@ setInterval(function(){
 
 function showHandler(){
 	a.css('max-height',b.offset().top-a.offset().top+b.height()+10);
+  // if ($(window).width() < 560) {
+  //   $(".img-clip-block").replaceWith("<img src='./res/img/svg/awards.svg'>");
+  // }
 }
