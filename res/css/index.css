@@ -223,6 +223,8 @@ div.kz-hero .svg-shape {
     .img-clip-row:nth-of-type(2) {
         min-width: 405px;
     }
+
+
 }
 
 
@@ -236,7 +238,8 @@ div.kz-hero .svg-shape {
     }
 }
 
-@media only screen and (max-width: 405px) {
+@media only screen and (max-width: 415px) {
+    
     .img-clip-row {
         margin-top: -154px;
     }
@@ -247,12 +250,30 @@ div.kz-hero .svg-shape {
 
     .img-clip-wrap {
         max-width: 100%;
+        transform: scale(.7,.7);
     }
 
     .img-clip-row:nth-of-type(2) {
         min-width: 405px;
         position: relative;
         left: calc((100vw - 420px)/2);
+    }
+
+    /*.img-clip-row:first-of-type .img-clip-wrap {
+    }*/
+
+    .img-clip-row:nth-of-type(2) .img-clip-wrap:nth-of-type(odd) {
+        top: 25px;
+        left: 25px;
+    }
+
+    .img-clip-row:nth-of-type(2) .img-clip-wrap:nth-of-type(even) {
+        top: 25px;
+        left: -25px;
+    }
+
+    .img-clip-row:last-of-type .img-clip-wrap {
+        top: 51px;
     }
 }
 
