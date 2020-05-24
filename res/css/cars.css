@@ -10,6 +10,7 @@
 html,
 body {
   box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 
 .ml-mr-auto {
@@ -230,6 +231,7 @@ footer.camber-footer small a {
 html,
 body {
   box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 
 .ml-mr-auto {
