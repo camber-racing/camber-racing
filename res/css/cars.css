@@ -1003,7 +1003,7 @@ section.car-items div.car-content2 div.specs-pills div.badges-pill div.modal div
     z-index: 1;
   }
   section.car-items div.car-content div.specs-pills div.badges-pill div.modal div.modal-content div.modal-body div.modal-pill-section span.badge {
-    font-size: 0.6rem !important;
+    font-size: 0.5rem !important;
   }
   section.car-items div.car-content2 {
     width: 100%;
@@ -1042,7 +1042,7 @@ section.car-items div.car-content2 div.specs-pills div.badges-pill div.modal div
     z-index: 1;
   }
   section.car-items div.car-content2 div.specs-pills div.badges-pill div.modal div.modal-content div.modal-body div.modal-pill-section span.badge {
-    font-size: 0.6rem !important;
+    font-size: 0.5rem !important;
   }
 }
 
