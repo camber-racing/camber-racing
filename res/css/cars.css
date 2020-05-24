@@ -78,6 +78,7 @@ nav.navbar div ul.navbar-nav a.nav-link:hover span::before {
 h2.camber-title {
   font-size: 48px;
   font-weight: 800;
+  text-align: center;
   color: black;
   margin: 30px auto;
   -webkit-text-fill-color: white;
@@ -184,6 +185,10 @@ footer.camber-footer small a {
 }
 
 @media (max-width: 576px) {
+  h2.camber-title {
+    font-size: 32px;
+  }
+
   footer.camber-footer {
     overflow: hidden;
     padding: 5px;
@@ -299,6 +304,7 @@ nav.navbar div ul.navbar-nav a.nav-link:hover span::before {
 h2.camber-title {
   font-size: 48px;
   font-weight: 800;
+  text-align: center;
   color: black;
   margin: 30px auto;
   -webkit-text-fill-color: white;
@@ -405,6 +411,10 @@ footer.camber-footer small a {
 }
 
 @media (max-width: 576px) {
+  h2.camber-title {
+    font-size: 32px;
+  }
+
   footer.camber-footer {
     overflow: hidden;
     padding: 5px;

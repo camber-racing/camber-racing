@@ -95,6 +95,7 @@ nav.navbar {
 h2.camber-title {
   font-size: 48px;
   font-weight: 800;
+  text-align: center;
   color: black;
   margin: 30px auto;
   -webkit-text-fill-color: white;
@@ -240,6 +241,10 @@ footer.camber-footer {
 }
 
 @media (max-width:576px) {
+  h2.camber-title {
+    font-size: 32px;
+  }
+
   footer.camber-footer {
     overflow: hidden;
     padding: 5px;
