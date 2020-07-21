@@ -1,60 +1,591 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Camber Racing</title>
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.1/css/swiper.min.css"
-    />
-    <link
-      rel="stylesheet"
-      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
-      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
-      crossorigin="anonymous"
-    />
-    <link rel="stylesheet" href="res/css/landing.css" />
-  </head>
-  <body>
-    <nav class="navbar navbar-expand-lg navbar-light">
-      <a class="navbar-brand" href="#"
-        ><img src="res/img/logos/logo-without-bg.png"
-      /></a>
-      <button
-        class="navbar-toggler"
-        type="button"
-        data-toggle="collapse"
-        data-target="#navbarSupportedContent"
-        aria-controls="navbarSupportedContent"
-        aria-expanded="false"
-        aria-label="Toggle navigation"
-      >
-        <span class="navbar-toggler-icon"></span>
-      </button>
 
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav ml-auto">
-          <li class="nav-item active">
-            <a class="nav-link" href="#"><span>Home</span></a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="aboutus.html"><span>About Us</span></a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#partners"><span>Partners</span></a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="cars.html"><span>The Paddock</span></a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="team.html"><span>Race With Us</span></a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#contact"><span>Contact Us</span></a>
-          </li>
-        </ul>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title>landing</title>
+  <!--CSS Links-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.1/css/swiper.min.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <link rel="stylesheet" href="res/css/global.css">
+  <link rel="stylesheet" href="res/css/index.css">
+
+  <!--Fontawesome-->
+  <script src="https://kit.fontawesome.com/95e303bf9f.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg navbar-light">
+    <div class="kz-nav-blur"></div>
+    <a class="navbar-brand" href="#"><img src="res/img/logos/logo-without-bg.png"></a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="#"><span>Home</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="aboutus.html"><span>About Us</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#partners"><span>Partners</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="cars.html"><span>The Paddock</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="team.html"><span>Race With Us</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#contact"><span>Contact Us</span></a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+
+
+  <br><br>
+
+  <div class="landing container-fluid">
+    <div class="row">
+      <div class="col-lg-6">
+        <img data-tilt class="col-lg-12" src='./res/img/logos/camberBg.jpg'
+          style="box-shadow: 0 0 5px rgba(199,199,199,.15);">
       </div>
-    </nav>
-  </body>
+      <div class="col-lg-6 text-middle-force">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odio id
+        voluptate veniam nisi quo sint ad velit adipisci, rerum inventore incidunt. Dolor aut saepe ducimus vero beatae
+        veniam, voluptate fugiat. </div>
+    </div>
+  </div>
+
+  <br><br>
+
+  <h2 class="camber-title">About <span>Us<span></h1>
+        <br><br>
+        <div class="row">
+          <div class="col-lg-6 text-middle-force">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odio id
+            voluptate
+            veniam nisi quo sint ad velit adipisci, rerum inventore incidunt. Dolor aut saepe ducimus vero beatae
+            veniam,
+            voluptate fugiat.
+          </div>
+
+          <div class="col-lg-6 cliped-vid">
+            <video autoplay style="width: 100%" autoplay muted loop>
+              <source src="./res/about-video.mp4" type="video/mp4">
+            </video>
+          </div>
+        </div>
+        </div>
+
+        <br><br>
+
+        <div id="news" class="container" style="overflow-y: hidden;">
+          <h2 class="camber-title">News <span>Feed</span></h1>
+            <div class="jumbotron row bg-dark">
+              <div class="col-lg-3">
+                <img src="./res/img/logos/camberBg.jpg" width=100% height=100%>
+              </div>
+              <div class="col-lg-7">
+                <h4>News Title 1</h4>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deleniti et voluptates, ea cum sit
+                  praesentium
+                  vitae laboriosam porro at reiciendis. Modi maiores quasi debitis tempora accusamus cum, officiis
+                  doloribus
+                  harum!</p>
+              </div>
+              <div class="col-lg-2 news-option-flex">
+                <span style="font-size: 20px">:</span><br>
+                <button class="btn btn-primary">Notify Me</button>
+              </div>
+            </div>
+
+            <div class="jumbotron row bg-dark">
+              <div class="col-lg-3">
+                <img src="./res/img/logos/camberBg.jpg" width=100% height=100%>
+              </div>
+              <div class="col-lg-7">
+                <h4>News Title 1</h4>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deleniti et voluptates, ea cum sit
+                  praesentium
+                  vitae laboriosam porro at reiciendis. Modi maiores quasi debitis tempora accusamus cum, officiis
+                  doloribus
+                  harum!</p>
+              </div>
+              <div class="col-lg-2 news-option-flex">
+                <span style="font-size: 20px">:</span><br>
+                <button class="btn btn-primary">Notify Me</button>
+              </div>
+            </div>
+
+
+            <div class="jumbotron row bg-dark">
+              <div class="col-lg-3">
+                <img src="./res/img/logos/camberBg.jpg" width=100% height=100%>
+              </div>
+              <div class="col-lg-7">
+                <h4>News Title 1</h4>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deleniti et voluptates, ea cum sit
+                  praesentium
+                  vitae laboriosam porro at reiciendis. Modi maiores quasi debitis tempora accusamus cum, officiis
+                  doloribus
+                  harum!</p>
+              </div>
+              <div class="col-lg-2 news-option-flex">
+                <span style="font-size: 20px">:</span><br>
+                <button class="btn btn-primary">Notify Me</button>
+              </div>
+            </div>
+
+            <div style="text-align: center;">
+              <button id="newsbtn" class="btn btn-primary">Show More</button>
+            </div>
+
+            <div class="jumbotron row bg-dark">
+              <div class="col-lg-3">
+                <img src="./res/img/logos/camberBg.jpg" width=100% height=100%>
+              </div>
+              <div class="col-lg-7">
+                <h4>News Title 1</h4>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deleniti et voluptates, ea cum sit
+                  praesentium
+                  vitae laboriosam porro at reiciendis. Modi maiores quasi debitis tempora accusamus cum, officiis
+                  doloribus
+                  harum!</p>
+              </div>
+              <div class="col-lg-2 news-option-flex">
+                <span style="font-size: 20px">:</span><br>
+                <button class="btn btn-primary">Notify Me</button>
+              </div>
+            </div>
+
+
+            <div class="jumbotron row bg-dark">
+              <div class="col-lg-3">
+                <img src="./res/img/logos/camberBg.jpg" width=100% height=100%>
+              </div>
+              <div class="col-lg-7">
+                <h4>News Title 1</h4>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deleniti et voluptates, ea cum sit
+                  praesentium
+                  vitae laboriosam porro at reiciendis. Modi maiores quasi debitis tempora accusamus cum, officiis
+                  doloribus
+                  harum!</p>
+              </div>
+              <div class="col-lg-2 news-option-flex">
+                <span style="font-size: 20px">:</span><br>
+                <button class="btn btn-primary">Notify Me</button>
+              </div>
+            </div>
+
+            <div style="text-align: center;">
+              <button id="newsbtn-less" class="btn btn-primary">Show Less</button>
+            </div>
+        </div>
+
+        <br><br><br>
+        <div class="build" style="height: 600px;">
+          <h2 class="camber-title">What We <span>Build</span></h1>
+
+            <div class="swiper-container">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide row">
+                  <p>BEAST</p>
+                  <img src="./res/img/cars/Beast.jpg">
+                </div>
+                <div class="swiper-slide row">
+                  <p>CR X</p>
+                  <img src="./res/img/cars/CR_X.jpg">
+                </div>
+                <div class="swiper-slide row">
+                  <p>CR 14</p>
+                  <img src="./res/img/cars/CR14.jpg">
+                </div>
+                <div class="swiper-slide row">
+                  <p>CR 15</p>
+                  <img src="./res/img/cars/CR15.jpg">
+                </div>
+                <div class="swiper-slide row">
+                  <p>CR 16</p>
+                  <img src="./res/img/cars/CR16.jpg">
+                </div>
+                <div class="swiper-slide row">
+                  <p>CR 18</p>
+                  <img src="./res/img/cars/CR18.jpg">
+                </div>
+                <div class="swiper-slide row">
+                  <p>CR 19</p>
+                  <img src="./res/img/cars/CR19.jpg">
+                </div>
+                <div class="swiper-slide row">
+                  <p>LJM</p>
+                  <img src="./res/img/cars/ljm.jpg">
+                </div>
+
+              </div>
+              <div class="swiper-pagination"></div>
+            </div>
+
+        </div>
+
+        <!-- <div class="awards">
+          <h2 class="camber-title"><span>Awards</span></h1>
+            <div class="container-fluid">
+              <div class="row">
+                <div class="col-lg-6">
+                  <div class="img-clip-block">
+                    <div class="img-clip-row">
+                      <div class="img-clip-wrap">
+                      </div>
+                    </div>
+
+                    <div class="img-clip-row">
+                      <a href="https://srmkzilla.net" class="img-clip-wrap">
+                        <div class="overlay">
+                          <div class="overlay-content">Portraits
+                          </div>
+                        </div>
+                      </a>
+
+                      <a href="https://srmkzilla.net" class="img-clip-wrap">
+                        <div class="overlay">
+                          <div class="overlay-content">Overlay</div>
+                        </div>
+                      </a>
+                    </div>
+
+                    <div class="img-clip-row">
+                      <a href="https://srmkzilla.net" class="img-clip-wrap polygon-clip-rhombus">
+                        <div class="overlay">
+                          <div class="overlay-content">Published</div>
+                        </div>
+                      </a>
+                    </div>
+                  </div> <!-- /img-clip-block -
+
+                  <svg class="clip-svg">
+                    <defs>
+                      <clipPath id="clip-diamond-demo" clipPathUnits="objectBoundingBox">
+                        <polygon points="0.5 0, 1 0.5, 0.5 1, 0 0.5" />
+                      </clipPath>
+                    </defs>
+                  </svg>
+                </div>
+                <div class="col-lg-6 text-middle-force">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odio
+                  id
+                  voluptate veniam nisi quo sint ad velit adipisci, rerum inventore incidunt. Dolor aut saepe ducimus
+                  vero
+                  beatae veniam, voluptate fugiat.
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-lg-6 text-middle-force">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odio
+                  id
+                  voluptate veniam nisi quo sint ad velit adipisci, rerum inventore incidunt. Dolor aut saepe ducimus
+                  vero
+                  beatae veniam, voluptate fugiat.
+                </div>
+                <div class="col-lg-6">
+                  <div class="img-clip-block">
+                    <div class="img-clip-row">
+                      <div class="img-clip-wrap">
+                      </div>
+                    </div>
+
+                    <div class="img-clip-row">
+                      <a href="https://srmkzilla.net" class="img-clip-wrap">
+                        <div class="overlay">
+                          <div class="overlay-content">Portraits
+                          </div>
+                        </div>
+                      </a>
+
+                      <a href="https://srmkzilla.net" class="img-clip-wrap">
+                        <div class="overlay">
+                          <div class="overlay-content">Overlay</div>
+                        </div>
+                      </a>
+                    </div>
+
+                    <div class="img-clip-row">
+                      <a href="https://srmkzilla.net" class="img-clip-wrap polygon-clip-rhombus">
+                        <div class="overlay">
+                          <div class="overlay-content">Published</div>
+                        </div>
+                      </a>
+                    </div>
+                  </div> <!-- /img-clip-block -
+
+                  <svg class="clip-svg">
+                    <defs>
+                      <clipPath id="clip-diamond-demo" clipPathUnits="objectBoundingBox">
+                        <polygon points="0.5 0, 1 0.5, 0.5 1, 0 0.5" />
+                      </clipPath>
+                    </defs>
+                  </svg>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-lg-6">
+                  <div class="img-clip-block">
+                    <div class="img-clip-row">
+                      <div class="img-clip-wrap">
+                      </div>
+                    </div>
+
+                    <div class="img-clip-row">
+                      <a href="https://srmkzilla.net" class="img-clip-wrap">
+                        <div class="overlay">
+                          <div class="overlay-content">Portraits
+                          </div>
+                        </div>
+                      </a>
+
+                      <a href="https://srmkzilla.net" class="img-clip-wrap">
+                        <div class="overlay">
+                          <div class="overlay-content">Overlay</div>
+                        </div>
+                      </a>
+                    </div>
+
+                    <div class="img-clip-row">
+                      <a href="https://srmkzilla.net" class="img-clip-wrap polygon-clip-rhombus">
+                        <div class="overlay">
+                          <div class="overlay-content">Published</div>
+                        </div>
+                      </a>
+                    </div>
+                  </div> <!-- /img-clip-block -
+
+                  <svg class="clip-svg">
+                    <defs>
+                      <clipPath id="clip-diamond-demo" clipPathUnits="objectBoundingBox">
+                        <polygon points="0.5 0, 1 0.5, 0.5 1, 0 0.5" />
+                      </clipPath>
+                    </defs>
+                  </svg>
+                </div>
+                <div class="col-lg-6 text-middle-force">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odio
+                  id
+                  voluptate veniam nisi quo sint ad velit adipisci, rerum inventore incidunt. Dolor aut saepe ducimus
+                  vero
+                  beatae veniam, voluptate fugiat.
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-lg-6  text-middle-force">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odio
+                  id
+                  voluptate veniam nisi quo sint ad velit adipisci, rerum inventore incidunt. Dolor aut saepe ducimus
+                  vero
+                  beatae veniam, voluptate fugiat.
+                </div>
+                <div class="col-lg-6">
+                  <div class="img-clip-block">
+                    <div class="img-clip-row">
+                      <div class="img-clip-wrap">
+                      </div>
+                    </div>
+
+                    <div class="img-clip-row">
+                      <a href="https://srmkzilla.net" class="img-clip-wrap">
+                        <div class="overlay">
+                          <div class="overlay-content">Portraits
+                          </div>
+                        </div>
+                      </a>
+
+                      <a href="https://srmkzilla.net" class="img-clip-wrap">
+                        <div class="overlay">
+                          <div class="overlay-content">Overlay</div>
+                        </div>
+                      </a>
+                    </div>
+
+                    <div class="img-clip-row">
+                      <a href="https://srmkzilla.net" class="img-clip-wrap polygon-clip-rhombus">
+                        <div class="overlay">
+                          <div class="overlay-content">Published</div>
+                        </div>
+                      </a>
+                    </div>
+                  </div> <!-- /img-clip-block -
+
+                  <svg class="clip-svg">
+                    <defs>
+                      <clipPath id="clip-diamond-demo" clipPathUnits="objectBoundingBox">
+                        <polygon points="0.5 0, 1 0.5, 0.5 1, 0 0.5" />
+                      </clipPath>
+                    </defs>
+                  </svg>
+                </div>
+
+              </div>
+            </div>
+        </div> -->
+
+        <br><br>
+        <h2 class="camber-title" id="partners">Our <span>Sponsors</span></h1>
+
+          <div class="sponsors-test">
+            <section>
+              <article>
+                <div>
+                  <ul>
+                    <li><img src="./res/img/sponsors/ANSYS.png"></li>
+                    <li><img src="./res/img/sponsors/ASAP.png"></li>
+                    <li><img src="./res/img/sponsors/Aurora.png"></li>
+                    <li><img src="./res/img/sponsors/Bisco.png"></li>
+                    <li><img src="./res/img/sponsors/Calspan.png"></li>
+                    <li><img src="./res/img/sponsors/Eastern.png"></li>
+                    <li><img src="./res/img/sponsors/ED.png"></li>
+                    <li><img src="./res/img/sponsors/Exelus.png"></li>
+                    <li><img src="./res/img/sponsors/GT.png"></li>
+                    <li><img src="./res/img/sponsors/Henkel.png"></li>
+                    <li><img src="./res/img/sponsors/Honicel.png"></li>
+                    <li><img src="./res/img/sponsors/HP.png"></li>
+                    <li><img src="./res/img/sponsors/Igus.jpg"></li>
+                    <li><img src="./res/img/sponsors/IPG.png"></li>
+                    <li><img src="./res/img/sponsors/JCB.png"></li>
+                    <li><img src="./res/img/sponsors/Knight.png"></li>
+                  </ul>
+                </div>
+                <div>
+                  <ul>
+                    <li><img src="./res/img/sponsors/ANSYS.png"></li>
+                    <li><img src="./res/img/sponsors/ASAP.png"></li>
+                    <li><img src="./res/img/sponsors/Aurora.png"></li>
+                    <li><img src="./res/img/sponsors/Bisco.png"></li>
+                    <li><img src="./res/img/sponsors/Calspan.png"></li>
+                    <li><img src="./res/img/sponsors/Eastern.png"></li>
+                    <li><img src="./res/img/sponsors/ED.png"></li>
+                    <li><img src="./res/img/sponsors/Exelus.png"></li>
+                    <li><img src="./res/img/sponsors/GT.png"></li>
+                    <li><img src="./res/img/sponsors/Henkel.png"></li>
+                    <li><img src="./res/img/sponsors/Honicel.png"></li>
+                    <li><img src="./res/img/sponsors/HP.png"></li>
+                    <li><img src="./res/img/sponsors/Igus.jpg"></li>
+                    <li><img src="./res/img/sponsors/IPG.png"></li>
+                    <li><img src="./res/img/sponsors/JCB.png"></li>
+                    <li><img src="./res/img/sponsors/Knight.png"></li>
+                  </ul>
+                </div>
+              </article>
+            </section>
+          </div>
+
+
+          <div class="sponsors-test">
+            <section>
+              <article>
+                <div>
+                  <ul>
+                    <li><img src="./res/img/sponsors/KR Composites.png"></li>
+                    <li><img src="./res/img/sponsors/Lotus.png"></li>
+                    <li><img src="./res/img/sponsors/MathWorks.png"></li>
+                    <li><img src="./res/img/sponsors/Motul.png"></li>
+                    <li><img src="./res/img/sponsors/MyPitCrew.png"></li>
+                    <li><img src="./res/img/sponsors/Ocean Sparkle.png"></li>
+                    <li><img src="./res/img/sponsors/Pragati.png"></li>
+                    <li><img src="./res/img/sponsors/rallynuts.jpg"></li>
+                    <li><img src="./res/img/sponsors/Ricardo.png"></li>
+                    <li><img src="./res/img/sponsors/Sadhav.png"></li>
+                    <li><img src="./res/img/sponsors/Siddhgiri.jpg"></li>
+                    <li><img src="./res/img/sponsors/SigmaWeld.png"></li>
+                    <li><img src="./res/img/sponsors/SolidWorks.png"></li>
+                    <li><img src="./res/img/sponsors/SRMIST.png"></li>
+                    <li><img src="./res/img/sponsors/Sudarshan.jpg"></li>
+                    <li><img src="./res/img/sponsors/Zircotec.png"></li>
+                  </ul>
+                </div>
+                <div>
+                  <ul>
+                    <li><img src="./res/img/sponsors/KR Composites.png"></li>
+                    <li><img src="./res/img/sponsors/Lotus.png"></li>
+                    <li><img src="./res/img/sponsors/MathWorks.png"></li>
+                    <li><img src="./res/img/sponsors/Motul.png"></li>
+                    <li><img src="./res/img/sponsors/MyPitCrew.png"></li>
+                    <li><img src="./res/img/sponsors/Ocean Sparkle.png"></li>
+                    <li><img src="./res/img/sponsors/Pragati.png"></li>
+                    <li><img src="./res/img/sponsors/rallynuts.jpg"></li>
+                    <li><img src="./res/img/sponsors/Ricardo.png"></li>
+                    <li><img src="./res/img/sponsors/Sadhav.png"></li>
+                    <li><img src="./res/img/sponsors/Siddhgiri.jpg"></li>
+                    <li><img src="./res/img/sponsors/SigmaWeld.png"></li>
+                    <li><img src="./res/img/sponsors/SolidWorks.png"></li>
+                    <li><img src="./res/img/sponsors/SRMIST.png"></li>
+                    <li><img src="./res/img/sponsors/Sudarshan.jpg"></li>
+                    <li><img src="./res/img/sponsors/Zircotec.png"></li>
+                  </ul>
+                </div>
+              </article>
+            </section>
+          </div>
+          <br><br>
+
+          <footer class="camber-footer container-fluid" id="contact">
+            <div class="row text-center">
+              <h5 class="ml-mr-auto">Building <span>People</span> Not just <span>Cars</span></h5>
+            </div>
+            <div class="row text-center" style="margin-top: 30px;">
+              <div class="col-md-4">
+                <img src="res/img/logos/logo-without-bg.png" />
+              </div>
+              <div class="col-md-4">
+                <div class="footer-nav-links ml-mr-auto">
+                  <h6>Move to</h6>
+                  <ul>
+                    <li><a href="#"><span class="active">Home</span></a></li>
+                    <li><a href="aboutus.html"><span>About Us</span></a></li>
+                    <li><a href="#partners"><span>Partners</span></a></li>
+                    <li><a href="cars.html"><span>The Paddock</span></a></li>
+                    <li><a href="team.html"><span>Race with Us</span></a></li>
+                  </ul>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="footer-contact-us ml-mr-auto">
+                  <h6>Contact Us</h6>
+                  <ul>
+                    <li><a href="#"><span>Mail id</span><i class="fas fa-envelope"></i></a></li>
+                    <li><a href="#"><span>Phone number</span><i class="fas fa-phone"></i></a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <hr>
+            <div class="row hr-below">
+              <div class="col-md-8 col-sm-8 copyright"><small>&copy;Copyright Camber Racing SRMIST | 2020</small>
+              </div>
+              <div class="col-md-4 col-sm-4 social">
+                <div class="social-media-icon">
+                  <a href="#"><i class="fab fa-facebook"></i></a>
+                  <a href="#"><i class="fab fa-instagram"></i></a>
+                </div>
+              </div>
+            </div>
+            <small>Made with <span>&hearts;</span> from <a href="#"><span>SRMKZILLA</span></a></small>
+          </footer>
+          <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+            integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+            crossorigin="anonymous"></script>
+          <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+            integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+            crossorigin="anonymous"></script>
+          <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+            integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+            crossorigin="anonymous"></script>
+          <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.1/js/swiper.min.js"></script>
+          <script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.7.0/vanilla-tilt.js"></script>
+          <script src="./res/js/main.js"></script>
+
+</body>
+
 </html>

@@ -25,7 +25,7 @@ nav.navbar {
   padding: 0;
   -webkit-box-shadow: 0 8px 6px -6px black;
   box-shadow: 0 8px 6px -6px black;
-  background-color: var(--black);
+  background-color: yellow;
   border-bottom-left-radius: 10px;
   border-bottom-right-radius: 10px;
   z-index: 5;
@@ -112,6 +112,15 @@ a.nav-link:hover span {
   padding: 24px 8px;
   clip-path: polygon(10% 0%, 100% 0%, 90% 100%, 0% 100%);
   background-color: var(--red);
+}
+.navbar-toggler {
+  margin: 10px;
+  padding: 8px 8px;
+  font-size: 1.25rem;
+  line-height: 1;
+  background-color: transparent;
+  border: 1px solid transparent;
+  border-radius: 0.25rem;
 }
 
 :root {
