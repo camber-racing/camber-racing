@@ -85,9 +85,7 @@ body {
     padding: 8px;
   }
   .nav-link span {
-    /* padding: 24px 0; */
-    /* clip-path: polygon(10% 0%, 100% 0%, 90% 100%, 0% 100%); */
-    /* color: var(--red); */
+    color: var(--white);
   }
   .navbar-nav {
     background: var(--grey);
