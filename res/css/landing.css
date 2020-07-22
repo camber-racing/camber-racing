@@ -62,10 +62,13 @@ body {
 }
 
 @media only screen and (max-width: 460px) {
+  .navbar {
+    height: 64px;
+  }
   .navbar-brand {
     padding: 8px;
     width: 156px;
-    height: 88px;
+    height: 92px;
   }
   .navbar-brand img {
     width: 120px;
@@ -73,7 +76,7 @@ body {
   }
   .navbar-toggler {
     z-index: 9;
-    margin: 8px 8px 8px 80%;
+    margin: 4px 8px 4px 80%;
     padding: 8px;
     font-size: 1.25rem;
     line-height: 1;
@@ -84,11 +87,15 @@ body {
   .nav-link {
     padding: 8px;
   }
-  .nav-link span {
-    color: var(--white);
-  }
+
   .navbar-nav {
     background: var(--grey);
+  }
+
+  .nav-link span:hover {
+    padding: 8px;
+    clip-path: none;
+    background-color: var(--grey);
   }
 }
 button:active {
