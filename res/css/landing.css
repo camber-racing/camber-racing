@@ -61,6 +61,48 @@ body {
   height: auto;
 }
 
+button:active {
+  background-color: var(--red);
+}
+
+.news-feed-container {
+  margin: 8px 160px;
+}
+
+h2.camber-title {
+  padding: 0 15px;
+  font-size: 40px;
+  font-weight: 600;
+  text-align: start;
+  color: var(--black);
+  margin: 30px auto;
+}
+h2.camber-title span {
+  color: var(--red);
+}
+.jumbotron {
+  margin: 0;
+  margin-bottom: 35px;
+  background-color: var(--white);
+  padding: 0;
+  color: var(--black);
+  font-size: 15px;
+}
+.col-lg-6 p {
+  margin: 0;
+  font-size: 16px;
+}
+.col-lg-6 h4 {
+  margin: 32px 0;
+  font-weight: 600;
+  font-size: 30px;
+}
+
+.jumbotron button {
+  padding: 8px;
+  font-size: 15px;
+  border: 1px solid var(--black);
+}
 @media only screen and (max-width: 460px) {
   .navbar {
     height: 64px;
@@ -97,11 +139,26 @@ body {
     clip-path: none;
     background-color: var(--grey);
   }
-}
-button:active {
-  background-color: var(--red);
-}
+  .news-feed-container {
+    width: 100%;
+    margin: 8px auto;
+  }
+  h2.camber-title {
+    margin: 16px auto;
+  }
+  .col-lg-6 p {
+    margin: 8px 0;
+  }
+  .col-lg-6 h4 {
+    margin: 24px 0;
+    font-size: 24px;
+  }
 
+  .news-option {
+    margin: 0;
+    padding: 0;
+  }
+}
 :root {
   --black: #000000;
   --grey: #1e1e1e;
