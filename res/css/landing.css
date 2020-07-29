@@ -153,6 +153,7 @@ h2.camber-title span {
 }
 .right-contains img{
   width: 500px;
+  border-radius: 10px 10px;
 }
 
 h2.camber-heading{
