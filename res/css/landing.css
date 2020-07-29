@@ -61,7 +61,7 @@ body {
   height: auto;
 }
 .carousel-inner{
-  height: 600px;
+  height: 728px;
   position: relative;
   width: 100%;
   overflow: hidden;
@@ -278,3 +278,4 @@ h2.camber2 span {
   --red: #e9081e;
   --white: #ffffff;
 }
+
