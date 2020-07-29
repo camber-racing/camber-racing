@@ -60,6 +60,21 @@ body {
   background-color: var(--red);
 }
 
+.carousel-inner {
+  height: 728px;
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+}
+.bnr-icon {
+  color: #ff5e00;
+  font-size: 75px;
+
+  padding: 15px;
+  border-radius: 50%;
+  height: 10px;
+}
+
 button:active {
   background-color: var(--red);
 }
@@ -102,7 +117,80 @@ h2.camber-title span {
   font-size: 15px;
   border: 1px solid var(--black);
 }
+.news-option {
+  padding: 0;
+}
 
+.contains {
+  background-image: url("/res/img/cars/CR_X.jpg");
+  background-size: 1400px 600px;
+  height: 80vh;
+  background-color: blueviolet;
+  background-attachment: scroll;
+  background-repeat: no-repeat;
+  position: relative;
+  text-align: center;
+}
+
+.left-contains {
+  float: left;
+  position: relative;
+  text-align: right;
+  width: 50%;
+  height: 100%;
+  margin-top: 10px;
+  padding-left: 30px;
+  padding-top: 10px;
+}
+
+.right-contains {
+  float: right;
+  text-align: center;
+  width: 50%;
+  height: 100%;
+  margin-top: 20px;
+  padding-left: 45px;
+  padding-top: 20px;
+}
+.right-contains img {
+  width: 500px;
+}
+
+h2.camber-heading {
+  padding: 0 15px;
+  font-size: 40px;
+  font-weight: 600;
+  text-align: start;
+  color: red;
+  margin: 30px auto;
+}
+
+h2.camber-heading span {
+  color: white;
+}
+
+p.camber1 {
+  height: 50%;
+  padding: 0 15px;
+  font-size: 21px;
+  font-weight: 500;
+  text-align: start;
+  color: white;
+  margin: 30px auto;
+}
+
+h2.camber2 {
+  padding: 0 15px;
+  font-size: 40px;
+  font-weight: 600;
+  text-align: center;
+  color: black;
+  margin: 30px auto;
+}
+
+h2.camber2 span {
+  color: red;
+}
 footer.camber-footer {
   margin-top: 50px;
   text-align: center;
@@ -318,6 +406,30 @@ footer.camber-footer small a {
     padding: 0;
   }
 
+  .contains {
+    width: 100%;
+    height: auto;
+    top: 0;
+    position: relative;
+    left: 0;
+    transform: none;
+  }
+
+  .box .left-contains {
+    width: 5%;
+    position: relative;
+    float: none;
+    left: 0;
+    transform: none;
+    margin: 0;
+    padding: 16px;
+  }
+  .box .right-contains {
+    float: none;
+    width: 10%;
+    margin-top: 20px;
+    padding: 20px;
+  }
   .col-md-4 {
     padding: 12px 50px;
   }
@@ -327,6 +439,9 @@ footer.camber-footer small a {
   }
   .input-section {
     padding: 24px 32px;
+  }
+  footer.camber-footer div.row div.social-media-icon {
+    margin: 16px 4px;
   }
   footer.camber-footer div.hr-below {
     margin: auto 24px;
