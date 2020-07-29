@@ -23,8 +23,24 @@ body {
   width: 100%;
   height: 72px;
   padding: 0;
-  background-color: black;
+  background-color: var(--black);
   z-index: 5;
+}
+.navbar-brand {
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: var(--white);
+  margin: 0;
+  padding: 16px;
+  width: 288px;
+  height: 138px;
+  clip-path: polygon(0 0, 100% 0, 80% 70%, 0 70%);
+}
+
+.navbar-brand img {
+  width: 208px;
+  height: auto;
 }
 
 .nav-link {
@@ -40,25 +56,8 @@ body {
 }
 
 .nav-link span:hover {
-  /* padding: 24px 0; */
   clip-path: polygon(10% 0%, 100% 0%, 90% 100%, 0% 100%);
   background-color: var(--red);
-}
-
-.navbar-brand {
-  position: fixed;
-  top: 0;
-  left: 0;
-  background-color: var(--white);
-  margin: 0;
-  padding: 16px;
-  width: 288px;
-  height: 138px;
-  clip-path: polygon(0 0, 100% 0, 80% 70%, 0 70%);
-}
-.navbar-brand img {
-  width: 208px;
-  height: auto;
 }
 
 button:active {
@@ -103,6 +102,166 @@ h2.camber-title span {
   font-size: 15px;
   border: 1px solid var(--black);
 }
+
+footer.camber-footer {
+  margin-top: 50px;
+  text-align: center;
+  padding: 20px;
+  /* background-image: -webkit-gradient(
+      linear,
+      left top,
+      left bottom,
+      from(rgba(17, 17, 17, 0.801)),
+      to(rgba(10, 10, 10, 0.966))
+    ),
+    url("../img/cars/CR_X.jpg");
+  background-image: linear-gradient(
+      to bottom,
+      rgba(17, 17, 17, 0.801),
+      rgba(10, 10, 10, 0.966)
+    ),
+    url("../img/cars/CR_X.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover; */
+  background-color: var(--black);
+  color: #ffffff;
+}
+.col-md-4 {
+  padding: 24px 50px;
+}
+
+footer.camber-footer hr {
+  border-top: 1px solid var(--red);
+  margin: auto 100px;
+}
+
+footer.camber-footer div.row h5 {
+  font-weight: 800;
+  font-size: 40px;
+  color: var(--red);
+}
+
+/* footer.camber-footer div.row h5 span {
+  color: white;
+  -webkit-text-fill-color: white;
+  -webkit-text-stroke-width: 0px;
+} */
+
+footer.camber-footer div.row h6 {
+  font-weight: 700;
+  font-size: 20px;
+  margin-bottom: 16px;
+}
+.col-md-4 {
+  padding: 24px 50px;
+}
+.input-section {
+  padding: 24px 104px;
+}
+.input-section input {
+  margin: 12px;
+  padding: 8px;
+  background-color: var(--grey);
+  border: none;
+  color: orangered;
+  border-radius: 8px;
+}
+.input-section input:focus {
+  outline: none;
+}
+.input-section input::placeholder {
+  color: orangered;
+}
+
+footer.camber-footer div.row div.social-media-icon {
+  text-align: center;
+  padding: 5px 0px;
+  color: var(--grey);
+  background-color: var(--white);
+  margin: 16px 8px;
+}
+
+footer.camber-footer div.row div.social-media-icon a {
+  text-decoration: none;
+  color: var(--grey);
+  padding: 5px 14px;
+}
+
+footer.camber-footer div.row div.social-media-icon a i {
+  font-size: 24px;
+}
+
+footer.camber-footer div.row div.social-media-icon a i:hover {
+  color: var(--red);
+}
+
+footer.camber-footer div.row ul {
+  list-style: none;
+}
+
+footer.camber-footer div.row ul li {
+  color: white;
+  opacity: 0.8;
+}
+
+footer.camber-footer div.row ul li a {
+  text-decoration: none;
+  color: white;
+  font-size: 0.9rem;
+}
+
+footer.camber-footer div.row ul li a:hover {
+  color: var(--red);
+  border-bottom: 1px dashed var(--red);
+}
+
+/* footer.camber-footer div.row div.footer-nav-links {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  text-align: center;
+} */
+
+footer.camber-footer div.row div.footer-contact-us {
+  /* width: -webkit-fit-content; */
+  /* width: -moz-fit-content; */
+  /* width: fit-content; */
+  text-align: left;
+}
+
+footer.camber-footer div.row div.footer-contact-us ul li :hover {
+  color: var(--red);
+}
+
+footer.camber-footer div.row div.footer-contact-us ul li a {
+  padding: 0px 5px;
+}
+footer.camber-footer div.row div.footer-contact-us ul li a .fas {
+  font-size: 16px;
+}
+
+/* footer.camber-footer div.row div.footer-contact-us ul li i:hover {
+  color: var(--red);
+} */
+
+footer.camber-footer div.hr-below {
+  margin: auto 100px;
+}
+
+footer.camber-footer div.hr-below div.copyright {
+  text-align: left;
+}
+
+footer.camber-footer small span {
+  font-size: 14px;
+  color: var(--red);
+}
+
+footer.camber-footer small a {
+  text-decoration: none;
+}
+
 @media only screen and (max-width: 460px) {
   .navbar {
     height: 64px;
