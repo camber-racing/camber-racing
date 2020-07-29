@@ -264,22 +264,22 @@ footer.camber-footer small a {
 
 @media only screen and (max-width: 460px) {
   .navbar {
-    height: 64px;
+    height: 56px;
   }
   .navbar-brand {
     padding: 8px;
-    width: 156px;
-    height: 92px;
+    width: 136px;
+    height: 80px;
   }
   .navbar-brand img {
-    width: 120px;
+    width: 104px;
     height: auto;
   }
   .navbar-toggler {
     z-index: 9;
     margin: 4px 8px 4px 80%;
-    padding: 8px;
-    font-size: 1.25rem;
+    padding: 4px;
+    font-size: 1rem;
     line-height: 1;
     background-color: var(--grey);
     border: 1px solid transparent;
@@ -316,6 +316,24 @@ footer.camber-footer small a {
   .news-option {
     margin: 0;
     padding: 0;
+  }
+
+  .col-md-4 {
+    padding: 12px 50px;
+  }
+  footer.camber-footer div.content div p {
+    text-align: justify;
+    font-size: 13px;
+  }
+  .input-section {
+    padding: 24px 32px;
+  }
+  footer.camber-footer div.hr-below {
+    margin: auto 24px;
+  }
+
+  footer.camber-footer div.hr-below div.copyright {
+    text-align: center;
   }
 }
 :root {
