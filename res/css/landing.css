@@ -60,7 +60,12 @@ body {
   width: 208px;
   height: auto;
 }
-
+.carousel-inner{
+  height: 600px;
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+}
 .bnr-icon{
   color: #FF5E00;
   font-size: 75px;
@@ -115,9 +120,10 @@ h2.camber-title span {
 }
 
 .contains {
-  background-image: url("./res/img/cars/CR_X.JPG");
-  background-size: 1400px 600px;
-  height: 80vh;
+  background-image: url("/res/img/cars/CR_X.jpg"); 
+  background-size: 1400px 600px; 
+  height: 80vh; 
+  background-color: blueviolet;
   background-attachment: scroll;
   background-repeat: no-repeat;
   position: relative;
@@ -130,7 +136,7 @@ h2.camber-title span {
   position: relative;
   text-align: right;
   width: 50%;
-  height: 5%;
+  height: 100%;
   margin-top: 10px;
   padding-left: 30px;
   padding-top: 10px;
@@ -138,13 +144,15 @@ h2.camber-title span {
 
 .right-contains{
   float: right;
-  image-resolution: 500px;
   text-align: center;
-  width: 45%;
+  width: 50%;
   height: 100%;
   margin-top: 20px;
   padding-left: 45px;
   padding-top: 20px;
+}
+.right-contains img{
+  width: 500px;
 }
 
 h2.camber-heading{
@@ -237,15 +245,9 @@ h2.camber2 span {
     margin: 0;
     padding: 0;
   }
-}
-:root {
-  --black: #000000;
-  --grey: #1e1e1e;
-  --red: #e9081e;
-  --white: #ffffff;
-}
 
-.contains {
+
+  .contains {
     width: 100%;
     height: auto;
     top: 0;
@@ -270,3 +272,10 @@ h2.camber2 span {
     padding: 20px;
   }
 }
+:root {
+  --black: #000000;
+  --grey: #1e1e1e;
+  --red: #e9081e;
+  --white: #ffffff;
+}
+
