@@ -66,23 +66,11 @@ body {
   width: 100%;
   overflow: hidden;
 }
-.bnr-icon {
-  color: #ff5e00;
-  font-size: 75px;
 
-  padding: 15px;
-  border-radius: 50%;
-  height: 10px;
-}
-.carousel-inner {
-  height: 728px;
-  position: relative;
-  width: 100%;
-  overflow: hidden;
-}
 .bnr-icon {
   color: #ff5e00;
   font-size: 75px;
+  position: absolute;
 
   padding: 15px;
   border-radius: 50%;
@@ -365,6 +353,15 @@ footer.camber-footer small a {
     padding: 8px;
     clip-path: none;
     background-color: var(--grey);
+  }
+  .carousel-inner {
+    height: 228px;
+  }
+  .carousel-control-next,
+  .carousel-control-prev {
+    display: inline;
+    top: 8%;
+    margin-right: 20px;
   }
   .news-feed-container {
     width: 100%;
