@@ -59,7 +59,9 @@ body {
   clip-path: polygon(10% 0%, 100% 0%, 90% 100%, 0% 100%);
   background-color: var(--red);
 }
-
+.carousel-indicators {
+  z-index: 1;
+}
 .carousel-inner {
   height: 728px;
   position: relative;
