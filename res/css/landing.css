@@ -122,8 +122,9 @@ h2.camber-title span {
 
 .contains {
   background-image: url("/res/img/cars/CR_X.jpg");
-  background-size: 100% 90%;
-  height: 90vh;
+  background-size: 1400px 600px;
+  height: 80vh;
+  /* background-color: blueviolet; */
   background-attachment: scroll;
   background-repeat: no-repeat;
   position: relative;
@@ -152,7 +153,8 @@ h2.camber-title span {
   padding-top: 20px;
 }
 .right-contains img {
-  width: 560px;
+  width: 500px;
+  border-radius: 10px 10px;
 }
 
 h2.camber-heading {
