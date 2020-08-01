@@ -59,7 +59,9 @@ body {
   clip-path: polygon(10% 0%, 100% 0%, 90% 100%, 0% 100%);
   background-color: var(--red);
 }
-
+.carousel-indicators {
+  z-index: 1;
+}
 .carousel-inner {
   height: 728px;
   position: relative;
@@ -122,8 +124,8 @@ h2.camber-title span {
 
 .contains {
   background-image: url("/res/img/cars/CR_X.jpg");
-  background-size: 1400px 600px;
-  height: 80vh;
+  background-size: 100% 90%;
+  height: 90vh;
   background-attachment: scroll;
   background-repeat: no-repeat;
   position: relative;
@@ -152,7 +154,7 @@ h2.camber-title span {
   padding-top: 20px;
 }
 .right-contains img {
-  width: 500px;
+  width: 560px;
   border-radius: 10px 10px;
 }
 
