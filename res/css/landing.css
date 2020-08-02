@@ -79,10 +79,6 @@ body {
   height: 10px;
 }
 
-button:active {
-  background-color: var(--red);
-}
-
 .news-feed-container {
   margin: 8px 160px;
 }
