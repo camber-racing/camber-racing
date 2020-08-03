@@ -120,7 +120,7 @@ h2.camber-title span {
   border: 1px solid var(--black);
 }
 
-.contains {
+.about-us-container {
   background-image: url("/res/img/cars/CR_X.jpg");
   background-size: 100% 90%;
   height: 90vh;
@@ -131,7 +131,7 @@ h2.camber-title span {
   margin: 0;
 }
 
-.left-contains {
+.about-us-container .left-container {
   float: left;
   position: relative;
   text-align: right;
@@ -142,7 +142,7 @@ h2.camber-title span {
   padding-top: 8%;
 }
 
-.right-contains {
+.right-container {
   float: right;
   text-align: center;
   width: 50%;
@@ -151,7 +151,7 @@ h2.camber-title span {
   padding-left: 45px;
   padding-top: 6%;
 }
-.right-contains img {
+.right-container img {
   width: 438px;
 }
 
@@ -164,11 +164,11 @@ h2.camber-heading {
   margin: 30px 0;
 }
 
-h2.camber-heading span {
+.about-us-container h2.camber-heading span {
   color: var(--red);
 }
 
-p.camber1 {
+.about-us-container .left-container p {
   height: 50%;
   padding: 0 15px;
   font-size: 21px;
@@ -178,17 +178,17 @@ p.camber1 {
   margin: 30px 0;
 }
 
-h2.camber2 {
+h2.social-media {
   padding: 0 15px;
   font-size: 40px;
   font-weight: 600;
   text-align: center;
-  color: black;
+  color: var(--black);
   margin: 30px auto;
 }
 
-h2.camber2 span {
-  color: red;
+h2.social-media span {
+  color: var(--red);
 }
 .news-option {
   padding: 0;
@@ -389,7 +389,7 @@ footer.camber-footer small a {
     padding: 0;
   }
 
-  .contains {
+  .about-us-container {
     /* width: 100%; */
     background-size: cover;
 
@@ -400,7 +400,7 @@ footer.camber-footer small a {
     transform: none;
   }
 
-  .left-contains {
+  .about-us-container .left-container {
     width: 100%;
     position: relative;
     float: none;
@@ -409,19 +409,19 @@ footer.camber-footer small a {
     margin: 0;
     padding: 16px;
   }
-  h2.camber-heading {
+  .about-us-container h2.camber-heading {
     margin: 4px 0;
   }
-  p.camber1 {
+  .about-us-container .left-container p {
     margin: 4px 0;
   }
-  .right-contains {
+  .about-us-container .right-container {
     float: none;
     width: 100%;
     padding: 0;
     margin: 0;
   }
-  .right-contains img {
+  .about-us-container .right-container img {
     width: 280px;
     margin-bottom: 10px;
   }
