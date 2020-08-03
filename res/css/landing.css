@@ -121,7 +121,7 @@ h2.camber-title span {
 }
 
 .about-us-container {
-  background-image: url("/res/img/cars/CR_X.jpg");
+  background-image: url("../img/cars/CR_X.jpg");
   background-size: 100% 90%;
   height: 90vh;
   background-attachment: scroll;
