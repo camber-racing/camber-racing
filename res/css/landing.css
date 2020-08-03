@@ -63,10 +63,12 @@ body {
   z-index: 1;
 }
 .carousel-inner {
-  height: 728px;
   position: relative;
   width: 100%;
   overflow: hidden;
+}
+.carousel-inner img {
+  height: 728px;
 }
 
 .bnr-icon {
@@ -150,7 +152,7 @@ h2.camber-title span {
   padding-top: 6%;
 }
 .right-contains img {
-  width: 560px;
+  width: 438px;
 }
 
 h2.camber-heading {
@@ -158,12 +160,12 @@ h2.camber-heading {
   font-size: 40px;
   font-weight: 600;
   text-align: start;
-  color: red;
+  color: var(--black);
   margin: 30px 0;
 }
 
 h2.camber-heading span {
-  color: white;
+  color: var(--red);
 }
 
 p.camber1 {
@@ -218,19 +220,22 @@ footer.camber-footer div.row h6 {
   font-weight: 700;
   font-size: 20px;
   margin-bottom: 16px;
+  text-align: center;
 }
 .col-md-4 {
   padding: 24px 50px;
 }
 .input-section {
-  padding: 24px 104px;
+  /* padding: 24px 104px; */
+  text-align: center;
 }
 .input-section input {
-  margin: 12px;
+  display: block;
+  margin: 12px auto;
   padding: 8px;
   background-color: var(--grey);
   border: none;
-  width: 270px;
+  width: 200px;
   color: orangered;
   border-radius: 8px;
 }
@@ -246,14 +251,14 @@ footer.camber-footer div.row div.social-media-icon {
   padding: 5px 0px;
   color: var(--grey);
   background-color: var(--white);
-  margin: 16px 12px;
-  width: 270px;
+  margin: 16px auto;
+  width: 200px;
 }
 
 footer.camber-footer div.row div.social-media-icon a {
   text-decoration: none;
   color: var(--grey);
-  padding: 5px 14px;
+  padding: 5px;
 }
 
 footer.camber-footer div.row div.social-media-icon a i {
@@ -276,9 +281,11 @@ footer.camber-footer div.row ul li {
 footer.camber-footer div.row ul li a {
   text-decoration: none;
   color: white;
-  font-size: 0.9rem;
 }
-
+footer.camber-footer div.row ul li a span {
+  font-size: 14px;
+  font-weight: 400;
+}
 footer.camber-footer div.row ul li a:hover {
   color: var(--red);
   border-bottom: 1px dashed var(--red);
@@ -316,7 +323,7 @@ footer.camber-footer small a {
   text-decoration: none;
 }
 
-@media only screen and (max-width: 460px) {
+@media only screen and (max-width: 840px) {
   .navbar {
     height: 56px;
   }
@@ -331,7 +338,7 @@ footer.camber-footer small a {
   }
   .navbar-toggler {
     z-index: 9;
-    margin: 4px 8px 4px 80%;
+    margin: 4px 8px 4px 85%;
     padding: 4px;
     font-size: 1rem;
     line-height: 1;
@@ -352,8 +359,9 @@ footer.camber-footer small a {
     clip-path: none;
     background-color: var(--grey);
   }
-  .carousel-inner {
-    height: 228px;
+
+  .carousel-inner img {
+    height: 244px;
   }
   .carousel-control-next,
   .carousel-control-prev {
@@ -414,7 +422,7 @@ footer.camber-footer small a {
     margin: 0;
   }
   .right-contains img {
-    width: 360px;
+    width: 280px;
     margin-bottom: 10px;
   }
 
@@ -428,9 +436,7 @@ footer.camber-footer small a {
   .input-section {
     padding: 24px 32px;
   }
-  footer.camber-footer div.row div.social-media-icon {
-    margin: 16px 12px;
-  }
+
   footer.camber-footer div.hr-below {
     margin: auto 24px;
   }
