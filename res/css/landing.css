@@ -63,10 +63,12 @@ body {
   z-index: 1;
 }
 .carousel-inner {
-  height: 728px;
   position: relative;
   width: 100%;
   overflow: hidden;
+}
+.carousel-inner img {
+  height: 728px;
 }
 
 .bnr-icon {
@@ -77,10 +79,6 @@ body {
   padding: 15px;
   border-radius: 50%;
   height: 10px;
-}
-
-button:active {
-  background-color: var(--red);
 }
 
 .news-feed-container {
@@ -122,7 +120,7 @@ h2.camber-title span {
   border: 1px solid var(--black);
 }
 
-.contains {
+.about-us-container {
   background-image: url("/res/img/cars/CR_X.jpg");
   background-size: 100% 90%;
   height: 90vh;
@@ -133,7 +131,7 @@ h2.camber-title span {
   margin: 0;
 }
 
-.left-contains {
+.about-us-container .left-container {
   float: left;
   position: relative;
   text-align: right;
@@ -141,21 +139,21 @@ h2.camber-title span {
   height: 100%;
   margin-top: 10px;
   padding-left: 30px;
-  padding-top: 10px;
+  padding-top: 8%;
 }
 
-.right-contains {
+.right-container {
   float: right;
   text-align: center;
   width: 50%;
   height: 100%;
-  margin-top: 20px;
+  margin-top: 30px;
   padding-left: 45px;
-  padding-top: 20px;
+  padding-top: 6%;
 }
-.right-contains img {
-  width: 560px;
-  border-radius: 10px 10px;
+
+.right-container img {
+  width: 438px;
 }
 
 h2.camber-heading {
@@ -163,15 +161,15 @@ h2.camber-heading {
   font-size: 40px;
   font-weight: 600;
   text-align: start;
-  color: red;
+  color: var(--black);
   margin: 30px 0;
 }
 
-h2.camber-heading span {
-  color: white;
+.about-us-container h2.camber-heading span {
+  color: var(--red);
 }
 
-p.camber1 {
+.about-us-container .left-container p {
   height: 50%;
   padding: 0 15px;
   font-size: 21px;
@@ -181,17 +179,17 @@ p.camber1 {
   margin: 30px 0;
 }
 
-h2.camber2 {
+h2.social-media {
   padding: 0 15px;
   font-size: 40px;
   font-weight: 600;
   text-align: center;
-  color: black;
+  color: var(--black);
   margin: 30px auto;
 }
 
-h2.camber2 span {
-  color: red;
+h2.social-media span {
+  color: var(--red);
 }
 .news-option {
   padding: 0;
@@ -223,19 +221,22 @@ footer.camber-footer div.row h6 {
   font-weight: 700;
   font-size: 20px;
   margin-bottom: 16px;
+  text-align: center;
 }
 .col-md-4 {
   padding: 24px 50px;
 }
 .input-section {
-  padding: 24px 104px;
+  /* padding: 24px 104px; */
+  text-align: center;
 }
 .input-section input {
-  margin: 12px;
+  display: block;
+  margin: 12px auto;
   padding: 8px;
   background-color: var(--grey);
   border: none;
-  width: 270px;
+  width: 200px;
   color: orangered;
   border-radius: 8px;
 }
@@ -251,14 +252,14 @@ footer.camber-footer div.row div.social-media-icon {
   padding: 5px 0px;
   color: var(--grey);
   background-color: var(--white);
-  margin: 16px 12px;
-  width: 270px;
+  margin: 16px auto;
+  width: 200px;
 }
 
 footer.camber-footer div.row div.social-media-icon a {
   text-decoration: none;
   color: var(--grey);
-  padding: 5px 14px;
+  padding: 5px;
 }
 
 footer.camber-footer div.row div.social-media-icon a i {
@@ -281,9 +282,11 @@ footer.camber-footer div.row ul li {
 footer.camber-footer div.row ul li a {
   text-decoration: none;
   color: white;
-  font-size: 0.9rem;
 }
-
+footer.camber-footer div.row ul li a span {
+  font-size: 14px;
+  font-weight: 400;
+}
 footer.camber-footer div.row ul li a:hover {
   color: var(--red);
   border-bottom: 1px dashed var(--red);
@@ -321,7 +324,7 @@ footer.camber-footer small a {
   text-decoration: none;
 }
 
-@media only screen and (max-width: 460px) {
+@media only screen and (max-width: 840px) {
   .navbar {
     height: 56px;
   }
@@ -336,7 +339,7 @@ footer.camber-footer small a {
   }
   .navbar-toggler {
     z-index: 9;
-    margin: 4px 8px 4px 80%;
+    margin: 4px 8px 4px 85%;
     padding: 4px;
     font-size: 1rem;
     line-height: 1;
@@ -357,8 +360,9 @@ footer.camber-footer small a {
     clip-path: none;
     background-color: var(--grey);
   }
-  .carousel-inner {
-    height: 228px;
+
+  .carousel-inner img {
+    height: 244px;
   }
   .carousel-control-next,
   .carousel-control-prev {
@@ -386,7 +390,7 @@ footer.camber-footer small a {
     padding: 0;
   }
 
-  .contains {
+  .about-us-container {
     /* width: 100%; */
     background-size: cover;
 
@@ -397,7 +401,7 @@ footer.camber-footer small a {
     transform: none;
   }
 
-  .left-contains {
+  .about-us-container .left-container {
     width: 100%;
     position: relative;
     float: none;
@@ -406,20 +410,20 @@ footer.camber-footer small a {
     margin: 0;
     padding: 16px;
   }
-  h2.camber-heading {
+  .about-us-container h2.camber-heading {
     margin: 4px 0;
   }
-  p.camber1 {
+  .about-us-container .left-container p {
     margin: 4px 0;
   }
-  .right-contains {
+  .about-us-container .right-container {
     float: none;
     width: 100%;
     padding: 0;
     margin: 0;
   }
-  .right-contains img {
-    width: 360px;
+  .about-us-container .right-container img {
+    width: 280px;
     margin-bottom: 10px;
   }
 
@@ -433,9 +437,7 @@ footer.camber-footer small a {
   .input-section {
     padding: 24px 32px;
   }
-  footer.camber-footer div.row div.social-media-icon {
-    margin: 16px 12px;
-  }
+
   footer.camber-footer div.hr-below {
     margin: auto 24px;
   }
