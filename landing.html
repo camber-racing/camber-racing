@@ -32,8 +32,8 @@
 
   <body>
     <nav class="navbar navbar-expand-lg navbar-light">
-      <a class="navbar-brand" href="#"
-        ><img src="res/img/logos/logo-without-bg.png"
+      <a class="navbar-brand" href="#" id="navbar-brand"
+        ><img src="res/img/logos/logo-without-bg.png" id="navbar-brand-img"
       /></a>
       <button
         class="navbar-toggler"
@@ -88,13 +88,22 @@
       </ol>
       <div class="carousel-inner">
         <div class="carousel-item active">
-          <img src="./res/img/cars/Beast.jpg" class="d-block w-100" />
+          <img
+            src="./res/img/cars/Beast.jpg"
+            class="d-block w-100 bg img-gradient"
+          />
         </div>
         <div class="carousel-item">
-          <img src="./res/img/cars/CR18.JPG" class="d-block w-100" />
+          <img
+            src="./res/img/cars/CR18.JPG"
+            class="d-block w-100 img-gradient"
+          />
         </div>
         <div class="carousel-item">
-          <img src="./res/img/cars/CR15.JPG" class="d-block w-100" />
+          <img
+            src="./res/img/cars/CR15.JPG"
+            class="d-block w-100 img-gradient"
+          />
         </div>
 
         <a
@@ -131,7 +140,73 @@
           <p>10 July</p>
           <h4>SPLIT SECOND: OUR MONTHYLY NEWS LETTER IS OUT</h4>
           <div class="col-lg-5 news-option">
-            <button class="btn btn-default">READ MORE</button>
+            <button
+              class="btn btn-default"
+              data-toggle="modal"
+              data-target="#exampleModalCenter"
+            >
+              READ MORE
+            </button>
+          </div>
+          <!-- Modal -->
+          <div
+            class="modal fade"
+            id="exampleModalCenter"
+            tabindex="-1"
+            role="dialog"
+            aria-labelledby="exampleModalCenterTitle"
+            aria-hidden="true"
+          >
+            <div class="modal-dialog modal-dialog-centered" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="exampleModalLongTitle">
+                    News title
+                  </h5>
+                  <button
+                    type="button"
+                    class="close"
+                    data-dismiss="modal"
+                    aria-label="Close"
+                  >
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                  Placerat vestibulum lectus mauris ultrices eros in. Feugiat in
+                  ante metus dictum at tempor commodo ullamcorper a. Quam
+                  viverra orci sagittis eu volutpat. Ac felis donec et odio
+                  pellentesque diam. Euismod elementum nisi quis eleifend quam
+                  adipiscing vitae proin sagittis. Tempus egestas sed sed risus.
+                  Id volutpat lacus laoreet non curabitur gravida arcu ac. Et
+                  leo duis ut diam quam nulla porttitor. Sem viverra aliquet
+                  eget sit amet tellus cras. Id volutpat lacus laoreet non
+                  curabitur gravida arcu ac tortor. Lorem mollis aliquam ut
+                  porttitor leo a diam.
+                  <br />
+                  Natoque penatibus et magnis dis parturient montes nascetur
+                  ridiculus. Est sit amet facilisis magna etiam. Risus at
+                  ultrices mi tempus imperdiet nulla. Rhoncus aenean vel elit
+                  scelerisque mauris. Arcu non odio euismod lacinia at. Ut
+                  placerat orci nulla pellentesque dignissim enim sit. Ac turpis
+                  egestas maecenas pharetra. Mi eget mauris pharetra et ultrices
+                  neque ornare aenean. Donec adipiscing tristique risus nec.
+                  Nullam vehicula ipsum a arcu cursus. Cursus euismod quis
+                  viverra nibh cras pulvinar mattis.
+                </div>
+                <div class="modal-footer">
+                  <button
+                    type="button"
+                    class="btn btn-secondary"
+                    data-dismiss="modal"
+                  >
+                    Close
+                  </button>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -144,7 +219,73 @@
           <p>10 July</p>
           <h4>SPLIT SECOND: OUR MONTHYLY NEWS LETTER IS OUT</h4>
           <div class="col-lg-5 news-option">
-            <button class="btn btn-default">READ MORE</button>
+            <button
+              class="btn btn-default"
+              data-toggle="modal"
+              data-target="#exampleModalCenter"
+            >
+              READ MORE
+            </button>
+          </div>
+          <!-- Modal -->
+          <div
+            class="modal fade"
+            id="exampleModalCenter"
+            tabindex="-1"
+            role="dialog"
+            aria-labelledby="exampleModalCenterTitle"
+            aria-hidden="true"
+          >
+            <div class="modal-dialog modal-dialog-centered" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="exampleModalLongTitle">
+                    News title
+                  </h5>
+                  <button
+                    type="button"
+                    class="close"
+                    data-dismiss="modal"
+                    aria-label="Close"
+                  >
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                  Placerat vestibulum lectus mauris ultrices eros in. Feugiat in
+                  ante metus dictum at tempor commodo ullamcorper a. Quam
+                  viverra orci sagittis eu volutpat. Ac felis donec et odio
+                  pellentesque diam. Euismod elementum nisi quis eleifend quam
+                  adipiscing vitae proin sagittis. Tempus egestas sed sed risus.
+                  Id volutpat lacus laoreet non curabitur gravida arcu ac. Et
+                  leo duis ut diam quam nulla porttitor. Sem viverra aliquet
+                  eget sit amet tellus cras. Id volutpat lacus laoreet non
+                  curabitur gravida arcu ac tortor. Lorem mollis aliquam ut
+                  porttitor leo a diam.
+                  <br />
+                  Natoque penatibus et magnis dis parturient montes nascetur
+                  ridiculus. Est sit amet facilisis magna etiam. Risus at
+                  ultrices mi tempus imperdiet nulla. Rhoncus aenean vel elit
+                  scelerisque mauris. Arcu non odio euismod lacinia at. Ut
+                  placerat orci nulla pellentesque dignissim enim sit. Ac turpis
+                  egestas maecenas pharetra. Mi eget mauris pharetra et ultrices
+                  neque ornare aenean. Donec adipiscing tristique risus nec.
+                  Nullam vehicula ipsum a arcu cursus. Cursus euismod quis
+                  viverra nibh cras pulvinar mattis.
+                </div>
+                <div class="modal-footer">
+                  <button
+                    type="button"
+                    class="btn btn-secondary"
+                    data-dismiss="modal"
+                  >
+                    Close
+                  </button>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -251,5 +392,6 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.1/js/swiper.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.7.0/vanilla-tilt.js"></script>
     <script src="./res/js/main.js"></script>
+    <script src="res/js/landing.js"></script>
   </body>
 </html>
