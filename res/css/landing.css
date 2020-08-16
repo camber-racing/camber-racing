@@ -1,5 +1,10 @@
+@font-face {
+  font-family: roboto-regular;
+  src: url(../fonts/Roboto-Regular.ttf) format("truetype");
+}
+
 * {
-  /* font-family: ; */
+  font-family: roboto-regular;
   margin: 0;
   padding: 0;
 }
