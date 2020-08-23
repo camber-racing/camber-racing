@@ -1,0 +1,489 @@
+@font-face {
+  font-family: roboto-regular;
+  src: url(../fonts/Roboto-Regular.ttf) format("truetype");
+}
+
+* {
+  font-family: roboto-regular;
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  font-size: 20px;
+}
+
+.ml-mr-auto {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.navbar {
+  position: fixed;
+  width: 100%;
+  height: 55px;
+  padding: 0;
+  background-color: var(--black);
+  z-index: 5;
+}
+.navbar-brand {
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: var(--white);
+  margin: 0;
+  padding: 16px;
+  width: 288px;
+  height: 138px;
+  clip-path: polygon(0 0, 100% 0, 80% 70%, 0 70%);
+}
+
+.navbar-brand img {
+  width: 208px;
+  height: auto;
+}
+
+.nav-link {
+  font-weight: 500;
+}
+
+.nav-link span {
+  position: relative;
+  padding: 16px 12px;
+  z-index: 2;
+
+  color: var(--white);
+}
+
+.nav-link span:hover {
+  clip-path: polygon(10% 0%, 100% 0%, 90% 100%, 0% 100%);
+  background-color: var(--red);
+}
+.carousel-indicators {
+  z-index: 1;
+}
+.carousel-inner {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+}
+.carousel-inner img {
+  height: 728px;
+}
+
+.bnr-icon {
+  color: #ff5e00;
+  font-size: 3.5rem;
+  position: absolute;
+  border-radius: 50%;
+  height: 25%;
+}
+.carousel-item:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.6);
+}
+
+.news-feed-container {
+  margin: 8px 8%;
+}
+
+h2.camber-title {
+  padding: 0 15px;
+  font-size: 40px;
+  font-weight: 600;
+  text-align: start;
+  color: var(--black);
+  margin: 30px auto;
+}
+h2.camber-title span {
+  color: var(--red);
+}
+.jumbotron {
+  margin: 0;
+  margin-bottom: 35px;
+  background-color: var(--white);
+  padding: 0;
+  color: var(--black);
+  font-size: 15px;
+}
+.col-lg-6 p {
+  margin: 0;
+  font-size: 16px;
+}
+.col-lg-6 h4 {
+  margin: 32px 0;
+  font-weight: 600;
+  font-size: 30px;
+}
+
+.jumbotron .news-option button {
+  padding: 8px;
+  font-size: 15px;
+  border: 1px solid var(--black);
+}
+.img-gradient::after {
+  background: linear-gradient(
+    to right bottom,
+    rgba(0, 0, 0, 0.4),
+    rgba(0, 0, 0, 1)
+  );
+}
+.about-us-container {
+  background-image: linear-gradient(
+      to right bottom,
+      rgba(0, 0, 0, 0.2),
+      rgba(0, 0, 0, 0.5)
+    ),
+    url(../img/cars/CR_X.jpg);
+  /* background-image: url("../img/cars/CR_X.jpg"); */
+  background-size: 100% 90%;
+  height: 90vh;
+  background-attachment: scroll;
+  background-repeat: no-repeat;
+  position: relative;
+  text-align: center;
+  margin: 8px 9%;
+}
+
+.about-us-container .left-container {
+  float: left;
+  position: relative;
+  text-align: right;
+  width: 50%;
+  height: 100%;
+  margin-top: 10px;
+  padding-left: 30px;
+  padding-top: 8%;
+}
+
+.about-us-container .right-container {
+  float: right;
+  text-align: center;
+  width: 50%;
+  height: 100%;
+  margin-top: 30px;
+  padding-left: 45px;
+  padding-top: 6%;
+  left: 50%;
+}
+
+.about-us-container .right-container img {
+  width: 438px;
+}
+
+.about-us-container .left-container h2.camber-heading {
+  padding: 0 15px;
+  font-size: 40px;
+  font-weight: 600;
+  text-align: start;
+  color: var(--white);
+  margin: 30px 0;
+}
+
+.about-us-container .left-container h2.camber-heading span {
+  color: var(--red);
+}
+
+.about-us-container .left-container p {
+  height: 50%;
+  padding: 0 15px;
+  font-size: 21px;
+  font-weight: 500;
+  text-align: start;
+  color: white;
+  margin: 30px 0;
+}
+
+h2.social-media {
+  padding: 0 15px;
+  font-size: 40px;
+  font-weight: 600;
+  text-align: center;
+  color: var(--black);
+  margin: 30px auto;
+}
+
+h2.social-media span {
+  color: var(--red);
+}
+.news-option {
+  padding: 0;
+}
+
+footer.camber-footer {
+  margin-top: 50px;
+  text-align: center;
+  padding: 20px;
+  background-color: var(--black);
+  color: #ffffff;
+}
+.col-md-4 {
+  padding: 24px 50px;
+}
+
+footer.camber-footer hr {
+  border-top: 1px solid var(--red);
+  margin: auto 100px;
+}
+
+footer.camber-footer div.row h5 {
+  font-weight: 800;
+  font-size: 40px;
+  color: var(--red);
+}
+
+footer.camber-footer div.row h6 {
+  font-weight: 700;
+  font-size: 20px;
+  margin-bottom: 16px;
+  text-align: center;
+}
+
+.input-section {
+  text-align: center;
+}
+.input-section input {
+  display: block;
+  margin: 12px auto;
+  padding: 8px;
+  background-color: var(--grey);
+  border: none;
+  width: 200px;
+  color: orangered;
+  border-radius: 8px;
+}
+.input-section input:focus {
+  outline: none;
+}
+.input-section input::placeholder {
+  color: orangered;
+}
+
+footer.camber-footer div.row div.social-media-icon {
+  text-align: center;
+  padding: 5px 0px;
+  color: var(--grey);
+  background-color: var(--white);
+  margin: 16px auto;
+  width: 200px;
+}
+
+footer.camber-footer div.row div.social-media-icon a {
+  text-decoration: none;
+  color: var(--grey);
+  padding: 5px;
+}
+
+footer.camber-footer div.row div.social-media-icon a i {
+  font-size: 22px;
+}
+
+footer.camber-footer div.row div.social-media-icon a i:hover {
+  color: var(--red);
+}
+
+footer.camber-footer div.row ul {
+  list-style: none;
+}
+
+footer.camber-footer div.row ul li {
+  color: white;
+  opacity: 0.8;
+}
+
+footer.camber-footer div.row ul li a {
+  text-decoration: none;
+  color: white;
+}
+footer.camber-footer div.row ul li a span {
+  font-size: 14px;
+  font-weight: 400;
+}
+footer.camber-footer div.row ul li a:hover {
+  color: var(--red);
+  border-bottom: 1px dashed var(--red);
+}
+
+footer.camber-footer div.row div.footer-contact-us {
+  text-align: left;
+}
+
+footer.camber-footer div.row div.footer-contact-us ul li :hover {
+  color: var(--red);
+}
+
+footer.camber-footer div.row div.footer-contact-us ul li a {
+  padding: 0px 5px;
+}
+footer.camber-footer div.row div.footer-contact-us ul li a .fas {
+  font-size: 16px;
+}
+
+footer.camber-footer div.hr-below {
+  margin: auto 100px;
+}
+
+footer.camber-footer div.hr-below div.copyright {
+  text-align: left;
+  font-size: 80%;
+  font-weight: 400;
+  text-align: center;
+  padding: 0 22px;
+}
+
+footer.camber-footer small span {
+  font-size: 14px;
+  color: var(--red);
+}
+
+footer.camber-footer small a {
+  text-decoration: none;
+}
+@media only screen and (max-width: 840px) {
+  .navbar {
+    height: 56px;
+  }
+  .navbar-brand {
+    padding: 8px;
+    width: 136px;
+    height: 80px;
+  }
+  .navbar-brand img {
+    width: 104px;
+    height: auto;
+  }
+  .navbar-toggler {
+    z-index: 9;
+    margin: 4px 8px 4px 85%;
+    padding: 4px;
+    font-size: 1rem;
+    line-height: 1;
+    background-color: var(--grey);
+    border: 1px solid transparent;
+    border-radius: 0.25rem;
+  }
+  .nav-link {
+    padding: 8px;
+  }
+
+  .navbar-nav {
+    background: var(--grey);
+  }
+
+  .nav-link span:hover {
+    padding: 8px;
+    clip-path: none;
+    background-color: var(--grey);
+  }
+
+  .carousel-inner img {
+    height: 244px;
+  }
+  .carousel-control-next,
+  .carousel-control-prev {
+    display: inline;
+    top: 48%;
+    margin-left: 10%;
+  }
+  .bnr-icon {
+    font-size: 1.5rem;
+  }
+  .news-feed-container {
+    width: 100%;
+    margin: 8px auto;
+  }
+  h2.camber-title {
+    margin: 16px auto;
+  }
+  .col-lg-6 p {
+    margin: 8px 0;
+  }
+  .col-lg-6 h4 {
+    margin: 24px 0;
+    font-size: 24px;
+  }
+
+  .news-option {
+    margin: 0;
+    padding: 0;
+  }
+
+  .about-us-container {
+    margin: 0 15px;
+    background-size: cover;
+    height: auto;
+    top: 0;
+    position: relative;
+    left: 0;
+    transform: none;
+  }
+
+  .about-us-container .left-container {
+    width: 100%;
+    position: relative;
+    float: none;
+    left: 0;
+    transform: none;
+    margin: 0;
+    padding: 16px;
+  }
+  .about-us-container h2.camber-heading {
+    margin: 4px 0;
+  }
+  .about-us-container .left-container p {
+    margin: 4px 0;
+  }
+  .about-us-container .right-container {
+    float: none;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+  }
+  .about-us-container .right-container img {
+    width: 280px;
+    margin-bottom: 10px;
+  }
+
+  .col-md-4 {
+    padding: 12px 50px;
+  }
+  footer.camber-footer div.content div p {
+    text-align: justify;
+    font-size: 13px;
+  }
+  .input-section {
+    padding: 24px 32px;
+  }
+
+  footer.camber-footer div.hr-below {
+    margin: auto 24px;
+  }
+
+  footer.camber-footer div.hr-below div.copyright {
+    text-align: center;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .nav-link span {
+    padding: 6px;
+  }
+  .about-us-container .right-container img {
+    width: 342px;
+  }
+}
+:root {
+  --black: #000000;
+  --grey: #1e1e1e;
+  --red: #e9081e;
+  --white: #ffffff;
+}
