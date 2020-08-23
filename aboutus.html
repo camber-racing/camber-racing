@@ -1,203 +1,295 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <title>Camber Racing SRM | About Us</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
 
     <!--CSS Links-->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
-        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-    <link rel="stylesheet" href="res/css/global.css">
-    <link rel="stylesheet" href="res/css/aboutus.css">
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+      crossorigin="anonymous"
+    />
+    <!-- <link rel="stylesheet" href="res/css/global.css"> -->
+    <!-- <link rel="stylesheet" href="res/css/aboutus.css" /> -->
+    <link rel="stylesheet" href="res/css/landing.css" />
 
     <!--Fontawesome-->
-    <script src="https://kit.fontawesome.com/95e303bf9f.js" crossorigin="anonymous"></script>
+    <script
+      src="https://kit.fontawesome.com/95e303bf9f.js"
+      crossorigin="anonymous"
+    ></script>
 
     <!-- Mapbox -->
-    <script src='https://api.mapbox.com/mapbox-gl-js/v1.8.1/mapbox-gl.js'></script>
-    <link href='https://api.mapbox.com/mapbox-gl-js/v1.8.1/mapbox-gl.css' rel='stylesheet' />
-</head>
+    <script src="https://api.mapbox.com/mapbox-gl-js/v1.8.1/mapbox-gl.js"></script>
+    <link
+      href="https://api.mapbox.com/mapbox-gl-js/v1.8.1/mapbox-gl.css"
+      rel="stylesheet"
+    />
+  </head>
 
-<body>
+  <body>
     <nav class="navbar navbar-expand-lg navbar-light">
-        <div class="kz-nav-blur"></div>
-        <a class="navbar-brand" href="#"><img src="res/img/logos/logo-without-bg.png"></a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
+      <div class="kz-nav-blur"></div>
+      <a class="navbar-brand" href="#"
+        ><img src="res/img/logos/logo-without-bg.png"
+      /></a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
 
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav ml-auto">
-                <li class="nav-item">
-                    <a class="nav-link" href="index.html"><span>Home</span></a>
-                </li>
-                <li class="nav-item active">
-                    <a class="nav-link" href="#"><span>About Us</span></a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="index.html#partners"><span>Partners</span></a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="cars.html"><span>The Paddock</span></a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="team.html"><span>Race With Us</span></a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#contact"><span>Contact Us</span></a>
-                </li>
-            </ul>
-        </div>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html"><span>Home</span></a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link" href="#"><span>About Us</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="index.html#partners"
+              ><span>Partners</span></a
+            >
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="cars.html"><span>The Paddock</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="team.html"><span>Race With Us</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#contact"><span>Contact Us</span></a>
+          </li>
+        </ul>
+      </div>
     </nav>
 
     <section class="container aboutus">
-        <div class="row aboutus-row text-center">
-            <div class="col-md-4 aboutus-row-img">
-                <img src="res/img/svg/aboutus_car.svg" />
-            </div>
-            <div class="col-md-8 aboutus-row-content">
-                <p>Camber Racing is the official Formula Student Combustion team of SRM IST, Chennai. It all started
-                    over at a coffee table in 2009 when a group of young automotive enthusiasts decided to turn their
-                    dreams into reality and unleash their passion. After a proposing a well -versed plan to the HOD, the
-                    team made its first prototype “CR 800”, engineered with passion and excellence. This, was the birth
-                    of Camber Racing. Since its evolution in 2009, the team has participated in various Formula Student
-                    events namely Formula Bharat, SUPRA SAE and Formula Student Germany. It comprises a passionate team
-                    of Undergraduate students from various disciplines, who apply their collective intelligence to
-                    engineer the ultimate racing machine. The team has added 26 awards and 2 national championships to
-                    the cabinet building 9 cars and completing 10 glorious years.</p>
-            </div>
+      <div class="row aboutus-row text-center">
+        <div class="col-md-4 aboutus-row-img">
+          <img src="res/img/svg/aboutus_car.svg" />
         </div>
-        <div class="row text-center">
-            <h2 class="camber-title text-center">Our<span> Motto</span></h2>
+        <div class="col-md-8 aboutus-row-content">
+          <p>
+            Camber Racing is the official Formula Student Combustion team of SRM
+            IST, Chennai. It all started over at a coffee table in 2009 when a
+            group of young automotive enthusiasts decided to turn their dreams
+            into reality and unleash their passion. After a proposing a well
+            -versed plan to the HOD, the team made its first prototype “CR 800”,
+            engineered with passion and excellence. This, was the birth of
+            Camber Racing. Since its evolution in 2009, the team has
+            participated in various Formula Student events namely Formula
+            Bharat, SUPRA SAE and Formula Student Germany. It comprises a
+            passionate team of Undergraduate students from various disciplines,
+            who apply their collective intelligence to engineer the ultimate
+            racing machine. The team has added 26 awards and 2 national
+            championships to the cabinet building 9 cars and completing 10
+            glorious years.
+          </p>
         </div>
-        <div class="row aboutus-row text-center">
-            <div class="col-md-8 aboutus-row-content">
-                <p>‘Building People not just cars’. Camber Racing believes in not only achieving excellence in designing
-                    and
-                    engineering a race car but also in developing skilled, competent individuals and cordial relations
-                    with
-                    the college fraternity, sponsors and FSAE student community.</p>
-            </div>
-            <div class="col-md-4 aboutus-row-img">
-                <img src="res/img/svg/motto.svg" />
-            </div>
+      </div>
+      <div class="row text-center">
+        <h2 class="camber-title text-center">Our<span> Motto</span></h2>
+      </div>
+      <div class="row aboutus-row text-center">
+        <div class="col-md-8 aboutus-row-content">
+          <p>
+            ‘Building People not just cars’. Camber Racing believes in not only
+            achieving excellence in designing and engineering a race car but
+            also in developing skilled, competent individuals and cordial
+            relations with the college fraternity, sponsors and FSAE student
+            community.
+          </p>
         </div>
-        <div class="row text-center">
-            <h2 class="camber-title text-center">Our<span> Vision</span></h2>
+        <div class="col-md-4 aboutus-row-img">
+          <img src="res/img/svg/motto.svg" />
         </div>
-        <div class="row aboutus-row text-center">
-            <div class="col-md-4 aboutus-row-img">
-                <img src="res/img/svg/vision.svg" />
-            </div>
-            <div class="col-md-8 aboutus-row-content">
-                <p>To pursue excellence in designing and building one of the best cars in the country and compete in
-                    national and international FSAE events.</p>
-            </div>
+      </div>
+      <div class="row text-center">
+        <h2 class="camber-title text-center">Our<span> Vision</span></h2>
+      </div>
+      <div class="row aboutus-row text-center">
+        <div class="col-md-4 aboutus-row-img">
+          <img src="res/img/svg/vision.svg" />
         </div>
+        <div class="col-md-8 aboutus-row-content">
+          <p>
+            To pursue excellence in designing and building one of the best cars
+            in the country and compete in national and international FSAE
+            events.
+          </p>
+        </div>
+      </div>
     </section>
     <section class="container contact-form">
-        <div class="row text-center">
-            <h2 class="camber-title text-center">Our<span> Support</span></h2>
+      <div class="row text-center">
+        <h2 class="camber-title text-center">Our<span> Support</span></h2>
+      </div>
+      <div class="row text-center contact-form-content">
+        <div class="col-md-6">
+          <div id="map"></div>
+          <script>
+            mapboxgl.accessToken =
+              "pk.eyJ1IjoiOTI2N2Fha2FzaHNoYXJtYSIsImEiOiJja2EzYWJzZXowOWh5M21sOTlwOW42NDg0In0.p2_c5SJEPrzfZekdgwkRRg";
+            var map = new mapboxgl.Map({
+              container: "map",
+              style: "mapbox://styles/mapbox/light-v10",
+              center: [80.0439, 12.8239],
+              zoom: 8,
+            });
+            var marker = new mapboxgl.Marker()
+              .setLngLat([80.0439, 12.8239])
+              .addTo(map);
+          </script>
         </div>
-        <div class="row text-center contact-form-content">
-            <div class="col-md-6">
-                <div id='map'></div>
-                <script>
-                    mapboxgl.accessToken = 'pk.eyJ1IjoiOTI2N2Fha2FzaHNoYXJtYSIsImEiOiJja2EzYWJzZXowOWh5M21sOTlwOW42NDg0In0.p2_c5SJEPrzfZekdgwkRRg';
-                    var map = new mapboxgl.Map({
-                        container: 'map',
-                        style: 'mapbox://styles/mapbox/light-v10',
-                        center: [80.0439, 12.8239],
-                        zoom: 8
-                    });
-                    var marker = new mapboxgl.Marker()
-                        .setLngLat([80.0439, 12.8239])
-                        .addTo(map);
-                </script>
+        <div class="col-md-6">
+          <form action="#" method="POST">
+            <div class="form-row">
+              <div class="form-group col">
+                <input
+                  type="text"
+                  class="form-control"
+                  placeholder="Name"
+                  name="user_name"
+                  required
+                />
+              </div>
+              <div class="form-group col">
+                <input
+                  type="number"
+                  class="form-control"
+                  placeholder="Phone"
+                  name="user_phone"
+                  required
+                />
+              </div>
             </div>
-            <div class="col-md-6">
-                <form action="#" method="POST">
-                    <div class="form-row">
-                        <div class="form-group col">
-                            <input type="text" class="form-control" placeholder="Name" name="user_name" required>
-                        </div>
-                        <div class="form-group col">
-                            <input type="number" class="form-control" placeholder="Phone" name="user_phone" required>
-                        </div>
-                    </div>
-                    <div class="form-group">
-                        <input type="email" class="form-control" placeholder="Email" name="user_email" required>
-                    </div>
-                    <div class="form-group">
-                        <textarea class="form-control" rows="3" placeholder="Message" name="user_msg"
-                            required></textarea>
-                    </div>
-                    <button type="submit" class="btn btn-danger mb-2 mr-auto" style="float: right;"
-                        value="Send">Send</button>
-                </form>
+            <div class="form-group">
+              <input
+                type="email"
+                class="form-control"
+                placeholder="Email"
+                name="user_email"
+                required
+              />
             </div>
+            <div class="form-group">
+              <textarea
+                class="form-control"
+                rows="3"
+                placeholder="Message"
+                name="user_msg"
+                required
+              ></textarea>
+            </div>
+            <button
+              type="submit"
+              class="btn btn-danger mb-2 mr-auto"
+              style="float: right;"
+              value="Send"
+            >
+              Send
+            </button>
+          </form>
         </div>
+      </div>
     </section>
     <footer class="camber-footer container-fluid" id="contact">
-        <div class="row text-center">
-            <h5 class="ml-mr-auto">Building <span>People</span> Not just <span>Cars</span></h5>
+      <div class="row text-center">
+        <h5 class="ml-mr-auto">
+          Building <span>People</span> Not just <span>Cars</span>
+        </h5>
+      </div>
+      <div class="row text-center" style="margin-top: 30px;">
+        <div class="col-md-4">
+          <img src="res/img/logos/logo-without-bg.png" />
         </div>
-        <div class="row text-center" style="margin-top: 30px;">
-            <div class="col-md-4">
-                <img src="res/img/logos/logo-without-bg.png" />
-            </div>
-            <div class="col-md-4">
-                <div class="footer-nav-links ml-mr-auto">
-                    <h6>Move to</h6>
-                    <ul>
-                        <li><a href="index.html"><span class="active">Home</span></a></li>
-                        <li><a href="#"><span>About Us</span></a></li>
-                        <li><a href="index.html#partners"><span>Partners</span></a></li>
-                        <li><a href="cars.html"><span>The Paddock</span></a></li>
-                        <li><a href="team.html"><span>Race with Us</span></a></li>
-                    </ul>
-                </div>
-            </div>
-            <div class="col-md-4">
-                <div class="footer-contact-us ml-mr-auto">
-                    <h6>Contact Us</h6>
-                    <ul>
-                        <li><a href="#"><span>Mail id</span><i class="fas fa-envelope"></i></a></li>
-                        <li><a href="#"><span>Phone number</span><i class="fas fa-phone"></i></a></li>
-                    </ul>
-                </div>
-            </div>
+        <div class="col-md-4">
+          <div class="footer-nav-links ml-mr-auto">
+            <h6>Move to</h6>
+            <ul>
+              <li>
+                <a href="index.html"><span class="active">Home</span></a>
+              </li>
+              <li>
+                <a href="#"><span>About Us</span></a>
+              </li>
+              <li>
+                <a href="index.html#partners"><span>Partners</span></a>
+              </li>
+              <li>
+                <a href="cars.html"><span>The Paddock</span></a>
+              </li>
+              <li>
+                <a href="team.html"><span>Race with Us</span></a>
+              </li>
+            </ul>
+          </div>
         </div>
-        <hr>
-        <div class="row hr-below">
-            <div class="col-md-8 col-sm-8 copyright"><small>&copy;Copyright Camber Racing SRMIST | 2020</small>
-            </div>
-            <div class="col-md-4 col-sm-4 social">
-                <div class="social-media-icon">
-                    <a href="#"><i class="fab fa-facebook"></i></a>
-                    <a href="#"><i class="fab fa-instagram"></i></a>
-                </div>
-            </div>
+        <div class="col-md-4">
+          <div class="footer-contact-us ml-mr-auto">
+            <h6>Contact Us</h6>
+            <ul>
+              <li>
+                <a href="#"
+                  ><span>Mail id</span><i class="fas fa-envelope"></i
+                ></a>
+              </li>
+              <li>
+                <a href="#"
+                  ><span>Phone number</span><i class="fas fa-phone"></i
+                ></a>
+              </li>
+            </ul>
+          </div>
         </div>
-        <small>Made with <span>&hearts;</span> from <a href="#"><span>SRMKZILLA</span></a></small>
+      </div>
+      <hr />
+      <div class="row hr-below">
+        <div class="col-md-8 col-sm-8 copyright">
+          <small>&copy;Copyright Camber Racing SRMIST | 2020</small>
+        </div>
+        <div class="col-md-4 col-sm-4 social">
+          <div class="social-media-icon">
+            <a href="#"><i class="fab fa-facebook"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+          </div>
+        </div>
+      </div>
+      <small
+        >Made with <span>&hearts;</span> from
+        <a href="#"><span>SRMKZILLA</span></a></small
+      >
     </footer>
 
-
-
     <!--Bootstrap js-->
-    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
-        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
-        crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
-        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
-        crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
-        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
-        crossorigin="anonymous"></script>
-</body>
-
+    <script
+      src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+      integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+      integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+      crossorigin="anonymous"
+    ></script>
+    <!-- add animation to navbar -->
+    <script src="res/js/landing.js"></script>
+  </body>
 </html>

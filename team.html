@@ -1,1394 +1,1447 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Camber Racing SRM | TEAM</title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+      crossorigin="anonymous"
+    />
+    <!-- <link rel="stylesheet" href="res/css/global.css"> -->
+    <link rel="stylesheet" href="res/css/landing.css" />
 
-<head>
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>Camber Racing SRM | TEAM</title>
-  <meta name="description" content="">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
-    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-  <link rel="stylesheet" href="res/css/global.css">
+    <style type="text/css">
+      .heading {
+        text-align: center;
+        font-size: 48px;
+        font-weight: 800;
+        color: black;
+        -webkit-text-fill-color: white;
+        -webkit-text-stroke-width: 1px;
+        -webkit-text-stroke-color: black;
+      }
 
-  <style type="text/css">
-    .heading {
-      text-align: center;
-      font-size: 48px;
-      font-weight: 800;
-      color: black;
-      -webkit-text-fill-color: white;
-      -webkit-text-stroke-width: 1px;
-      -webkit-text-stroke-color: black;
-    }
+      .heading > span {
+        color: black;
+        -webkit-text-fill-color: black;
+      }
 
-    .heading>span {
-      color: black;
-      -webkit-text-fill-color: black;
-    }
+      .imgContainer {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin: 20px;
+      }
 
-    .imgContainer {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-      margin: 20px;
-    }
+      .imgContainer > img {
+        width: 80px;
+        height: 80px;
+        margin: 20px;
+        border-radius: 50%;
+        box-shadow: 0 0 2px gray;
+      }
 
-    .imgContainer>img {
-      width: 80px;
-      height: 80px;
-      margin: 20px;
-      border-radius: 50%;
-      box-shadow: 0 0 2px gray;
-    }
+      .tab-content .tab-pane {
+        text-align: center;
+        margin-top: 20px;
+        display: none !important;
+      }
 
-    .tab-content .tab-pane {
-      text-align: center;
-      margin-top: 20px;
-      display: none !IMPORTANT;
-    }
+      .tab-content .active {
+        display: block !important;
+      }
 
-    .tab-content .active {
-      display: block !IMPORTANT;
-    }
-
-    .speaker-box {
-      margin: 13px 35px 13px 35px;
-      padding: 7px;
-      box-sizing: border-box;
-      display: flex;
-      box-shadow: 0 0 5px gray;
-      border-radius: 75px;
-    }
-
-    .speaker-box:nth-of-type(even) {
-      flex-direction: row-reverse;
-      text-align: right;
-    }
-
-    .speaker-img {
-      border-radius: 51%;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      padding: 0;
-    }
-
-    .speaker-img>img {
-      box-shadow: 0 0 5px gray;
-      width: 151px;
-      border-radius: 51%;
-      margin-right: 5px;
-    }
-
-    .speaker-text {
-      padding: 13px;
-      margin-bottom: 15px;
-    }
-
-    @media only screen and (max-width: 600px) {
       .speaker-box {
-        flex-direction: column;
-        padding-top: 19px;
+        margin: 13px 35px 13px 35px;
+        padding: 7px;
+        box-sizing: border-box;
+        display: flex;
+        box-shadow: 0 0 5px gray;
+        border-radius: 75px;
       }
 
       .speaker-box:nth-of-type(even) {
-        flex-direction: column;
-        text-align: center;
-        padding-top: 19px;
+        flex-direction: row-reverse;
+        text-align: right;
       }
 
-      .speaker-img>img {
-        width: 199px;
+      .speaker-img {
+        border-radius: 51%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 0;
       }
-    }
-  </style>
-</head>
 
-<body>
-  <nav class="navbar navbar-expand-lg navbar-light">
-    <div class="kz-nav-blur"></div>
-    <a class="navbar-brand" href="#"><img src="res/img/logos/logo-without-bg.png"></a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav ml-auto">
-        <li class="nav-item active">
-          <a class="nav-link" href="index.html"><span>Home</span></a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="aboutus.html"><span>About Us</span></a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="index.html#partners"><span>Partners</span></a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="cars.html"><span>The Paddock</span></a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#"><span>Race With Us</span></a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#contact"><span>Contact Us</span></a>
-        </li>
-      </ul>
-    </div>
-  </nav>
-  <br><br>
-
-  <h1 class="heading">Message from the <span>Leads</span></h1>
-  <div class="speaker-box">
-    <div class="speaker-img">
-      <img src="res/img/Team-Camber/dr.martin.jpg">
-    </div>
-    <div class="speaker-text">
-      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Natus sit quaerat esse nihil numquam, distinctio beatae.
-      Accusantium atque saepe quo vero iste nulla id, consequuntur iusto nostrum placeat harum distinctio.
-      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Natus sit quaerat esse nihil numquam, distinctio beatae.
-      Accusantium atque saepe quo vero iste nulla id, consequuntur iusto nostrum placeat harum distinctio.
-      <br>
-      <b>Professor</b>
-    </div>
-  </div>
-  <div class="speaker-box">
-    <div class="speaker-img">
-      <img src="res/img/Team-Camber/dr.martin.jpg">
-    </div>
-    <div class="speaker-text">
-      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Natus sit quaerat esse nihil numquam, distinctio beatae.
-      Accusantium atque saepe quo vero iste nulla id, consequuntur iusto nostrum placeat harum distinctio.
-      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Natus sit quaerat esse nihil numquam, distinctio beatae.
-      Accusantium atque saepe quo vero iste nulla id, consequuntur iusto nostrum placeat harum distinctio.
-      <br>
-      <b>Professor</b>
-    </div>
-  </div>
-  <div class="speaker-box">
-    <div class="speaker-img">
-      <img src="res/img/Team-Camber/dr.martin.jpg">
-    </div>
-    <div class="speaker-text">
-      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Natus sit quaerat esse nihil numquam, distinctio beatae.
-      Accusantium atque saepe quo vero iste nulla id, consequuntur iusto nostrum placeat harum distinctio.
-      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Natus sit quaerat esse nihil numquam, distinctio beatae.
-      Accusantium atque saepe quo vero iste nulla id, consequuntur iusto nostrum placeat harum distinctio.
-      <br>
-      <b>Professor</b>
-    </div>
-  </div>
-  <br><br>
-
-  <h1 class="heading">Our <span>Team</span></h1>
-  <div class="imgContainer 2020"></div>
-  <br><br>
-
-
-
-  <ul class="nav nav-pills nav-justified">
-    <li class="nav-item">
-      <a class="nav-link" data-toggle="pill" href="#img-2019">2019</a>
-    </li>
-    <li class="nav-item">
-      <a class="nav-link" data-toggle="pill" href="#img-2018">2018</a>
-    </li>
-    <li class="nav-item">
-      <a class="nav-link" data-toggle="pill" href="#img-2017">2017</a>
-    </li>
-    <li class="nav-item">
-      <a class="nav-link" data-toggle="pill" href="#img-2016">2016</a>
-    </li>
-    <li class="nav-item">
-      <a class="nav-link" data-toggle="pill" href="#img-2015">2015</a>
-    </li>
-    <li class="nav-item">
-      <a class="nav-link" data-toggle="pill" href="#img-2014">2014</a>
-    </li>
-    <li class="nav-item">
-      <a class="nav-link" data-toggle="pill" href="#img-2013">2013</a>
-    </li>
-    <li class="nav-item">
-      <a class="nav-link" data-toggle="pill" href="#img-2012">2012</a>
-    </li>
-    <li class="nav-item">
-      <a class="nav-link" data-toggle="pill" href="#img-2011">2011</a>
-    </li>
-  </ul>
-
-  <div class="tab-content">
-    <div id="img-2019" class="tab-pane fade in">
-      <h1 class="heading">2019 <span>Team</span></h1>
-      <div class="imgContainer 2019"></div>
-    </div>
-    <div id="img-2018" class="tab-pane fade in">
-      <h1 class="heading">2018 <span>Team</span></h1>
-      <div class="imgContainer 2018"></div>
-    </div>
-    <div id="img-2017" class="tab-pane fade in">
-      <h1 class="heading">2017 <span>Team</span></h1>
-      <div class="imgContainer 2017"></div>
-    </div>
-    <div id="img-2016" class="tab-pane fade in">
-      <h1 class="heading">2016 <span>Team</span></h1>
-      <div class="imgContainer 2016"></div>
-    </div>
-    <div id="img-2015" class="tab-pane fade in">
-      <h1 class="heading">2015 <span>Team</span></h1>
-      <div class="imgContainer 2015"></div>
-    </div>
-    <div id="img-2014" class="tab-pane fade in">
-      <h1 class="heading">2014 <span>Team</span></h1>
-      <div class="imgContainer 2014"></div>
-    </div>
-    <div id="img-2013" class="tab-pane fade in">
-      <h1 class="heading">2013 <span>Team</span></h1>
-      <div class="imgContainer 2013"></div>
-    </div>
-    <div id="img-2012" class="tab-pane fade in">
-      <h1 class="heading">2012 <span>Team</span></h1>
-      <div class="imgContainer 2012"></div>
-    </div>
-    <div id="img-2011" class="tab-pane fade in">
-      <h1 class="heading">2011 <span>Team</span></h1>
-      <div class="imgContainer 2011"></div>
-    </div>
-  </div>
-  <br><br>
-
-  <footer class="camber-footer container-fluid">
-    <div class="row text-center">
-      <h5 class="ml-mr-auto">Building <span>People</span> Not just <span>Cars</span></h5>
-    </div>
-    <div class="row text-center" style="margin-top: 30px;">
-      <div class="col-md-4">
-        <img src="res/img/logos/logo-without-bg.png" />
-      </div>
-      <div class="col-md-4">
-        <div class="footer-nav-links ml-mr-auto">
-          <h6>Move to</h6>
-          <ul>
-            <li><a href="index.html"><span class="active">Home</span></a></li>
-            <li><a href="aboutus.html"><span>About Us</span></a></li>
-            <li><a href="index.html#partners"><span>Partners</span></a></li>
-            <li><a href="cars.html"><span>The Paddock</span></a></li>
-            <li><a href="#"><span>Race with Us</span></a></li>
-          </ul>
-        </div>
-      </div>
-      <div class="col-md-4">
-        <div class="footer-contact-us ml-mr-auto">
-          <h6>Contact Us</h6>
-          <ul>
-            <li><a href="#"><span>Mail id</span><i class="fas fa-envelope"></i></a></li>
-            <li><a href="#"><span>Phone number</span><i class="fas fa-phone"></i></a></li>
-          </ul>
-        </div>
-      </div>
-    </div>
-    <hr>
-    <div class="row hr-below">
-      <div class="col-md-8 col-sm-8 copyright"><small>&copy;Copyright Camber Racing SRMIST | 2020</small>
-      </div>
-      <div class="col-md-4 col-sm-4 social">
-        <div class="social-media-icon">
-          <a href="#"><i class="fab fa-facebook"></i></a>
-          <a href="#"><i class="fab fa-instagram"></i></a>
-        </div>
-      </div>
-    </div>
-    <small>Made with <span>&hearts;</span> from <a href="#"><span>SRMKZILLA</span></a></small>
-  </footer>
-
-
-  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
-    integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
-    crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
-    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
-    crossorigin="anonymous"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
-    integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
-    crossorigin="anonymous"></script>
-
-  <script>
-    const team = [
-      {
-        "name": "abhilash raghunathan",
-        "year": "2011"
-      },
-      {
-        "name": "ajay singh",
-        "year": "2011"
-      },
-      {
-        "name": "akhilesh krishnan",
-        "year": "2011"
-      },
-      {
-        "name": "akshay jain",
-        "year": "2011"
-      },
-      {
-        "name": "anand kumar",
-        "year": "2011"
-      },
-      {
-        "name": "aniket kumar",
-        "year": "2011"
-      },
-      {
-        "name": "ansh verma",
-        "year": "2011"
-      },
-      {
-        "name": "anupam chakraborty",
-        "year": "2011"
-      },
-      {
-        "name": "archisman",
-        "year": "2011"
-      },
-      {
-        "name": "avinash karthik",
-        "year": "2011"
-      },
-      {
-        "name": "baibhab guru",
-        "year": "2011"
-      },
-      {
-        "name": "karthik",
-        "year": "2011"
-      },
-      {
-        "name": "kartik mohan",
-        "year": "2011"
-      },
-      {
-        "name": "kaushik ramji",
-        "year": "2011"
-      },
-      {
-        "name": "mahesh ramchandran",
-        "year": "2011"
-      },
-      {
-        "name": "poojith raj",
-        "year": "2011"
-      },
-      {
-        "name": "prakanshu bajpai",
-        "year": "2011"
-      },
-      {
-        "name": "pritham reddy",
-        "year": "2011"
-      },
-      {
-        "name": "pushkar venkat",
-        "year": "2011"
-      },
-      {
-        "name": "raj lalwani",
-        "year": "2011"
-      },
-      {
-        "name": "rashmi sharma",
-        "year": "2011"
-      },
-      {
-        "name": "rishabh dugar",
-        "year": "2011"
-      },
-      {
-        "name": "sandeep ganesh",
-        "year": "2011"
-      },
-      {
-        "name": "sriram",
-        "year": "2011"
-      },
-      {
-        "name": "sudha ramaswamy",
-        "year": "2011"
-      },
-      {
-        "name": "tarun tripathy",
-        "year": "2011"
-      },
-      {
-        "name": "abhinav kumar",
-        "year": "2012"
-      },
-      {
-        "name": "aditya mekineni",
-        "year": "2012"
-      },
-      {
-        "name": "akhilesh krishnan",
-        "year": "2012"
-      },
-      {
-        "name": "aman singh",
-        "year": "2012"
-      },
-      {
-        "name": "anand kumar",
-        "year": "2012"
-      },
-      {
-        "name": "arka chattaraj",
-        "year": "2012"
-      },
-      {
-        "name": "avinash karthik",
-        "year": "2012"
-      },
-      {
-        "name": "harshin lalpet",
-        "year": "2012"
-      },
-      {
-        "name": "kaushik ramji",
-        "year": "2012"
-      },
-      {
-        "name": "phani chebiyyam",
-        "year": "2012"
-      },
-      {
-        "name": "poojith kallaru",
-        "year": "2012"
-      },
-      {
-        "name": "preetam reddy",
-        "year": "2012"
-      },
-      {
-        "name": "rahul",
-        "year": "2012"
-      },
-      {
-        "name": "raj lalwani",
-        "year": "2012"
-      },
-      {
-        "name": "ratna",
-        "year": "2012"
-      },
-      {
-        "name": "rishabh dugar",
-        "year": "2012"
-      },
-      {
-        "name": "roshni francis",
-        "year": "2012"
-      },
-      {
-        "name": "rupam srivastava",
-        "year": "2012"
-      },
-      {
-        "name": "shailee upadhyay",
-        "year": "2012"
-      },
-      {
-        "name": "shaleen bahadur",
-        "year": "2012"
-      },
-      {
-        "name": "shubham sharma",
-        "year": "2012"
-      },
-      {
-        "name": "siddhartha",
-        "year": "2012"
-      },
-      {
-        "name": "vishnu prasad",
-        "year": "2012"
-      },
-      {
-        "name": "vrushti modi",
-        "year": "2012"
-      },
-      {
-        "name": "14",
-        "year": "2013"
-      },
-      {
-        "name": "5",
-        "year": "2013"
-      },
-      {
-        "name": "8",
-        "year": "2013"
-      },
-      {
-        "name": "Aaradhya",
-        "year": "2013"
-      },
-      {
-        "name": "Abhinav Kumar",
-        "year": "2013"
-      },
-      {
-        "name": "Abhishek Kumar",
-        "year": "2013"
-      },
-      {
-        "name": "aditya makineni",
-        "year": "2013"
-      },
-      {
-        "name": "Aditya Trivedi",
-        "year": "2013"
-      },
-      {
-        "name": "Aman Singh",
-        "year": "2013"
-      },
-      {
-        "name": "aman munjal",
-        "year": "2013"
-      },
-      {
-        "name": "Anshul Chaudhary",
-        "year": "2013"
-      },
-      {
-        "name": "bharath iyer",
-        "year": "2013"
-      },
-      {
-        "name": "Eeshan Geel",
-        "year": "2013"
-      },
-      {
-        "name": "Gautam",
-        "year": "2013"
-      },
-      {
-        "name": "Harshin Lalpet",
-        "year": "2013"
-      },
-      {
-        "name": "Murali",
-        "year": "2013"
-      },
-      {
-        "name": "murtaza khambaty",
-        "year": "2013"
-      },
-      {
-        "name": "new10",
-        "year": "2013"
-      },
-      {
-        "name": "Nilai",
-        "year": "2013"
-      },
-      {
-        "name": "pavan theja",
-        "year": "2013"
-      },
-      {
-        "name": "phani chebiyyam",
-        "year": "2013"
-      },
-      {
-        "name": "Pritish Panda",
-        "year": "2013"
-      },
-      {
-        "name": "rahul",
-        "year": "2013"
-      },
-      {
-        "name": "ratna",
-        "year": "2013"
-      },
-      {
-        "name": "rishi raj singh",
-        "year": "2013"
-      },
-      {
-        "name": "Roshni Francis",
-        "year": "2013"
-      },
-      {
-        "name": "Shailee Upadhyay",
-        "year": "2013"
-      },
-      {
-        "name": "shreyas sansuddi",
-        "year": "2013"
-      },
-      {
-        "name": "Siddhartha De",
-        "year": "2013"
-      },
-      {
-        "name": "Vishwaprashanth kumar",
-        "year": "2013"
-      },
-      {
-        "name": "Abhinav Kumar",
-        "year": "2014"
-      },
-      {
-        "name": "Abhishek Kumar",
-        "year": "2014"
-      },
-      {
-        "name": "Aditya Trivedi",
-        "year": "2014"
-      },
-      {
-        "name": "Aman Munjal",
-        "year": "2014"
-      },
-      {
-        "name": "Anshul",
-        "year": "2014"
-      },
-      {
-        "name": "Bharath Iyer",
-        "year": "2014"
-      },
-      {
-        "name": "Eeshan Geel",
-        "year": "2014"
-      },
-      {
-        "name": "Gautam",
-        "year": "2014"
-      },
-      {
-        "name": "Harshin Lalpet",
-        "year": "2014"
-      },
-      {
-        "name": "Murali",
-        "year": "2014"
-      },
-      {
-        "name": "Murtaza",
-        "year": "2014"
-      },
-      {
-        "name": "Nilai Suresh",
-        "year": "2014"
-      },
-      {
-        "name": "Pavan Theja",
-        "year": "2014"
-      },
-      {
-        "name": "Pritish Panda",
-        "year": "2014"
-      },
-      {
-        "name": "Rahul kumar",
-        "year": "2014"
-      },
-      {
-        "name": "Ratna",
-        "year": "2014"
-      },
-      {
-        "name": "Rishi Raj Singh",
-        "year": "2014"
-      },
-      {
-        "name": "Siddhartha",
-        "year": "2014"
-      },
-      {
-        "name": "Vishwaprashanth kumar",
-        "year": "2014"
-      },
-      {
-        "name": "Aaradhya Nagar",
-        "year": "2015"
-      },
-      {
-        "name": "Abhishek Kumar",
-        "year": "2015"
-      },
-      {
-        "name": "Aditya Trivedi",
-        "year": "2015"
-      },
-      {
-        "name": "Akbar",
-        "year": "2015"
-      },
-      {
-        "name": "Anil",
-        "year": "2015"
-      },
-      {
-        "name": "Anshul Chaudhary",
-        "year": "2015"
-      },
-      {
-        "name": "Divyansh",
-        "year": "2015"
-      },
-      {
-        "name": "Eeshan Geel",
-        "year": "2015"
-      },
-      {
-        "name": "Gautam",
-        "year": "2015"
-      },
-      {
-        "name": "Husain",
-        "year": "2015"
-      },
-      {
-        "name": "Kaustabh",
-        "year": "2015"
-      },
-      {
-        "name": "Lalwani",
-        "year": "2015"
-      },
-      {
-        "name": "Madhu",
-        "year": "2015"
-      },
-      {
-        "name": "Murali",
-        "year": "2015"
-      },
-      {
-        "name": "Nilai",
-        "year": "2015"
-      },
-      {
-        "name": "Prashanth",
-        "year": "2015"
-      },
-      {
-        "name": "Pritish",
-        "year": "2015"
-      },
-      {
-        "name": "Rohan Date",
-        "year": "2015"
-      },
-      {
-        "name": "Roni",
-        "year": "2015"
-      },
-      {
-        "name": "Salman",
-        "year": "2015"
-      },
-      {
-        "name": "Shivam",
-        "year": "2015"
-      },
-      {
-        "name": "Vaibhav Kotnala",
-        "year": "2015"
-      },
-      {
-        "name": "aaradhya",
-        "year": "2016"
-      },
-      {
-        "name": "akbar",
-        "year": "2016"
-      },
-      {
-        "name": "akhil",
-        "year": "2016"
-      },
-      {
-        "name": "anil",
-        "year": "2016"
-      },
-      {
-        "name": "atharva",
-        "year": "2016"
-      },
-      {
-        "name": "Chirag Samdaria",
-        "year": "2016"
-      },
-      {
-        "name": "deepak reddy",
-        "year": "2016"
-      },
-      {
-        "name": "Divyansh",
-        "year": "2016"
-      },
-      {
-        "name": "Kaustabh",
-        "year": "2016"
-      },
-      {
-        "name": "madhu",
-        "year": "2016"
-      },
-      {
-        "name": "Mriganka",
-        "year": "2016"
-      },
-      {
-        "name": "pradeep",
-        "year": "2016"
-      },
-      {
-        "name": "Priyanth Kumar",
-        "year": "2016"
-      },
-      {
-        "name": "Rahul",
-        "year": "2016"
-      },
-      {
-        "name": "rohan",
-        "year": "2016"
-      },
-      {
-        "name": "ronak",
-        "year": "2016"
-      },
-      {
-        "name": "roni",
-        "year": "2016"
-      },
-      {
-        "name": "Sai Santosh",
-        "year": "2016"
-      },
-      {
-        "name": "saiduth",
-        "year": "2016"
-      },
-      {
-        "name": "salman",
-        "year": "2016"
-      },
-      {
-        "name": "shivam",
-        "year": "2016"
-      },
-      {
-        "name": "tarun kumar",
-        "year": "2016"
-      },
-      {
-        "name": "uday",
-        "year": "2016"
-      },
-      {
-        "name": "vaibhav kotnala",
-        "year": "2016"
-      },
-      {
-        "name": "vaibhav lalwani",
-        "year": "2016"
-      },
-      {
-        "name": "vv praveen",
-        "year": "2016"
-      },
-      {
-        "name": "aditya",
-        "year": "2017"
-      },
-      {
-        "name": "adyasha",
-        "year": "2017"
-      },
-      {
-        "name": "akbar",
-        "year": "2017"
-      },
-      {
-        "name": "akhil",
-        "year": "2017"
-      },
-      {
-        "name": "akshay",
-        "year": "2017"
-      },
-      {
-        "name": "anil",
-        "year": "2017"
-      },
-      {
-        "name": "atharva",
-        "year": "2017"
-      },
-      {
-        "name": "chundawat",
-        "year": "2017"
-      },
-      {
-        "name": "deepak reddy",
-        "year": "2017"
-      },
-      {
-        "name": "dhruv mehta",
-        "year": "2017"
-      },
-      {
-        "name": "Divyansh",
-        "year": "2017"
-      },
-      {
-        "name": "gopal",
-        "year": "2017"
-      },
-      {
-        "name": "harshit",
-        "year": "2017"
-      },
-      {
-        "name": "junaid",
-        "year": "2017"
-      },
-      {
-        "name": "kakkar",
-        "year": "2017"
-      },
-      {
-        "name": "krishna",
-        "year": "2017"
-      },
-      {
-        "name": "kshitij soni",
-        "year": "2017"
-      },
-      {
-        "name": "mobashir afzal",
-        "year": "2017"
-      },
-      {
-        "name": "Mriganka",
-        "year": "2017"
-      },
-      {
-        "name": "navneet",
-        "year": "2017"
-      },
-      {
-        "name": "pradeep",
-        "year": "2017"
-      },
-      {
-        "name": "rahul",
-        "year": "2017"
-      },
-      {
-        "name": "ronak",
-        "year": "2017"
-      },
-      {
-        "name": "roni",
-        "year": "2017"
-      },
-      {
-        "name": "saiduth",
-        "year": "2017"
-      },
-      {
-        "name": "shawn",
-        "year": "2017"
-      },
-      {
-        "name": "shreya",
-        "year": "2017"
-      },
-      {
-        "name": "uday",
-        "year": "2017"
-      },
-      {
-        "name": "varun",
-        "year": "2017"
-      },
-      {
-        "name": "vv praveen",
-        "year": "2017"
-      },
-      {
-        "name": "abhinav roy",
-        "year": "2018"
-      },
-      {
-        "name": "abhishek nanda",
-        "year": "2018"
-      },
-      {
-        "name": "aditya chacko",
-        "year": "2018"
-      },
-      {
-        "name": "adyasha nanda",
-        "year": "2018"
-      },
-      {
-        "name": "akshay kumar",
-        "year": "2018"
-      },
-      {
-        "name": "aman maheshwari",
-        "year": "2018"
-      },
-      {
-        "name": "ambarish pradeep",
-        "year": "2018"
-      },
-      {
-        "name": "anirudh reddy",
-        "year": "2018"
-      },
-      {
-        "name": "ankur singh",
-        "year": "2018"
-      },
-      {
-        "name": "aparajita singh",
-        "year": "2018"
-      },
-      {
-        "name": "aparajito ganguli",
-        "year": "2018"
-      },
-      {
-        "name": "arunav borah",
-        "year": "2018"
-      },
-      {
-        "name": "atharva kadam",
-        "year": "2018"
-      },
-      {
-        "name": "darpan yadav",
-        "year": "2018"
-      },
-      {
-        "name": "dhruv mehta",
-        "year": "2018"
-      },
-      {
-        "name": "g karthik",
-        "year": "2018"
-      },
-      {
-        "name": "gautam kavuri",
-        "year": "2018"
-      },
-      {
-        "name": "gopal dwivedi",
-        "year": "2018"
-      },
-      {
-        "name": "harshit gambhir",
-        "year": "2018"
-      },
-      {
-        "name": "hrishav paul",
-        "year": "2018"
-      },
-      {
-        "name": "junaid singh",
-        "year": "2018"
-      },
-      {
-        "name": "kanwarpal singh",
-        "year": "2018"
-      },
-      {
-        "name": "kshitij soni",
-        "year": "2018"
-      },
-      {
-        "name": "kunal kakkar",
-        "year": "2018"
-      },
-      {
-        "name": "kunal pandey",
-        "year": "2018"
-      },
-      {
-        "name": "md. fahim",
-        "year": "2018"
-      },
-      {
-        "name": "pradyumn pandey",
-        "year": "2018"
-      },
-      {
-        "name": "s arvind",
-        "year": "2018"
-      },
-      {
-        "name": "sai kiran",
-        "year": "2018"
-      },
-      {
-        "name": "saiduth ramesh",
-        "year": "2018"
-      },
-      {
-        "name": "shikhar sehgal",
-        "year": "2018"
-      },
-      {
-        "name": "varun jain",
-        "year": "2018"
-      },
-      {
-        "name": "vinith kishan",
-        "year": "2018"
-      },
-      {
-        "name": "vishnu rajeev",
-        "year": "2018"
-      },
-      {
-        "name": "yohann bhumgara",
-        "year": "2018"
-      },
-      {
-        "name": "aayush kumar singh",
-        "year": "2019"
-      },
-      {
-        "name": "abhinav roy",
-        "year": "2019"
-      },
-      {
-        "name": "Abhishek nanda",
-        "year": "2019"
-      },
-      {
-        "name": "aman maheshwari",
-        "year": "2019"
-      },
-      {
-        "name": "ambareesh pradeep",
-        "year": "2019"
-      },
-      {
-        "name": "ankit kr sahu",
-        "year": "2019"
-      },
-      {
-        "name": "annkur singh",
-        "year": "2019"
-      },
-      {
-        "name": "aparjito ganguli",
-        "year": "2019"
-      },
-      {
-        "name": "aravind s",
-        "year": "2019"
-      },
-      {
-        "name": "bishal sikdar",
-        "year": "2019"
-      },
-      {
-        "name": "Darpan yadav",
-        "year": "2019"
-      },
-      {
-        "name": "gautam kavuri",
-        "year": "2019"
-      },
-      {
-        "name": "harshmeet singh",
-        "year": "2019"
-      },
-      {
-        "name": "harvinde singh",
-        "year": "2019"
-      },
-      {
-        "name": "junaid singh",
-        "year": "2019"
-      },
-      {
-        "name": "karwarpal singh",
-        "year": "2019"
-      },
-      {
-        "name": "kshitij singh",
-        "year": "2019"
-      },
-      {
-        "name": "kunal kakkar",
-        "year": "2019"
-      },
-      {
-        "name": "md Fahim",
-        "year": "2019"
-      },
-      {
-        "name": "pradyumn pandey",
-        "year": "2019"
-      },
-      {
-        "name": "prasanjeet das",
-        "year": "2019"
-      },
-      {
-        "name": "rituraj das",
-        "year": "2019"
-      },
-      {
-        "name": "saliq shah",
-        "year": "2019"
-      },
-      {
-        "name": "satvik vatsa",
-        "year": "2019"
-      },
-      {
-        "name": "shashwat geel",
-        "year": "2019"
-      },
-      {
-        "name": "sourav pattnaik",
-        "year": "2019"
-      },
-      {
-        "name": "sparsh agarwal",
-        "year": "2019"
-      },
-      {
-        "name": "subodh dangi",
-        "year": "2019"
-      },
-      {
-        "name": "sudha sindhuja",
-        "year": "2019"
-      },
-      {
-        "name": "suresh kumar",
-        "year": "2019"
-      },
-      {
-        "name": "tenzin",
-        "year": "2019"
-      },
-      {
-        "name": "udit mini",
-        "year": "2019"
-      },
-      {
-        "name": "yohann bhumgara",
-        "year": "2019"
-      },
-      {
-        "name": "abhniav roy",
-        "year": "2020"
-      },
-      {
-        "name": "abraham mathew",
-        "year": "2020"
-      },
-      {
-        "name": "aditya agrawal",
-        "year": "2020"
-      },
-      {
-        "name": "aditya reddy",
-        "year": "2020"
-      },
-      {
-        "name": "ambareesh pradeep",
-        "year": "2020"
-      },
-      {
-        "name": "aparjito ganguli",
-        "year": "2020"
-      },
-      {
-        "name": "bishal sikdar",
-        "year": "2020"
-      },
-      {
-        "name": "gautam kavuri",
-        "year": "2020"
-      },
-      {
-        "name": "hariesh s",
-        "year": "2020"
-      },
-      {
-        "name": "harshmeet singh",
-        "year": "2020"
-      },
-      {
-        "name": "harvinde singh",
-        "year": "2020"
-      },
-      {
-        "name": "kshitij singh",
-        "year": "2020"
-      },
-      {
-        "name": "mohit galani",
-        "year": "2020"
-      },
-      {
-        "name": "pranjal saxena",
-        "year": "2020"
-      },
-      {
-        "name": "rasesh lagdev",
-        "year": "2020"
-      },
-      {
-        "name": "saliq shah",
-        "year": "2020"
-      },
-      {
-        "name": "shashwat geel",
-        "year": "2020"
-      },
-      {
-        "name": "sourav pattnaik",
-        "year": "2020"
-      },
-      {
-        "name": "subodh dangi",
-        "year": "2020"
-      },
-      {
-        "name": "sudha sindhuja",
-        "year": "2019"
-      },
-      {
-        "name": "suresh kumar",
-        "year": "2020"
-      },
-      {
-        "name": "yohann bhumgara",
-        "year": "2020"
+      .speaker-img > img {
+        box-shadow: 0 0 5px gray;
+        width: 151px;
+        border-radius: 51%;
+        margin-right: 5px;
       }
-    ];
-    team.forEach(member => {
-      $(`.${member.year}`).append(`<img src="./res/img/Team-Camber/team${member.year}/${member.name}.jpg" 
+
+      .speaker-text {
+        padding: 13px;
+        margin-bottom: 15px;
+      }
+
+      @media only screen and (max-width: 600px) {
+        .speaker-box {
+          flex-direction: column;
+          padding-top: 19px;
+        }
+
+        .speaker-box:nth-of-type(even) {
+          flex-direction: column;
+          text-align: center;
+          padding-top: 19px;
+        }
+
+        .speaker-img > img {
+          width: 199px;
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-light">
+      <!-- <div class="kz-nav-blur"></div> -->
+      <a class="navbar-brand" href="#"
+        ><img src="res/img/logos/logo-without-bg.png"
+      /></a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="index.html"><span>Home</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="aboutus.html"><span>About Us</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="index.html#partners"
+              ><span>Partners</span></a
+            >
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="cars.html"><span>The Paddock</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#"><span>Race With Us</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#contact"><span>Contact Us</span></a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <br /><br />
+
+    <h1 class="heading">Message from the <span>Leads</span></h1>
+    <div class="speaker-box">
+      <div class="speaker-img">
+        <img src="res/img/Team-Camber/dr.martin.jpg" />
+      </div>
+      <div class="speaker-text">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Natus sit
+        quaerat esse nihil numquam, distinctio beatae. Accusantium atque saepe
+        quo vero iste nulla id, consequuntur iusto nostrum placeat harum
+        distinctio. Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+        Natus sit quaerat esse nihil numquam, distinctio beatae. Accusantium
+        atque saepe quo vero iste nulla id, consequuntur iusto nostrum placeat
+        harum distinctio.
+        <br />
+        <b>Professor</b>
+      </div>
+    </div>
+    <div class="speaker-box">
+      <div class="speaker-img">
+        <img src="res/img/Team-Camber/dr.martin.jpg" />
+      </div>
+      <div class="speaker-text">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Natus sit
+        quaerat esse nihil numquam, distinctio beatae. Accusantium atque saepe
+        quo vero iste nulla id, consequuntur iusto nostrum placeat harum
+        distinctio. Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+        Natus sit quaerat esse nihil numquam, distinctio beatae. Accusantium
+        atque saepe quo vero iste nulla id, consequuntur iusto nostrum placeat
+        harum distinctio.
+        <br />
+        <b>Professor</b>
+      </div>
+    </div>
+    <div class="speaker-box">
+      <div class="speaker-img">
+        <img src="res/img/Team-Camber/dr.martin.jpg" />
+      </div>
+      <div class="speaker-text">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Natus sit
+        quaerat esse nihil numquam, distinctio beatae. Accusantium atque saepe
+        quo vero iste nulla id, consequuntur iusto nostrum placeat harum
+        distinctio. Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+        Natus sit quaerat esse nihil numquam, distinctio beatae. Accusantium
+        atque saepe quo vero iste nulla id, consequuntur iusto nostrum placeat
+        harum distinctio.
+        <br />
+        <b>Professor</b>
+      </div>
+    </div>
+    <br /><br />
+
+    <h1 class="heading">Our <span>Team</span></h1>
+    <div class="imgContainer 2020"></div>
+    <br /><br />
+
+    <ul class="nav nav-pills nav-justified">
+      <li class="nav-item">
+        <a class="nav-link" data-toggle="pill" href="#img-2019">2019</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" data-toggle="pill" href="#img-2018">2018</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" data-toggle="pill" href="#img-2017">2017</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" data-toggle="pill" href="#img-2016">2016</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" data-toggle="pill" href="#img-2015">2015</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" data-toggle="pill" href="#img-2014">2014</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" data-toggle="pill" href="#img-2013">2013</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" data-toggle="pill" href="#img-2012">2012</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" data-toggle="pill" href="#img-2011">2011</a>
+      </li>
+    </ul>
+
+    <div class="tab-content">
+      <div id="img-2019" class="tab-pane fade in">
+        <h1 class="heading">2019 <span>Team</span></h1>
+        <div class="imgContainer 2019"></div>
+      </div>
+      <div id="img-2018" class="tab-pane fade in">
+        <h1 class="heading">2018 <span>Team</span></h1>
+        <div class="imgContainer 2018"></div>
+      </div>
+      <div id="img-2017" class="tab-pane fade in">
+        <h1 class="heading">2017 <span>Team</span></h1>
+        <div class="imgContainer 2017"></div>
+      </div>
+      <div id="img-2016" class="tab-pane fade in">
+        <h1 class="heading">2016 <span>Team</span></h1>
+        <div class="imgContainer 2016"></div>
+      </div>
+      <div id="img-2015" class="tab-pane fade in">
+        <h1 class="heading">2015 <span>Team</span></h1>
+        <div class="imgContainer 2015"></div>
+      </div>
+      <div id="img-2014" class="tab-pane fade in">
+        <h1 class="heading">2014 <span>Team</span></h1>
+        <div class="imgContainer 2014"></div>
+      </div>
+      <div id="img-2013" class="tab-pane fade in">
+        <h1 class="heading">2013 <span>Team</span></h1>
+        <div class="imgContainer 2013"></div>
+      </div>
+      <div id="img-2012" class="tab-pane fade in">
+        <h1 class="heading">2012 <span>Team</span></h1>
+        <div class="imgContainer 2012"></div>
+      </div>
+      <div id="img-2011" class="tab-pane fade in">
+        <h1 class="heading">2011 <span>Team</span></h1>
+        <div class="imgContainer 2011"></div>
+      </div>
+    </div>
+    <br /><br />
+
+    <footer class="camber-footer container-fluid">
+      <div class="row text-center">
+        <h5 class="ml-mr-auto">
+          Building <span>People</span> Not just <span>Cars</span>
+        </h5>
+      </div>
+      <div class="row text-center" style="margin-top: 30px;">
+        <div class="col-md-4">
+          <img src="res/img/logos/logo-without-bg.png" />
+        </div>
+        <div class="col-md-4">
+          <div class="footer-nav-links ml-mr-auto">
+            <h6>Move to</h6>
+            <ul>
+              <li>
+                <a href="index.html"><span class="active">Home</span></a>
+              </li>
+              <li>
+                <a href="aboutus.html"><span>About Us</span></a>
+              </li>
+              <li>
+                <a href="index.html#partners"><span>Partners</span></a>
+              </li>
+              <li>
+                <a href="cars.html"><span>The Paddock</span></a>
+              </li>
+              <li>
+                <a href="#"><span>Race with Us</span></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="footer-contact-us ml-mr-auto">
+            <h6>Contact Us</h6>
+            <ul>
+              <li>
+                <a href="#"
+                  ><span>Mail id</span><i class="fas fa-envelope"></i
+                ></a>
+              </li>
+              <li>
+                <a href="#"
+                  ><span>Phone number</span><i class="fas fa-phone"></i
+                ></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <hr />
+      <div class="row hr-below">
+        <div class="col-md-8 col-sm-8 copyright">
+          <small>&copy;Copyright Camber Racing SRMIST | 2020</small>
+        </div>
+        <div class="col-md-4 col-sm-4 social">
+          <div class="social-media-icon">
+            <a href="#"><i class="fab fa-facebook"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+          </div>
+        </div>
+      </div>
+      <small
+        >Made with <span>&hearts;</span> from
+        <a href="#"><span>SRMKZILLA</span></a></small
+      >
+    </footer>
+
+    <script
+      src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+      integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+      integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+      crossorigin="anonymous"
+    ></script>
+
+    <script>
+      const team = [
+        {
+          name: "abhilash raghunathan",
+          year: "2011",
+        },
+        {
+          name: "ajay singh",
+          year: "2011",
+        },
+        {
+          name: "akhilesh krishnan",
+          year: "2011",
+        },
+        {
+          name: "akshay jain",
+          year: "2011",
+        },
+        {
+          name: "anand kumar",
+          year: "2011",
+        },
+        {
+          name: "aniket kumar",
+          year: "2011",
+        },
+        {
+          name: "ansh verma",
+          year: "2011",
+        },
+        {
+          name: "anupam chakraborty",
+          year: "2011",
+        },
+        {
+          name: "archisman",
+          year: "2011",
+        },
+        {
+          name: "avinash karthik",
+          year: "2011",
+        },
+        {
+          name: "baibhab guru",
+          year: "2011",
+        },
+        {
+          name: "karthik",
+          year: "2011",
+        },
+        {
+          name: "kartik mohan",
+          year: "2011",
+        },
+        {
+          name: "kaushik ramji",
+          year: "2011",
+        },
+        {
+          name: "mahesh ramchandran",
+          year: "2011",
+        },
+        {
+          name: "poojith raj",
+          year: "2011",
+        },
+        {
+          name: "prakanshu bajpai",
+          year: "2011",
+        },
+        {
+          name: "pritham reddy",
+          year: "2011",
+        },
+        {
+          name: "pushkar venkat",
+          year: "2011",
+        },
+        {
+          name: "raj lalwani",
+          year: "2011",
+        },
+        {
+          name: "rashmi sharma",
+          year: "2011",
+        },
+        {
+          name: "rishabh dugar",
+          year: "2011",
+        },
+        {
+          name: "sandeep ganesh",
+          year: "2011",
+        },
+        {
+          name: "sriram",
+          year: "2011",
+        },
+        {
+          name: "sudha ramaswamy",
+          year: "2011",
+        },
+        {
+          name: "tarun tripathy",
+          year: "2011",
+        },
+        {
+          name: "abhinav kumar",
+          year: "2012",
+        },
+        {
+          name: "aditya mekineni",
+          year: "2012",
+        },
+        {
+          name: "akhilesh krishnan",
+          year: "2012",
+        },
+        {
+          name: "aman singh",
+          year: "2012",
+        },
+        {
+          name: "anand kumar",
+          year: "2012",
+        },
+        {
+          name: "arka chattaraj",
+          year: "2012",
+        },
+        {
+          name: "avinash karthik",
+          year: "2012",
+        },
+        {
+          name: "harshin lalpet",
+          year: "2012",
+        },
+        {
+          name: "kaushik ramji",
+          year: "2012",
+        },
+        {
+          name: "phani chebiyyam",
+          year: "2012",
+        },
+        {
+          name: "poojith kallaru",
+          year: "2012",
+        },
+        {
+          name: "preetam reddy",
+          year: "2012",
+        },
+        {
+          name: "rahul",
+          year: "2012",
+        },
+        {
+          name: "raj lalwani",
+          year: "2012",
+        },
+        {
+          name: "ratna",
+          year: "2012",
+        },
+        {
+          name: "rishabh dugar",
+          year: "2012",
+        },
+        {
+          name: "roshni francis",
+          year: "2012",
+        },
+        {
+          name: "rupam srivastava",
+          year: "2012",
+        },
+        {
+          name: "shailee upadhyay",
+          year: "2012",
+        },
+        {
+          name: "shaleen bahadur",
+          year: "2012",
+        },
+        {
+          name: "shubham sharma",
+          year: "2012",
+        },
+        {
+          name: "siddhartha",
+          year: "2012",
+        },
+        {
+          name: "vishnu prasad",
+          year: "2012",
+        },
+        {
+          name: "vrushti modi",
+          year: "2012",
+        },
+        {
+          name: "14",
+          year: "2013",
+        },
+        {
+          name: "5",
+          year: "2013",
+        },
+        {
+          name: "8",
+          year: "2013",
+        },
+        {
+          name: "Aaradhya",
+          year: "2013",
+        },
+        {
+          name: "Abhinav Kumar",
+          year: "2013",
+        },
+        {
+          name: "Abhishek Kumar",
+          year: "2013",
+        },
+        {
+          name: "aditya makineni",
+          year: "2013",
+        },
+        {
+          name: "Aditya Trivedi",
+          year: "2013",
+        },
+        {
+          name: "Aman Singh",
+          year: "2013",
+        },
+        {
+          name: "aman munjal",
+          year: "2013",
+        },
+        {
+          name: "Anshul Chaudhary",
+          year: "2013",
+        },
+        {
+          name: "bharath iyer",
+          year: "2013",
+        },
+        {
+          name: "Eeshan Geel",
+          year: "2013",
+        },
+        {
+          name: "Gautam",
+          year: "2013",
+        },
+        {
+          name: "Harshin Lalpet",
+          year: "2013",
+        },
+        {
+          name: "Murali",
+          year: "2013",
+        },
+        {
+          name: "murtaza khambaty",
+          year: "2013",
+        },
+        {
+          name: "new10",
+          year: "2013",
+        },
+        {
+          name: "Nilai",
+          year: "2013",
+        },
+        {
+          name: "pavan theja",
+          year: "2013",
+        },
+        {
+          name: "phani chebiyyam",
+          year: "2013",
+        },
+        {
+          name: "Pritish Panda",
+          year: "2013",
+        },
+        {
+          name: "rahul",
+          year: "2013",
+        },
+        {
+          name: "ratna",
+          year: "2013",
+        },
+        {
+          name: "rishi raj singh",
+          year: "2013",
+        },
+        {
+          name: "Roshni Francis",
+          year: "2013",
+        },
+        {
+          name: "Shailee Upadhyay",
+          year: "2013",
+        },
+        {
+          name: "shreyas sansuddi",
+          year: "2013",
+        },
+        {
+          name: "Siddhartha De",
+          year: "2013",
+        },
+        {
+          name: "Vishwaprashanth kumar",
+          year: "2013",
+        },
+        {
+          name: "Abhinav Kumar",
+          year: "2014",
+        },
+        {
+          name: "Abhishek Kumar",
+          year: "2014",
+        },
+        {
+          name: "Aditya Trivedi",
+          year: "2014",
+        },
+        {
+          name: "Aman Munjal",
+          year: "2014",
+        },
+        {
+          name: "Anshul",
+          year: "2014",
+        },
+        {
+          name: "Bharath Iyer",
+          year: "2014",
+        },
+        {
+          name: "Eeshan Geel",
+          year: "2014",
+        },
+        {
+          name: "Gautam",
+          year: "2014",
+        },
+        {
+          name: "Harshin Lalpet",
+          year: "2014",
+        },
+        {
+          name: "Murali",
+          year: "2014",
+        },
+        {
+          name: "Murtaza",
+          year: "2014",
+        },
+        {
+          name: "Nilai Suresh",
+          year: "2014",
+        },
+        {
+          name: "Pavan Theja",
+          year: "2014",
+        },
+        {
+          name: "Pritish Panda",
+          year: "2014",
+        },
+        {
+          name: "Rahul kumar",
+          year: "2014",
+        },
+        {
+          name: "Ratna",
+          year: "2014",
+        },
+        {
+          name: "Rishi Raj Singh",
+          year: "2014",
+        },
+        {
+          name: "Siddhartha",
+          year: "2014",
+        },
+        {
+          name: "Vishwaprashanth kumar",
+          year: "2014",
+        },
+        {
+          name: "Aaradhya Nagar",
+          year: "2015",
+        },
+        {
+          name: "Abhishek Kumar",
+          year: "2015",
+        },
+        {
+          name: "Aditya Trivedi",
+          year: "2015",
+        },
+        {
+          name: "Akbar",
+          year: "2015",
+        },
+        {
+          name: "Anil",
+          year: "2015",
+        },
+        {
+          name: "Anshul Chaudhary",
+          year: "2015",
+        },
+        {
+          name: "Divyansh",
+          year: "2015",
+        },
+        {
+          name: "Eeshan Geel",
+          year: "2015",
+        },
+        {
+          name: "Gautam",
+          year: "2015",
+        },
+        {
+          name: "Husain",
+          year: "2015",
+        },
+        {
+          name: "Kaustabh",
+          year: "2015",
+        },
+        {
+          name: "Lalwani",
+          year: "2015",
+        },
+        {
+          name: "Madhu",
+          year: "2015",
+        },
+        {
+          name: "Murali",
+          year: "2015",
+        },
+        {
+          name: "Nilai",
+          year: "2015",
+        },
+        {
+          name: "Prashanth",
+          year: "2015",
+        },
+        {
+          name: "Pritish",
+          year: "2015",
+        },
+        {
+          name: "Rohan Date",
+          year: "2015",
+        },
+        {
+          name: "Roni",
+          year: "2015",
+        },
+        {
+          name: "Salman",
+          year: "2015",
+        },
+        {
+          name: "Shivam",
+          year: "2015",
+        },
+        {
+          name: "Vaibhav Kotnala",
+          year: "2015",
+        },
+        {
+          name: "aaradhya",
+          year: "2016",
+        },
+        {
+          name: "akbar",
+          year: "2016",
+        },
+        {
+          name: "akhil",
+          year: "2016",
+        },
+        {
+          name: "anil",
+          year: "2016",
+        },
+        {
+          name: "atharva",
+          year: "2016",
+        },
+        {
+          name: "Chirag Samdaria",
+          year: "2016",
+        },
+        {
+          name: "deepak reddy",
+          year: "2016",
+        },
+        {
+          name: "Divyansh",
+          year: "2016",
+        },
+        {
+          name: "Kaustabh",
+          year: "2016",
+        },
+        {
+          name: "madhu",
+          year: "2016",
+        },
+        {
+          name: "Mriganka",
+          year: "2016",
+        },
+        {
+          name: "pradeep",
+          year: "2016",
+        },
+        {
+          name: "Priyanth Kumar",
+          year: "2016",
+        },
+        {
+          name: "Rahul",
+          year: "2016",
+        },
+        {
+          name: "rohan",
+          year: "2016",
+        },
+        {
+          name: "ronak",
+          year: "2016",
+        },
+        {
+          name: "roni",
+          year: "2016",
+        },
+        {
+          name: "Sai Santosh",
+          year: "2016",
+        },
+        {
+          name: "saiduth",
+          year: "2016",
+        },
+        {
+          name: "salman",
+          year: "2016",
+        },
+        {
+          name: "shivam",
+          year: "2016",
+        },
+        {
+          name: "tarun kumar",
+          year: "2016",
+        },
+        {
+          name: "uday",
+          year: "2016",
+        },
+        {
+          name: "vaibhav kotnala",
+          year: "2016",
+        },
+        {
+          name: "vaibhav lalwani",
+          year: "2016",
+        },
+        {
+          name: "vv praveen",
+          year: "2016",
+        },
+        {
+          name: "aditya",
+          year: "2017",
+        },
+        {
+          name: "adyasha",
+          year: "2017",
+        },
+        {
+          name: "akbar",
+          year: "2017",
+        },
+        {
+          name: "akhil",
+          year: "2017",
+        },
+        {
+          name: "akshay",
+          year: "2017",
+        },
+        {
+          name: "anil",
+          year: "2017",
+        },
+        {
+          name: "atharva",
+          year: "2017",
+        },
+        {
+          name: "chundawat",
+          year: "2017",
+        },
+        {
+          name: "deepak reddy",
+          year: "2017",
+        },
+        {
+          name: "dhruv mehta",
+          year: "2017",
+        },
+        {
+          name: "Divyansh",
+          year: "2017",
+        },
+        {
+          name: "gopal",
+          year: "2017",
+        },
+        {
+          name: "harshit",
+          year: "2017",
+        },
+        {
+          name: "junaid",
+          year: "2017",
+        },
+        {
+          name: "kakkar",
+          year: "2017",
+        },
+        {
+          name: "krishna",
+          year: "2017",
+        },
+        {
+          name: "kshitij soni",
+          year: "2017",
+        },
+        {
+          name: "mobashir afzal",
+          year: "2017",
+        },
+        {
+          name: "Mriganka",
+          year: "2017",
+        },
+        {
+          name: "navneet",
+          year: "2017",
+        },
+        {
+          name: "pradeep",
+          year: "2017",
+        },
+        {
+          name: "rahul",
+          year: "2017",
+        },
+        {
+          name: "ronak",
+          year: "2017",
+        },
+        {
+          name: "roni",
+          year: "2017",
+        },
+        {
+          name: "saiduth",
+          year: "2017",
+        },
+        {
+          name: "shawn",
+          year: "2017",
+        },
+        {
+          name: "shreya",
+          year: "2017",
+        },
+        {
+          name: "uday",
+          year: "2017",
+        },
+        {
+          name: "varun",
+          year: "2017",
+        },
+        {
+          name: "vv praveen",
+          year: "2017",
+        },
+        {
+          name: "abhinav roy",
+          year: "2018",
+        },
+        {
+          name: "abhishek nanda",
+          year: "2018",
+        },
+        {
+          name: "aditya chacko",
+          year: "2018",
+        },
+        {
+          name: "adyasha nanda",
+          year: "2018",
+        },
+        {
+          name: "akshay kumar",
+          year: "2018",
+        },
+        {
+          name: "aman maheshwari",
+          year: "2018",
+        },
+        {
+          name: "ambarish pradeep",
+          year: "2018",
+        },
+        {
+          name: "anirudh reddy",
+          year: "2018",
+        },
+        {
+          name: "ankur singh",
+          year: "2018",
+        },
+        {
+          name: "aparajita singh",
+          year: "2018",
+        },
+        {
+          name: "aparajito ganguli",
+          year: "2018",
+        },
+        {
+          name: "arunav borah",
+          year: "2018",
+        },
+        {
+          name: "atharva kadam",
+          year: "2018",
+        },
+        {
+          name: "darpan yadav",
+          year: "2018",
+        },
+        {
+          name: "dhruv mehta",
+          year: "2018",
+        },
+        {
+          name: "g karthik",
+          year: "2018",
+        },
+        {
+          name: "gautam kavuri",
+          year: "2018",
+        },
+        {
+          name: "gopal dwivedi",
+          year: "2018",
+        },
+        {
+          name: "harshit gambhir",
+          year: "2018",
+        },
+        {
+          name: "hrishav paul",
+          year: "2018",
+        },
+        {
+          name: "junaid singh",
+          year: "2018",
+        },
+        {
+          name: "kanwarpal singh",
+          year: "2018",
+        },
+        {
+          name: "kshitij soni",
+          year: "2018",
+        },
+        {
+          name: "kunal kakkar",
+          year: "2018",
+        },
+        {
+          name: "kunal pandey",
+          year: "2018",
+        },
+        {
+          name: "md. fahim",
+          year: "2018",
+        },
+        {
+          name: "pradyumn pandey",
+          year: "2018",
+        },
+        {
+          name: "s arvind",
+          year: "2018",
+        },
+        {
+          name: "sai kiran",
+          year: "2018",
+        },
+        {
+          name: "saiduth ramesh",
+          year: "2018",
+        },
+        {
+          name: "shikhar sehgal",
+          year: "2018",
+        },
+        {
+          name: "varun jain",
+          year: "2018",
+        },
+        {
+          name: "vinith kishan",
+          year: "2018",
+        },
+        {
+          name: "vishnu rajeev",
+          year: "2018",
+        },
+        {
+          name: "yohann bhumgara",
+          year: "2018",
+        },
+        {
+          name: "aayush kumar singh",
+          year: "2019",
+        },
+        {
+          name: "abhinav roy",
+          year: "2019",
+        },
+        {
+          name: "Abhishek nanda",
+          year: "2019",
+        },
+        {
+          name: "aman maheshwari",
+          year: "2019",
+        },
+        {
+          name: "ambareesh pradeep",
+          year: "2019",
+        },
+        {
+          name: "ankit kr sahu",
+          year: "2019",
+        },
+        {
+          name: "annkur singh",
+          year: "2019",
+        },
+        {
+          name: "aparjito ganguli",
+          year: "2019",
+        },
+        {
+          name: "aravind s",
+          year: "2019",
+        },
+        {
+          name: "bishal sikdar",
+          year: "2019",
+        },
+        {
+          name: "Darpan yadav",
+          year: "2019",
+        },
+        {
+          name: "gautam kavuri",
+          year: "2019",
+        },
+        {
+          name: "harshmeet singh",
+          year: "2019",
+        },
+        {
+          name: "harvinde singh",
+          year: "2019",
+        },
+        {
+          name: "junaid singh",
+          year: "2019",
+        },
+        {
+          name: "karwarpal singh",
+          year: "2019",
+        },
+        {
+          name: "kshitij singh",
+          year: "2019",
+        },
+        {
+          name: "kunal kakkar",
+          year: "2019",
+        },
+        {
+          name: "md Fahim",
+          year: "2019",
+        },
+        {
+          name: "pradyumn pandey",
+          year: "2019",
+        },
+        {
+          name: "prasanjeet das",
+          year: "2019",
+        },
+        {
+          name: "rituraj das",
+          year: "2019",
+        },
+        {
+          name: "saliq shah",
+          year: "2019",
+        },
+        {
+          name: "satvik vatsa",
+          year: "2019",
+        },
+        {
+          name: "shashwat geel",
+          year: "2019",
+        },
+        {
+          name: "sourav pattnaik",
+          year: "2019",
+        },
+        {
+          name: "sparsh agarwal",
+          year: "2019",
+        },
+        {
+          name: "subodh dangi",
+          year: "2019",
+        },
+        {
+          name: "sudha sindhuja",
+          year: "2019",
+        },
+        {
+          name: "suresh kumar",
+          year: "2019",
+        },
+        {
+          name: "tenzin",
+          year: "2019",
+        },
+        {
+          name: "udit mini",
+          year: "2019",
+        },
+        {
+          name: "yohann bhumgara",
+          year: "2019",
+        },
+        {
+          name: "abhniav roy",
+          year: "2020",
+        },
+        {
+          name: "abraham mathew",
+          year: "2020",
+        },
+        {
+          name: "aditya agrawal",
+          year: "2020",
+        },
+        {
+          name: "aditya reddy",
+          year: "2020",
+        },
+        {
+          name: "ambareesh pradeep",
+          year: "2020",
+        },
+        {
+          name: "aparjito ganguli",
+          year: "2020",
+        },
+        {
+          name: "bishal sikdar",
+          year: "2020",
+        },
+        {
+          name: "gautam kavuri",
+          year: "2020",
+        },
+        {
+          name: "hariesh s",
+          year: "2020",
+        },
+        {
+          name: "harshmeet singh",
+          year: "2020",
+        },
+        {
+          name: "harvinde singh",
+          year: "2020",
+        },
+        {
+          name: "kshitij singh",
+          year: "2020",
+        },
+        {
+          name: "mohit galani",
+          year: "2020",
+        },
+        {
+          name: "pranjal saxena",
+          year: "2020",
+        },
+        {
+          name: "rasesh lagdev",
+          year: "2020",
+        },
+        {
+          name: "saliq shah",
+          year: "2020",
+        },
+        {
+          name: "shashwat geel",
+          year: "2020",
+        },
+        {
+          name: "sourav pattnaik",
+          year: "2020",
+        },
+        {
+          name: "subodh dangi",
+          year: "2020",
+        },
+        {
+          name: "sudha sindhuja",
+          year: "2019",
+        },
+        {
+          name: "suresh kumar",
+          year: "2020",
+        },
+        {
+          name: "yohann bhumgara",
+          year: "2020",
+        },
+      ];
+      team.forEach((member) => {
+        $(`.${member.year}`)
+          .append(`<img src="./res/img/Team-Camber/team${member.year}/${member.name}.jpg" 
               data-toggle="tooltip" data-placement="top" title="${member.name}">`);
-    });
-    $('[data-toggle="tooltip"]').tooltip();
-  </script>
-</body>
-
+      });
+      $('[data-toggle="tooltip"]').tooltip();
+    </script>
+    <!-- add animation to navbar -->
+    <script src="res/js/landing.js"></script>
+  </body>
 </html>
