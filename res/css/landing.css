@@ -93,6 +93,7 @@ body {
 }
 
 .news-feed-container {
+  overflow-y: hidden;
   margin: 8px 8%;
 }
 
