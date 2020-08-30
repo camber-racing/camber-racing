@@ -244,6 +244,9 @@ footer.camber-footer div.row h5 {
   font-size: 40px;
   color: var(--red);
 }
+footer.camber-footer div.row img {
+  width: 172px;
+}
 
 footer.camber-footer div.row h6 {
   font-weight: 700;
