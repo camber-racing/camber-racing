@@ -481,7 +481,7 @@ footer.camber-footer small a {
   }
 }
 
-@media only screen and (max-width: 1024px) {
+@media only screen and (max-width: 1370px) and (min-width: 840px) {
   .nav-link span {
     padding: 6px;
   }
