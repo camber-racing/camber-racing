@@ -14,562 +14,9 @@ body {
   scroll-behavior: smooth;
 }
 
-.ml-mr-auto {
-  margin-left: auto;
-  margin-right: auto;
-}
-
-nav.navbar {
-  position: relative;
-  -webkit-box-shadow: 0 8px 6px -6px black;
-  box-shadow: 0 8px 6px -6px black;
-  background-color: white;
-  border-bottom-left-radius: 10px;
-  border-bottom-right-radius: 10px;
-}
-
-nav.navbar .kz-nav-blur {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  z-index: -1;
-  background-color: whitesmoke;
-  -webkit-filter: blur(5px);
-  filter: blur(5px);
-}
-
-nav.navbar a.navbar-brand img {
-  width: 104px;
-  height: auto;
-}
-
-nav.navbar div ul.navbar-nav li.nav-item {
-  padding: 0px 8px;
-}
-
-nav.navbar div ul.navbar-nav a.nav-link {
-  font-weight: 600;
-  position: relative;
-  transition: 0.2s ease;
-  -webkit-transition: 0.2s ease;
-}
-
-nav.navbar div ul.navbar-nav a.nav-link span {
-  position: relative;
-  padding: 4px 0px;
-  z-index: 2;
-}
-
-nav.navbar div ul.navbar-nav a.nav-link span::before {
-  content: "";
-  display: inline-block;
-  position: absolute;
-  width: 0;
-  height: 100%;
-  background-color: #2ab7ca;
-  opacity: 0.5;
-  z-index: 1;
-}
-
-nav.navbar div ul.navbar-nav a.nav-link:hover span::before {
-  content: "";
-  height: 100%;
-  display: inline-block;
-  width: 30%;
-  opacity: 0.5;
-  background-color: #2ab7ca;
-  transition: 0.2s ease;
-  -webkit-transition: 0.2s ease;
-  z-index: 1;
-}
-
-h2.camber-title {
-  font-size: 48px;
-  font-weight: 800;
-  text-align: center;
-  color: black;
-  margin: 30px auto;
-  -webkit-text-fill-color: white;
-  -webkit-text-stroke-width: 1px;
-  -webkit-text-stroke-color: black;
-}
-
-h2.camber-title span {
-  color: black;
-  -webkit-text-fill-color: black;
-}
-
-footer.camber-footer {
-  margin-top: 50px;
-  text-align: center;
-  padding: 20px;
-  padding-bottom: 0px;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(17, 17, 17, 0.801)), to(rgba(10, 10, 10, 0.966))), url("../img/cars/CR_X.jpg");
-  background-image: linear-gradient(to bottom, rgba(17, 17, 17, 0.801), rgba(10, 10, 10, 0.966)), url("../img/cars/CR_X.jpg");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  color: #ffffff;
-}
-
-footer.camber-footer hr {
-  border-top: 1px solid red;
-  margin: auto 100px;
-}
-
-footer.camber-footer div.row h5 {
-  font-weight: 800;
-  font-size: 32px;
-  color: transparent;
-  -webkit-text-fill-color: transparent;
-  -webkit-text-stroke-width: 1px;
-  -webkit-text-stroke-color: white;
-}
-
-footer.camber-footer div.row h5 span {
-  color: white;
-  -webkit-text-fill-color: white;
-  -webkit-text-stroke-width: 0px;
-}
-
-footer.camber-footer div.row h6 {
-  border-bottom: 1px solid red;
-  font-weight: 700;
-}
-
-footer.camber-footer div.row ul {
-  list-style: none;
-}
-
-footer.camber-footer div.row ul li {
-  color: white;
-  opacity: 0.8;
-}
-
-footer.camber-footer div.row ul li a {
-  text-decoration: none;
-  color: white;
-  font-size: 0.9rem;
-}
-
-footer.camber-footer div.row ul li a span:hover {
-  color: red;
-  border-bottom: 1px dashed red;
-}
-
-footer.camber-footer div.row div.footer-nav-links {
-  width: -webkit-fit-content;
-  width: -moz-fit-content;
-  width: fit-content;
-  text-align: left;
-}
-
-footer.camber-footer div.row div.footer-contact-us {
-  width: -webkit-fit-content;
-  width: -moz-fit-content;
-  width: fit-content;
-  text-align: right;
-}
-
-footer.camber-footer div.row div.footer-contact-us ul li a:hover i {
-  color: red;
-}
-
-footer.camber-footer div.row div.footer-contact-us ul li i {
-  padding: 0px 5px;
-}
-
-footer.camber-footer div.row div.footer-contact-us ul li i:hover {
-  color: red;
-}
-
-footer.camber-footer div.row div.social-media-icon {
-  text-align: right;
-  padding: 5px 0px;
-}
-
-footer.camber-footer div.row div.social-media-icon a {
-  text-decoration: none;
-  color: #ffffff;
-  padding: 5px;
-}
-
-footer.camber-footer div.row div.social-media-icon a i {
-  font-size: 24px;
-}
-
-footer.camber-footer div.row div.social-media-icon a i:hover {
-  color: red;
-}
-
-footer.camber-footer div.hr-below {
-  margin: auto 100px;
-}
-
-footer.camber-footer div.hr-below div.copyright {
-  text-align: left;
-}
-
-footer.camber-footer small span {
-  font-size: 14px;
-  color: red;
-}
-
-footer.camber-footer small a {
-  text-decoration: none;
-}
-
-@media (max-width: 576px) {
-  h2.camber-title {
-    font-size: 32px;
-  }
-
-  footer.camber-footer {
-    overflow: hidden;
-    padding: 5px;
-    padding-bottom: 0px;
-  }
-
-  footer.camber-footer hr {
-    margin: auto 10px;
-  }
-
-  footer.camber-footer div.row h5 {
-    font-weight: 700;
-    font-size: 28px;
-  }
-
-  footer.camber-footer div.footer-nav-links {
-    text-align: center !important;
-  }
-
-  footer.camber-footer div.footer-contact-us {
-    text-align: center !important;
-  }
-
-  footer.camber-footer div.footer-contact-us ul li i {
-    padding: 0px 2px;
-    font-size: 8px;
-  }
-
-  footer.camber-footer div.social-media-icon i {
-    font-size: 8px;
-  }
-
-  footer.camber-footer div.hr-below {
-    margin: auto 10px;
-  }
-
-  footer.camber-footer div.copyright {
-    width: -webkit-fit-content;
-    width: -moz-fit-content;
-    width: fit-content;
-  }
-
-  footer.camber-footer div.copyright small {
-    font-size: 9px;
-  }
-
-  footer.camber-footer div.social {
-    width: -webkit-fit-content;
-    width: -moz-fit-content;
-    width: fit-content;
-  }
-}
-* {
-  font-family: "Montserrat";
-  margin: 0;
-  padding: 0;
-}
-
-html,
-body {
-  -webkit-box-sizing: border-box;
-  box-sizing: border-box;
-  scroll-behavior: smooth;
-}
-
-.ml-mr-auto {
-  margin-left: auto;
-  margin-right: auto;
-}
-
-nav.navbar {
-  position: relative;
-  -webkit-box-shadow: 0 8px 6px -6px black;
-  box-shadow: 0 8px 6px -6px black;
-  background-color: white;
-  border-bottom-left-radius: 10px;
-  border-bottom-right-radius: 10px;
-}
-
-nav.navbar .kz-nav-blur {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  z-index: -1;
-  background-color: whitesmoke;
-  -webkit-filter: blur(5px);
-  filter: blur(5px);
-}
-
-nav.navbar a.navbar-brand img {
-  width: 104px;
-  height: auto;
-}
-
-nav.navbar div ul.navbar-nav li.nav-item {
-  padding: 0px 8px;
-}
-
-nav.navbar div ul.navbar-nav a.nav-link {
-  font-weight: 600;
-  position: relative;
-  transition: 0.2s ease;
-  -webkit-transition: 0.2s ease;
-}
-
-nav.navbar div ul.navbar-nav a.nav-link span {
-  position: relative;
-  padding: 4px 0px;
-  z-index: 2;
-}
-
-nav.navbar div ul.navbar-nav a.nav-link span::before {
-  content: "";
-  display: inline-block;
-  position: absolute;
-  width: 0;
-  height: 100%;
-  background-color: #2ab7ca;
-  opacity: 0.5;
-  z-index: 1;
-}
-
-nav.navbar div ul.navbar-nav a.nav-link:hover span::before {
-  content: "";
-  height: 100%;
-  display: inline-block;
-  width: 30%;
-  opacity: 0.5;
-  background-color: #2ab7ca;
-  transition: 0.2s ease;
-  -webkit-transition: 0.2s ease;
-  z-index: 1;
-}
-
-h2.camber-title {
-  font-size: 48px;
-  font-weight: 800;
-  text-align: center;
-  color: black;
-  margin: 30px auto;
-  -webkit-text-fill-color: white;
-  -webkit-text-stroke-width: 1px;
-  -webkit-text-stroke-color: black;
-}
-
-h2.camber-title span {
-  color: black;
-  -webkit-text-fill-color: black;
-}
-
-footer.camber-footer {
-  margin-top: 50px;
-  text-align: center;
-  padding: 20px;
-  padding-bottom: 0px;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(17, 17, 17, 0.801)), to(rgba(10, 10, 10, 0.966))), url("../img/cars/CR_X.jpg");
-  background-image: linear-gradient(to bottom, rgba(17, 17, 17, 0.801), rgba(10, 10, 10, 0.966)), url("../img/cars/CR_X.jpg");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  color: #ffffff;
-}
-
-footer.camber-footer hr {
-  border-top: 1px solid red;
-  margin: auto 100px;
-}
-
-footer.camber-footer div.row h5 {
-  font-weight: 800;
-  font-size: 32px;
-  color: transparent;
-  -webkit-text-fill-color: transparent;
-  -webkit-text-stroke-width: 1px;
-  -webkit-text-stroke-color: white;
-}
-
-footer.camber-footer div.row h5 span {
-  color: white;
-  -webkit-text-fill-color: white;
-  -webkit-text-stroke-width: 0px;
-}
-
-footer.camber-footer div.row h6 {
-  border-bottom: 1px solid red;
-  font-weight: 700;
-}
-
-footer.camber-footer div.row ul {
-  list-style: none;
-}
-
-footer.camber-footer div.row ul li {
-  color: white;
-  opacity: 0.8;
-}
-
-footer.camber-footer div.row ul li a {
-  text-decoration: none;
-  color: white;
-  font-size: 0.9rem;
-}
-
-footer.camber-footer div.row ul li a span:hover {
-  color: red;
-  border-bottom: 1px dashed red;
-}
-
-footer.camber-footer div.row div.footer-nav-links {
-  width: -webkit-fit-content;
-  width: -moz-fit-content;
-  width: fit-content;
-  text-align: left;
-}
-
-footer.camber-footer div.row div.footer-contact-us {
-  width: -webkit-fit-content;
-  width: -moz-fit-content;
-  width: fit-content;
-  text-align: right;
-}
-
-footer.camber-footer div.row div.footer-contact-us ul li a:hover i {
-  color: red;
-}
-
-footer.camber-footer div.row div.footer-contact-us ul li i {
-  padding: 0px 5px;
-}
-
-footer.camber-footer div.row div.footer-contact-us ul li i:hover {
-  color: red;
-}
-
-footer.camber-footer div.row div.social-media-icon {
-  text-align: right;
-  padding: 5px 0px;
-}
-
-footer.camber-footer div.row div.social-media-icon a {
-  text-decoration: none;
-  color: #ffffff;
-  padding: 5px;
-}
-
-footer.camber-footer div.row div.social-media-icon a i {
-  font-size: 24px;
-}
-
-footer.camber-footer div.row div.social-media-icon a i:hover {
-  color: red;
-}
-
-footer.camber-footer div.hr-below {
-  margin: auto 100px;
-}
-
-footer.camber-footer div.hr-below div.copyright {
-  text-align: left;
-}
-
-footer.camber-footer small span {
-  font-size: 14px;
-  color: red;
-}
-
-footer.camber-footer small a {
-  text-decoration: none;
-}
-
-@media (max-width: 576px) {
-  h2.camber-title {
-    font-size: 32px;
-  }
-
-  footer.camber-footer {
-    overflow: hidden;
-    padding: 5px;
-    padding-bottom: 0px;
-  }
-
-  footer.camber-footer hr {
-    margin: auto 10px;
-  }
-
-  footer.camber-footer div.row h5 {
-    font-weight: 700;
-    font-size: 28px;
-  }
-
-  footer.camber-footer div.footer-nav-links {
-    text-align: center !important;
-  }
-
-  footer.camber-footer div.footer-contact-us {
-    text-align: center !important;
-  }
-
-  footer.camber-footer div.footer-contact-us ul li i {
-    padding: 0px 2px;
-    font-size: 8px;
-  }
-
-  footer.camber-footer div.social-media-icon i {
-    font-size: 8px;
-  }
-
-  footer.camber-footer div.hr-below {
-    margin: auto 10px;
-  }
-
-  footer.camber-footer div.copyright {
-    width: -webkit-fit-content;
-    width: -moz-fit-content;
-    width: fit-content;
-  }
-
-  footer.camber-footer div.copyright small {
-    font-size: 9px;
-  }
-
-  footer.camber-footer div.social {
-    width: -webkit-fit-content;
-    width: -moz-fit-content;
-    width: fit-content;
-  }
-}
 div.kz-hero .svg-shape {
   -webkit-clip-path: url(#kz-hero-curve);
   clip-path: url(#kz-hero-curve);
-}
-
-html,
-body {
-  -webkit-box-sizing: border-box;
-  box-sizing: border-box;
-  overflow-x: hidden;
-  font-size: 20px;
-}
-
-h2.camber-title span {
-  -webkit-text-fill-color: black;
 }
 
 div.kz-hero .svg-shape {
@@ -859,7 +306,8 @@ section.car-items div.car-content {
   margin: 40px auto;
   background-color: whitesmoke;
   border-radius: 10px;
-  -webkit-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+  -webkit-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3),
+    0 0 40px rgba(0, 0, 0, 0.1) inset;
   box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
 }
 
@@ -925,13 +373,21 @@ section.car-items div.car-content div.specs-pills div.badges-pill button.btn {
   z-index: 99;
 }
 
-section.car-items div.car-content div.specs-pills div.badges-pill button.btn:focus {
+section.car-items
+  div.car-content
+  div.specs-pills
+  div.badges-pill
+  button.btn:focus {
   border: none;
   -webkit-box-shadow: none;
   box-shadow: none;
 }
 
-section.car-items div.car-content div.specs-pills div.badges-pill div.social-media-icons {
+section.car-items
+  div.car-content
+  div.specs-pills
+  div.badges-pill
+  div.social-media-icons {
   position: absolute;
   top: 0;
   left: 0;
@@ -943,62 +399,149 @@ section.car-items div.car-content div.specs-pills div.badges-pill div.social-med
   justify-content: center;
 }
 
-section.car-items div.car-content div.specs-pills div.badges-pill div.social-media-icons a {
+section.car-items
+  div.car-content
+  div.specs-pills
+  div.badges-pill
+  div.social-media-icons
+  a {
   text-decoration: none;
   color: #000000;
   padding: 0px 8px;
 }
 
-section.car-items div.car-content div.specs-pills div.badges-pill div.social-media-icons a i {
+section.car-items
+  div.car-content
+  div.specs-pills
+  div.badges-pill
+  div.social-media-icons
+  a
+  i {
   font-size: 24px;
 }
 
-section.car-items div.car-content div.specs-pills div.badges-pill div.modal div.modal-content div.modal-header {
+section.car-items
+  div.car-content
+  div.specs-pills
+  div.badges-pill
+  div.modal
+  div.modal-content
+  div.modal-header {
   text-align: center;
 }
 
-section.car-items div.car-content div.specs-pills div.badges-pill div.modal div.modal-content div.modal-header h5 {
+section.car-items
+  div.car-content
+  div.specs-pills
+  div.badges-pill
+  div.modal
+  div.modal-content
+  div.modal-header
+  h5 {
   color: #000000;
   font-weight: 700;
   text-align: center;
 }
 
-section.car-items div.car-content div.specs-pills div.badges-pill div.modal div.modal-content div.modal-body div.modal-img {
+section.car-items
+  div.car-content
+  div.specs-pills
+  div.badges-pill
+  div.modal
+  div.modal-content
+  div.modal-body
+  div.modal-img {
   width: 100%;
 }
 
-section.car-items div.car-content div.specs-pills div.badges-pill div.modal div.modal-content div.modal-body div.modal-img img {
+section.car-items
+  div.car-content
+  div.specs-pills
+  div.badges-pill
+  div.modal
+  div.modal-content
+  div.modal-body
+  div.modal-img
+  img {
   width: 100%;
 }
 
-section.car-items div.car-content div.specs-pills div.badges-pill div.modal div.modal-content div.modal-body div.modal-pill-section {
+section.car-items
+  div.car-content
+  div.specs-pills
+  div.badges-pill
+  div.modal
+  div.modal-content
+  div.modal-body
+  div.modal-pill-section {
   margin: 20px auto;
 }
 
-section.car-items div.car-content div.specs-pills div.badges-pill div.modal div.modal-content div.modal-body div.modal-pill-section h6 {
+section.car-items
+  div.car-content
+  div.specs-pills
+  div.badges-pill
+  div.modal
+  div.modal-content
+  div.modal-body
+  div.modal-pill-section
+  h6 {
   font-weight: 600;
   text-align: left;
 }
 
-section.car-items div.car-content div.specs-pills div.badges-pill div.modal div.modal-content div.modal-body div.modal-pill-section h6 span {
+section.car-items
+  div.car-content
+  div.specs-pills
+  div.badges-pill
+  div.modal
+  div.modal-content
+  div.modal-body
+  div.modal-pill-section
+  h6
+  span {
   color: brown;
 }
 
-section.car-items div.car-content div.specs-pills div.badges-pill div.modal div.modal-content div.modal-body div.modal-pill-section h6::after {
+section.car-items
+  div.car-content
+  div.specs-pills
+  div.badges-pill
+  div.modal
+  div.modal-content
+  div.modal-body
+  div.modal-pill-section
+  h6::after {
   content: "";
   display: inline-block;
   width: 12px;
   border-bottom: brown solid 3px;
 }
 
-section.car-items div.car-content div.specs-pills div.badges-pill div.modal div.modal-content div.modal-body div.modal-pill-section span.badge {
+section.car-items
+  div.car-content
+  div.specs-pills
+  div.badges-pill
+  div.modal
+  div.modal-content
+  div.modal-body
+  div.modal-pill-section
+  span.badge {
   border: 1px solid brown;
   padding: 2px 10px;
   margin: auto 5px;
   font-weight: 400;
 }
 
-section.car-items div.car-content div.specs-pills div.badges-pill div.modal div.modal-content div.modal-body div.modal-pill-section span.badge:hover {
+section.car-items
+  div.car-content
+  div.specs-pills
+  div.badges-pill
+  div.modal
+  div.modal-content
+  div.modal-body
+  div.modal-pill-section
+  span.badge:hover {
   background-color: brown;
   color: white;
   cursor: pointer;
@@ -1012,7 +555,8 @@ section.car-items div.car-content2 {
   margin: 40px auto;
   background-color: whitesmoke;
   border-radius: 10px;
-  -webkit-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+  -webkit-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3),
+    0 0 40px rgba(0, 0, 0, 0.1) inset;
   box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
 }
 
@@ -1078,13 +622,21 @@ section.car-items div.car-content2 div.specs-pills div.badges-pill button.btn {
   z-index: 99;
 }
 
-section.car-items div.car-content2 div.specs-pills div.badges-pill button.btn:focus {
+section.car-items
+  div.car-content2
+  div.specs-pills
+  div.badges-pill
+  button.btn:focus {
   border: none;
   -webkit-box-shadow: none;
   box-shadow: none;
 }
 
-section.car-items div.car-content2 div.specs-pills div.badges-pill div.social-media-icons {
+section.car-items
+  div.car-content2
+  div.specs-pills
+  div.badges-pill
+  div.social-media-icons {
   position: absolute;
   top: 0;
   right: 0;
@@ -1096,62 +648,149 @@ section.car-items div.car-content2 div.specs-pills div.badges-pill div.social-me
   justify-content: center;
 }
 
-section.car-items div.car-content2 div.specs-pills div.badges-pill div.social-media-icons a {
+section.car-items
+  div.car-content2
+  div.specs-pills
+  div.badges-pill
+  div.social-media-icons
+  a {
   text-decoration: none;
   color: #000000;
   padding: 0px 8px;
 }
 
-section.car-items div.car-content2 div.specs-pills div.badges-pill div.social-media-icons a i {
+section.car-items
+  div.car-content2
+  div.specs-pills
+  div.badges-pill
+  div.social-media-icons
+  a
+  i {
   font-size: 24px;
 }
 
-section.car-items div.car-content2 div.specs-pills div.badges-pill div.modal div.modal-content div.modal-header {
+section.car-items
+  div.car-content2
+  div.specs-pills
+  div.badges-pill
+  div.modal
+  div.modal-content
+  div.modal-header {
   text-align: center;
 }
 
-section.car-items div.car-content2 div.specs-pills div.badges-pill div.modal div.modal-content div.modal-header h5 {
+section.car-items
+  div.car-content2
+  div.specs-pills
+  div.badges-pill
+  div.modal
+  div.modal-content
+  div.modal-header
+  h5 {
   color: #000000;
   font-weight: 700;
   text-align: center;
 }
 
-section.car-items div.car-content2 div.specs-pills div.badges-pill div.modal div.modal-content div.modal-body div.modal-img {
+section.car-items
+  div.car-content2
+  div.specs-pills
+  div.badges-pill
+  div.modal
+  div.modal-content
+  div.modal-body
+  div.modal-img {
   width: 100%;
 }
 
-section.car-items div.car-content2 div.specs-pills div.badges-pill div.modal div.modal-content div.modal-body div.modal-img img {
+section.car-items
+  div.car-content2
+  div.specs-pills
+  div.badges-pill
+  div.modal
+  div.modal-content
+  div.modal-body
+  div.modal-img
+  img {
   width: 100%;
 }
 
-section.car-items div.car-content2 div.specs-pills div.badges-pill div.modal div.modal-content div.modal-body div.modal-pill-section {
+section.car-items
+  div.car-content2
+  div.specs-pills
+  div.badges-pill
+  div.modal
+  div.modal-content
+  div.modal-body
+  div.modal-pill-section {
   margin: 20px auto;
 }
 
-section.car-items div.car-content2 div.specs-pills div.badges-pill div.modal div.modal-content div.modal-body div.modal-pill-section h6 {
+section.car-items
+  div.car-content2
+  div.specs-pills
+  div.badges-pill
+  div.modal
+  div.modal-content
+  div.modal-body
+  div.modal-pill-section
+  h6 {
   font-weight: 600;
   text-align: left;
 }
 
-section.car-items div.car-content2 div.specs-pills div.badges-pill div.modal div.modal-content div.modal-body div.modal-pill-section h6 span {
+section.car-items
+  div.car-content2
+  div.specs-pills
+  div.badges-pill
+  div.modal
+  div.modal-content
+  div.modal-body
+  div.modal-pill-section
+  h6
+  span {
   color: brown;
 }
 
-section.car-items div.car-content2 div.specs-pills div.badges-pill div.modal div.modal-content div.modal-body div.modal-pill-section h6::after {
+section.car-items
+  div.car-content2
+  div.specs-pills
+  div.badges-pill
+  div.modal
+  div.modal-content
+  div.modal-body
+  div.modal-pill-section
+  h6::after {
   content: "";
   display: inline-block;
   width: 12px;
   border-bottom: brown solid 3px;
 }
 
-section.car-items div.car-content2 div.specs-pills div.badges-pill div.modal div.modal-content div.modal-body div.modal-pill-section span.badge {
+section.car-items
+  div.car-content2
+  div.specs-pills
+  div.badges-pill
+  div.modal
+  div.modal-content
+  div.modal-body
+  div.modal-pill-section
+  span.badge {
   border: 1px solid brown;
   padding: 2px 10px;
   margin: auto 5px;
   font-weight: 400;
 }
 
-section.car-items div.car-content2 div.specs-pills div.badges-pill div.modal div.modal-content div.modal-body div.modal-pill-section span.badge:hover {
+section.car-items
+  div.car-content2
+  div.specs-pills
+  div.badges-pill
+  div.modal
+  div.modal-content
+  div.modal-body
+  div.modal-pill-section
+  span.badge:hover {
   background-color: brown;
   color: white;
   cursor: pointer;
@@ -1195,13 +834,25 @@ section.car-items div.car-content2 div.specs-pills div.badges-pill div.modal div
     margin-right: auto;
   }
 
-  section.car-items div.car-content div.specs-pills div.badges-pill div.social-media-icons {
+  section.car-items
+    div.car-content
+    div.specs-pills
+    div.badges-pill
+    div.social-media-icons {
     position: relative;
     width: 50%;
     z-index: 1;
   }
 
-  section.car-items div.car-content div.specs-pills div.badges-pill div.modal div.modal-content div.modal-body div.modal-pill-section span.badge {
+  section.car-items
+    div.car-content
+    div.specs-pills
+    div.badges-pill
+    div.modal
+    div.modal-content
+    div.modal-body
+    div.modal-pill-section
+    span.badge {
     font-size: 0.5rem !important;
   }
 
@@ -1238,22 +889,36 @@ section.car-items div.car-content2 div.specs-pills div.badges-pill div.modal div
     height: auto;
   }
 
-  section.car-items div.car-content2 div.specs-pills div.badges-pill button.btn {
+  section.car-items
+    div.car-content2
+    div.specs-pills
+    div.badges-pill
+    button.btn {
     margin-left: auto;
     margin-right: auto;
   }
 
-  section.car-items div.car-content2 div.specs-pills div.badges-pill div.social-media-icons {
+  section.car-items
+    div.car-content2
+    div.specs-pills
+    div.badges-pill
+    div.social-media-icons {
     position: relative;
     width: 50%;
     float: right;
     z-index: 1;
   }
 
-  section.car-items div.car-content2 div.specs-pills div.badges-pill div.modal div.modal-content div.modal-body div.modal-pill-section span.badge {
+  section.car-items
+    div.car-content2
+    div.specs-pills
+    div.badges-pill
+    div.modal
+    div.modal-content
+    div.modal-body
+    div.modal-pill-section
+    span.badge {
     font-size: 0.5rem !important;
   }
 }
-/*# sourceMappingURL=cars.css.map */
-
 /*# sourceMappingURL=cars.css.map */
