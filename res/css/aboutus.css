@@ -17,6 +17,9 @@ section.aboutus-container {
   width: 100%;
   overflow: hidden;
 }
+section.aboutus-container .row p {
+  margin-bottom: 0.1rem;
+
 /* section.aboutus-container .landing .image::after {
   content: "";
   position: absolute;
