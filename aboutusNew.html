@@ -84,8 +84,9 @@
         <img class="img-fluid w-100 h-auto" src="./res/img/aboutUs/landing.png" alt="landing image" />
       </div>
     </div>
-      <div class="jumbotron row mb-2">
-          <div class="col mx-4">
+      <div class="jumbotron mb-1">
+        <div class="row mx-4">
+          <div class="col-lg-6 ">
         <h2 class="camber-title text-center">ABOUT <span>US</span></h2>
             <p class="text-justify">Camber Raacing is the Formula Student combustion team of SRM IST, Chennai. The team was founded in 2009 when a group of young engineers decided to turn their dreams into reality and went on to make the first prototype, "CR800". Since then, there has been no looking back. Nine cars, 26 awards and 2 times National Champions.</p>
             <br>
@@ -97,23 +98,49 @@
             
           </div>
 
-          <div class="col mx-4">
+          <div class="col-lg-5">
             <img class="img-fluid" src="./res/img/logos/logo.png" alt="brand-image">
           </div>
-
+        </div>
     </section>
 
     <section class="formulaStudent-container">
       <div class="landing">
           <div class="image">
-        <img class="img-fluid w-100 h-auto" src="./res/img/aboutUs/Formula Student.png" alt="landing image" />
-      </div>
+              <img class="img-fluid w-100 h-auto" src="./res/img/aboutUs/Formula Student.png" alt="landing image" />
+          </div>
     </div>
-      <div class="jumbotron row ">
-        <div class="col mx-4">
-          <img class="img-fluid" src="./res/img/logos/logo.png" alt="brand-image">
+      <div class="jumbotron ">
+        <div class=" row mx-4">
+
+          <div class="col-lg-6 my-1 ">
+          <div class="chart-container d-flex flex-column justify-content-center allign-items-center ">
+                <div class="static-chart mh-50 my-8">
+                  <div class="title text-center">
+                    <h4>STATIC EVENTS</h4>
+                  </div>
+                <div class="static-events-chart">
+                    <canvas id="staticChart" ></canvas>
+                 </div>
+                </div>
+
+
+
+
+                <div class="dynamic-chart my-8">
+                      <div class="title text-center my-8">
+                         <h4>Dynamic EVENTS</h4>
+                      </div>
+                        <div class="dynamic-events-chart">
+                      <canvas id="dynamicChart" ></canvas>
+                      </div>
+                    </div>
+
+             </div>
         </div>
-          <div class="col mx-4">
+
+
+          <div class="col-lg-5 ">
         <h2 class="camber-title text-center">FORMULA <span>STUDENT</span></h2>
             <p class="text-justify">Camber Raacing is the Formula Student combustion team of SRM IST, Chennai. The team was founded in 2009 when a group of young engineers decided to turn their dreams into reality and went on to make the first prototype, "CR800". Since then, there has been no looking back. Nine cars, 26 awards and 2 times National Champions.</p>
             <br>
@@ -124,23 +151,29 @@
             <p><b>Building people, not just Cars!</b></p>
             
           </div>
-
+        </div>
+        </div>
          
     </section>
 
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <!-- jQuery Script -->
     <script
       src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
       integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
       crossorigin="anonymous"
     ></script>
+    <!-- Popper.js Script  -->
     <script
       src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
       integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
       crossorigin="anonymous"
     ></script>
+    <!-- Chart.js Script  -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.min.js" integrity="sha512-s+xg36jbIujB2S2VKfpGmlC3T5V2TF3lY48DX7u2r9XzGzgPsa6wTpOQA7J9iffvdeBN0q9tKzRxVxw1JviZPg==" crossorigin="anonymous"></script>
+    <!-- Bootstrap Script -->
     <script
       src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
       integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
@@ -149,6 +182,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.1/js/swiper.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.7.0/vanilla-tilt.js"></script>
     <script src="./res/js/main.js"></script>
+    <script src="./res/js/aboutus.js"></script>
     <!-- add animation to navbar -->
     <script src="res/js/landing.js"></script>
   </body>

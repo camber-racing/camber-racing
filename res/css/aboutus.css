@@ -1,7 +1,7 @@
-@import url("https://fonts.googleapis.com/css?family=Montserrat:400,700,900&display=swap");
-@import url("https://fonts.googleapis.com/css?family=Montserrat:400,700,900&display=swap");
+/* @import url("https://fonts.googleapis.com/css?family=Montserrat:400,700,900&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Montserrat:400,700,900&display=swap"); */
 * {
-  font-family: "Montserrat";
+  /* font-family: "Montserrat"; */
   margin: 0;
   padding: 0;
 }
@@ -19,7 +19,7 @@ section.aboutus-container {
 }
 section.aboutus-container .row p {
   margin-bottom: 0.1rem;
-
+}
 /* section.aboutus-container .landing .image::after {
   content: "";
   position: absolute;
