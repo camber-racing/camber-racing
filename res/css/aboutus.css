@@ -1,7 +1,10 @@
-/* @import url("https://fonts.googleapis.com/css?family=Montserrat:400,700,900&display=swap");
-@import url("https://fonts.googleapis.com/css?family=Montserrat:400,700,900&display=swap"); */
+@font-face {
+  font-family: roboto-regular;
+  src: url(../fonts/Roboto-Regular.ttf) format("truetype");
+}
+
 * {
-  /* font-family: "Montserrat"; */
+  font-family: roboto-regular;
   margin: 0;
   padding: 0;
 }
@@ -11,6 +14,7 @@ body {
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   scroll-behavior: smooth;
+
 }
 section.aboutus-container {
   position: relative;
@@ -19,6 +23,8 @@ section.aboutus-container {
 }
 section.aboutus-container .row p {
   margin-bottom: 0.1rem;
+  font-weight: 600;
+  font-size: 21px;
 }
 /* section.aboutus-container .landing .image::after {
   content: "";
@@ -33,7 +39,14 @@ section.aboutus-container .landing img {
   height: 600px;
   width: auto;
 }
-
+section.formulaStudent-container .row p {
+  font-weight: 500;
+  font-size: 21px;
+}
+.chart-container .chartjs-render-monitor{
+  width: 32rem !important;
+  height: 16rem !important;
+}
 /* footer.camber-footer {
   margin-top: 50px;
   text-align: center;
@@ -167,6 +180,12 @@ footer.camber-footer small a {
 } */
 
 @media (max-width: 576px) {
+
+  .chart-container .chartjs-render-monitor{
+    width: 18rem !important;
+    height: 9.8rem !important;
+  }
+
   h2.camber-title {
     font-size: 32px;
   }

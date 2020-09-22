@@ -29,8 +29,15 @@ let myChart = new Chart(staticChart, {
       mode: null,
     },
     legend: {
+      display: true,
       position: "right",
-    },
+
+      labels: {
+        fontSize: 20,
+        fontColor: "#000000",
+      }
+    }
+
   },
 });
 
@@ -51,7 +58,13 @@ let piechart = new Chart(dynamicChart, {
       mode: null,
     },
     legend: {
+      display: true,
       position: "right",
+
+      labels: {
+        fontSize: 20,
+        fontColor: "#000000",
+      }
     },
   },
 });
