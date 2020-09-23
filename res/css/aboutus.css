@@ -40,7 +40,8 @@ section.aboutus-container .landing img {
   width: auto;
 }
 section.formulaStudent-container .row p {
-  font-weight: 500;
+  margin-bottom: 0.1rem;
+  font-weight: 600;
   font-size: 21px;
 }
 .chart-container .chartjs-render-monitor{
@@ -182,8 +183,8 @@ footer.camber-footer small a {
 @media (max-width: 576px) {
 
   .chart-container .chartjs-render-monitor{
-    width: 18rem !important;
-    height: 9.8rem !important;
+    width: 16rem !important;
+    height: 8rem !important;
   }
 
   h2.camber-title {
