@@ -2,7 +2,10 @@
   font-family: roboto-regular;
   src: url(../fonts/Roboto-Regular.ttf) format("truetype");
 }
-
+@font-face{
+  font-family: air-mitalic;
+  src: url(../fonts/air_mitalic.ttf) format("truetype");
+}
 * {
   font-family: roboto-regular;
   margin: 0;
@@ -235,47 +238,35 @@ footer.camber-footer {
   padding: 24px 50px;
 }
 
-footer.camber-footer hr {
-  border-top: 1px solid var(--red);
-  margin: auto 100px;
-}
+
 
 footer.camber-footer div.row h5 {
-  font-weight: 800;
+  font-family: air-mitalic;
+  font-weight: 600;
   font-size: 40px;
+  letter-spacing: 2px;
+  stroke: var(--black);
+    stroke-width: 3;
   color: var(--red);
+  margin-top: 2rem;
 }
 footer.camber-footer div.row img {
   width: 172px;
 }
 
+
+.footer-button div{
+  background-color: var(--red);
+  border: none;
+  border-radius: 0.4rem;
+
+}
 footer.camber-footer div.row h6 {
   font-weight: 700;
   font-size: 20px;
-  margin-bottom: 16px;
-  text-align: center;
+  color: var(--white);
+  margin: 0 !important;
 }
-
-.input-section {
-  text-align: center;
-}
-.input-section input {
-  display: block;
-  margin: 12px auto;
-  padding: 8px;
-  background-color: var(--grey);
-  border: none;
-  width: 200px;
-  color: orangered;
-  border-radius: 8px;
-}
-.input-section input:focus {
-  outline: none;
-}
-.input-section input::placeholder {
-  color: orangered;
-}
-
 footer.camber-footer div.row div.social-media-icon {
   text-align: center;
   padding: 5px 0px;
@@ -299,6 +290,64 @@ footer.camber-footer div.row div.social-media-icon a i:hover {
   color: var(--red);
 }
 
+footer.camber-footer div.row div.footer-contact-us .heading {
+  font-weight: 600;
+  font-size: 21px;
+color: var(--red);
+margin: 2rem 0 1.4rem 0!important;
+text-align: start;
+
+}
+
+footer.camber-footer div.row div.footer-contact-us h6 {
+margin: 0.4rem 0 !important;
+font-weight: 600;
+
+
+}
+footer.camber-footer div.row div.footer-contact-us div p {
+  font-size: 16px;
+  margin-right: 8rem;
+  /* margin-bottom: 2rem; */
+
+}
+footer.camber-footer div.row div.footer-contact-us ul li :hover {
+  color: var(--red);
+}
+
+footer.camber-footer div.row div.footer-contact-us ul li a {
+  /* padding: 0px 5px; */
+}
+footer.camber-footer div.row div.footer-contact-us ul li a .fas {
+  font-size: 16px;
+}
+
+.input-section {
+  text-align: center;
+}
+footer.camber-footer div.row .heading {
+  font-weight: 600;
+  font-size: 21px;
+color: var(--red);
+margin: 2rem 0 1.4rem 0!important;
+text-align: start;
+}
+.input-section input {
+  display: block;
+  background-color: var(--grey);
+  border: none;
+  color: orangered;
+  border-radius: 8px;
+}
+.input-section input:focus {
+  outline: none;
+}
+.input-section input::placeholder {
+  color: var(--white);
+}
+
+
+
 footer.camber-footer div.row ul {
   list-style: none;
 }
@@ -321,40 +370,35 @@ footer.camber-footer div.row ul li a:hover {
   border-bottom: 1px dashed var(--red);
 }
 
-footer.camber-footer div.row div.footer-contact-us {
-  text-align: left;
+footer.camber-footer hr {
+  border-top: 1px solid var(--red);
 }
 
-footer.camber-footer div.row div.footer-contact-us ul li :hover {
-  color: var(--red);
-}
-
-footer.camber-footer div.row div.footer-contact-us ul li a {
-  padding: 0px 5px;
-}
-footer.camber-footer div.row div.footer-contact-us ul li a .fas {
-  font-size: 16px;
-}
 
 footer.camber-footer div.hr-below {
-  margin: auto 100px;
+  margin: auto inherit;
 }
 
 footer.camber-footer div.hr-below div.copyright {
-  text-align: left;
-  font-size: 80%;
+  text-align: start;
+  /* font-size: 80%; */
   font-weight: 400;
-  text-align: center;
-  padding: 0 22px;
+  padding: 0 !important;
 }
+footer.camber-footer .brand-mark {
+  text-align: right;
+  padding: 0;
 
+}
 footer.camber-footer small span {
   font-size: 14px;
   color: var(--red);
+
 }
 
 footer.camber-footer small a {
   text-decoration: none;
+
 }
 @media only screen and (max-width: 840px) {
   .navbar {
@@ -468,16 +512,29 @@ footer.camber-footer small a {
     text-align: justify;
     font-size: 13px;
   }
+  footer.camber-footer div.row h6{
+    font-size: 16px;
+  }
+  .footer-contact-us {
+    padding: 24px 32px;
+  }
   .input-section {
     padding: 24px 32px;
   }
-
+  footer.camber-footer div.row div.footer-contact-us div p {
+    margin-right: 0rem;
+}
   footer.camber-footer div.hr-below {
     margin: auto 24px;
   }
 
   footer.camber-footer div.hr-below div.copyright {
     text-align: center;
+    margin-bottom: 0.3rem;
+  }
+  footer.camber-footer .brand-mark {
+    text-align: center!important;
+
   }
 }
 
@@ -488,6 +545,9 @@ footer.camber-footer small a {
   .about-us-container .right-container img {
     width: 342px;
   }
+  footer.camber-footer div.row div.footer-contact-us div p {
+    margin-right: 0rem;
+}
 }
 :root {
   --black: #000000;
