@@ -255,15 +255,21 @@ footer.camber-footer div.row img {
 }
 
 
-.footer-button div{
+.footer-newsletter-button div, .footer-send-button div{
   background-color: var(--red);
   border: none;
   border-radius: 0.4rem;
+  text-align: center;
+  width: max-content;
 
 }
+.footer-newsletter-button {
+width: max-content;
+}
+
 footer.camber-footer div.row h6 {
   font-weight: 700;
-  font-size: 20px;
+  font-size: 18px;
   color: var(--white);
   margin: 0 !important;
 }
@@ -302,9 +308,10 @@ text-align: start;
 footer.camber-footer div.row div.footer-contact-us h6 {
 margin: 0.4rem 0 !important;
 font-weight: 600;
-
-
 }
+
+
+
 footer.camber-footer div.row div.footer-contact-us div p {
   font-size: 16px;
   margin-right: 8rem;
@@ -321,6 +328,11 @@ footer.camber-footer div.row div.footer-contact-us ul li a {
 footer.camber-footer div.row div.footer-contact-us ul li a .fas {
   font-size: 16px;
 }
+footer.camber-footer div.row div.footer-button a:hover {
+  text-decoration: none;
+
+}
+
 
 .input-section {
   text-align: center;
@@ -508,18 +520,25 @@ footer.camber-footer small a {
   .col-md-4 {
     padding: 12px 50px;
   }
+  .content{
+    padding: 24px 32px;
+
+  }
   footer.camber-footer div.content div p {
     text-align: justify;
     font-size: 13px;
   }
   footer.camber-footer div.row h6{
-    font-size: 16px;
+    font-size: 13px;
   }
   .footer-contact-us {
     padding: 24px 32px;
   }
   .input-section {
     padding: 24px 32px;
+  }
+  .input-section input{
+    width: 94% !important;
   }
   footer.camber-footer div.row div.footer-contact-us div p {
     margin-right: 0rem;
@@ -539,6 +558,7 @@ footer.camber-footer small a {
 }
 
 @media only screen and (max-width: 1370px) and (min-width: 840px) {
+  
   .nav-link span {
     padding: 6px;
   }
