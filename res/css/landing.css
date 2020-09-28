@@ -480,7 +480,7 @@ footer.camber-footer small a {
   }
 
   .about-us-container {
-    margin: 0 15px;
+    margin: 0 ;
     background-size: cover;
     height: auto;
     top: 0;
@@ -506,9 +506,9 @@ footer.camber-footer small a {
   }
   .about-us-container .right-container {
     float: none;
-    width: 100%;
+    width: 96%;
     padding: 16px;
-    margin: 0 0.8rem;
+    margin: 0 0 0 0.8rem;
   }
   .about-us-container .right-container img {
     width: 92%;
