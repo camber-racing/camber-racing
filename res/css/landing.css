@@ -506,9 +506,9 @@ footer.camber-footer small a {
   }
   .about-us-container .right-container {
     float: none;
-    width: 96%;
-    padding: 16px;
-    margin: 0 0 0 0.8rem;
+    width: 100%;
+    padding: 1rem 0.5rem 1rem 1.5rem;
+    margin: 0;
   }
   .about-us-container .right-container img {
     width: 92%;
