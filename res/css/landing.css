@@ -228,7 +228,7 @@ h2.social-media span {
 }
 
 footer.camber-footer {
-  margin-top: 50px;
+  margin-top: 1rem;
   text-align: center;
   padding: 20px;
   background-color: var(--black);
@@ -542,7 +542,7 @@ footer.camber-footer small a {
   }
   footer.camber-footer div.row div.footer-contact-us div p {
     margin-right: 0rem;
-}
+  }
   footer.camber-footer div.hr-below {
     margin: auto 24px;
   }
