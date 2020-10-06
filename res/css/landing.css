@@ -69,36 +69,6 @@ body {
 .carousel-indicators {
   z-index: 1;
 }
-.carousel-inner {
-  position: relative;
-  width: 100%;
-  overflow: hidden;
-}
-.carousel-inner img {
-  height: 728px;
-}
-
-.bnr-icon {
-  color: #ff5e00;
-  font-size: 3.5rem;
-  position: absolute;
-  border-radius: 50%;
-  height: 25%;
-}
-.carousel-item:after {
-  content: "";
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  background: rgba(0, 0, 0, 0.6);
-}
-
-.news-feed-container {
-  overflow-y: hidden;
-  margin: 8px 8%;
-}
 
 h2.camber-title {
   padding: 0 15px;
@@ -110,119 +80,6 @@ h2.camber-title {
 }
 h2.camber-title span {
   color: var(--red);
-}
-.jumbotron {
-  margin: 0;
-  margin-bottom: 35px;
-  background-color: var(--white);
-  padding: 0;
-  color: var(--black);
-  font-size: 15px;
-}
-.col-lg-6 p {
-  margin: 0;
-  font-size: 16px;
-}
-.col-lg-6 img {
-  width: 100%;
-  height: 100%;
-}
-.col-lg-6 h4 {
-  margin: 32px 0;
-  font-weight: 600;
-  font-size: 30px;
-}
-
-.jumbotron .news-option button {
-  padding: 8px;
-  font-size: 15px;
-  border: 1px solid var(--black);
-}
-.img-gradient::after {
-  background: linear-gradient(
-    to right bottom,
-    rgba(0, 0, 0, 0.4),
-    rgba(0, 0, 0, 1)
-  );
-}
-.about-us-container {
-  background-image: linear-gradient(
-      to right bottom,
-      rgba(0, 0, 0, 0.2),
-      rgba(0, 0, 0, 0.5)
-    ),
-    url(../img/cars/CR_X.jpg);
-  background-size: 100% 90%;
-  height: 90vh;
-  background-attachment: scroll;
-  background-repeat: no-repeat;
-  position: relative;
-  text-align: center;
-  margin: 8px 0;
-}
-
-.about-us-container .left-container {
-  float: left;
-  position: relative;
-  /* text-align: right; */
-  text-align: justify;
-  width: 50%;
-  height: 100%;
-  margin-top: 10px;
-  padding-left: 20%;
-  padding-top: 8%;
-}
-
-.about-us-container .right-container {
-  float: right;
-  text-align: justify;
-  width: 50%;
-  height: 100%;
-  margin-top: 30px;
-  padding: 8% 8% 0 4%;
-}
-
-.about-us-container .right-container img {
-  width: 438px;
-}
-
-.about-us-container .left-container h2.camber-heading {
-  padding: 0 15px;
-  font-size: 40px;
-  font-weight: 600;
-  text-align: start;
-  color: var(--white);
-  margin: 30px 0;
-}
-
-.about-us-container .left-container h2.camber-heading span {
-  color: var(--red);
-}
-
-.about-us-container .left-container p {
-  height: 50%;
-  padding: 0 15px;
-  font-size: 21px;
-  font-weight: 500;
-  text-align: start;
-  color: white;
-  margin: 30px 0;
-}
-
-h2.social-media {
-  padding: 0 15px;
-  font-size: 40px;
-  font-weight: 600;
-  text-align: center;
-  color: var(--black);
-  margin: 30px auto;
-}
-
-h2.social-media span {
-  color: var(--red);
-}
-.news-option {
-  padding: 0;
 }
 
 footer.camber-footer {
@@ -429,80 +286,6 @@ footer.camber-footer small a {
     background-color: var(--grey);
   }
 
-  .carousel-inner img {
-    height: 244px;
-  }
-  .carousel-control-next,
-  .carousel-control-prev {
-    display: inline;
-    top: 48%;
-    margin-left: 10%;
-  }
-  .bnr-icon {
-    font-size: 1.5rem;
-  }
-  .news-feed-container {
-    width: 100%;
-    margin: 8px auto;
-  }
-  h2.camber-title {
-    margin: 16px auto;
-  }
-  .col-lg-6 p {
-    margin: 8px 0;
-  }
-  .col-lg-6 h4 {
-    margin: 24px 0;
-    font-size: 24px;
-  }
-
-  .news-option {
-    margin: 0;
-    padding: 0;
-  }
-
-  .about-us-container {
-    margin: 0;
-    background-size: cover;
-    height: auto;
-    top: 0;
-    position: relative;
-    left: 0;
-    transform: none;
-  }
-
-  .about-us-container .left-container {
-    width: 100%;
-    position: relative;
-    float: none;
-    left: 0;
-    transform: none;
-    margin: 0;
-    padding: 16px;
-  }
-  .about-us-container h2.camber-heading {
-    margin: 4px 0;
-  }
-  .about-us-container .left-container p {
-    margin: 4px 0;
-  }
-  .about-us-container .right-container {
-    float: none;
-    width: 100%;
-    padding: 1rem 0.5rem 1rem 1.6rem;
-    margin: 0;
-  }
-  .about-us-container .right-container img {
-    width: 100%;
-    /* margin-bottom: 10px; */
-  }
-
-  .col-md-4 {
-    padding: 12px 50px;
-  }
-  .content {
-    padding: 24px 32px;
-  }
   footer.camber-footer div.content div p {
     text-align: justify;
     font-size: 13px;
@@ -539,9 +322,7 @@ footer.camber-footer small a {
   .nav-link span {
     padding: 6px;
   }
-  .about-us-container .right-container img {
-    width: 342px;
-  }
+
   footer.camber-footer div.row div.footer-contact-us div p {
     margin-right: 0rem;
   }
