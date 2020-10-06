@@ -14,34 +14,53 @@ body {
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   scroll-behavior: smooth;
-
 }
 section.cars-container {
   position: relative;
   width: 100%;
   /* overflow: hidden; */
 }
-section.cars-container .landing-heading{
-margin: 5rem 0 0 8rem;}
-
-section.cars-container .row p,section.formulaStudent-container .row p {
-  margin-bottom: 0.1rem;
+section.cars-container .landing-heading {
+  margin: 5rem 0 0 8rem;
+}
+section.cars-container .row h5 {
+  font-family: air-mitalic;
   font-weight: 600;
+  font-size: 40px;
+  letter-spacing: 2px;
+  stroke: var(--black);
+  stroke-width: 3;
+  color: var(--red);
+  margin-top: 2rem;
+}
+section.image-container {
+  margin-right: 0;
+  margin-left: 20px;
+}
+section.cars-container .row p,
+section.cars-container .row ul,
+section.cars-container .row ul li {
+  margin-bottom: 0.1rem;
+  font-weight: 400;
   font-size: 20px;
 }
-
+section.cars-container .row h3 {
+  font-weight: 600;
+  font-size: 2rem;
+}
+section.cars-container .row .achievements p {
+  font-weight: 600;
+}
+section.cars-container .row ul li {
+  margin-left: 1rem;
+}
 section.cars-container .landing img {
   height: 600px;
   width: auto;
 }
 
 @media only screen and (max-width: 840px) {
-    section.cars-container .landing-heading{
-        margin: 2.6rem 0 0 0;
-
-}
-
-}
-
-@media only screen and (max-width: 1370px) and (min-width: 840px) {
+  section.cars-container .landing-heading {
+    margin: 4.6rem 0 0 0;
+  }
 }

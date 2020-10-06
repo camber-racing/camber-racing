@@ -14,17 +14,21 @@ body {
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   scroll-behavior: smooth;
-
 }
 section.aboutus-container {
   position: relative;
   width: 100%;
   /* overflow: hidden; */
 }
-section.aboutus-container .row p,section.formulaStudent-container .row p {
+section.aboutus-container .row p,
+section.formulaStudent-container .row p {
   margin-bottom: 0.1rem;
-  font-weight: 600;
-  font-size: 21px;
+  font-weight: 400;
+  font-size: 20px;
+}
+
+@media only screen and (max-width: 840px) {
+}
+@media only screen and (max-width: 1370px) and (min-width: 840px) {
 }
 /*# sourceMappingURL=aboutus.css.map */
-

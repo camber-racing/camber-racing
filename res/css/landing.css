@@ -2,7 +2,7 @@
   font-family: roboto-regular;
   src: url(../fonts/Roboto-Regular.ttf) format("truetype");
 }
-@font-face{
+@font-face {
   font-family: air-mitalic;
   src: url(../fonts/air_mitalic.ttf) format("truetype");
 }
@@ -236,15 +236,13 @@ footer.camber-footer {
   padding: 24px 50px;
 }
 
-
-
 footer.camber-footer div.row h5 {
   font-family: air-mitalic;
   font-weight: 600;
   font-size: 40px;
   letter-spacing: 2px;
   stroke: var(--black);
-    stroke-width: 3;
+  stroke-width: 3;
   color: var(--red);
   margin-top: 2rem;
 }
@@ -252,17 +250,16 @@ footer.camber-footer div.row img {
   width: 172px;
 }
 
-
-.footer-newsletter-button div, .footer-send-button div{
+.footer-newsletter-button div,
+.footer-send-button div {
   background-color: var(--red);
   border: none;
   border-radius: 0.4rem;
   text-align: center;
   width: max-content;
-
 }
 .footer-newsletter-button {
-width: max-content;
+  width: max-content;
 }
 
 footer.camber-footer div.row h6 {
@@ -297,40 +294,31 @@ footer.camber-footer div.row div.social-media-icon a i:hover {
 footer.camber-footer div.row div.footer-contact-us .heading {
   font-weight: 600;
   font-size: 21px;
-color: var(--red);
-margin: 2rem 0 1.4rem 0!important;
-text-align: start;
-
+  color: var(--red);
+  margin: 2rem 0 1.4rem 0 !important;
+  text-align: start;
 }
 
 footer.camber-footer div.row div.footer-contact-us h6 {
-margin: 0.4rem 0 !important;
-font-weight: 600;
+  margin: 0.4rem 0 !important;
+  font-weight: 600;
 }
-
-
 
 footer.camber-footer div.row div.footer-contact-us div p {
   font-size: 16px;
   margin-right: 8rem;
   /* margin-bottom: 2rem; */
-
 }
 footer.camber-footer div.row div.footer-contact-us ul li :hover {
   color: var(--red);
 }
 
-footer.camber-footer div.row div.footer-contact-us ul li a {
-  /* padding: 0px 5px; */
-}
 footer.camber-footer div.row div.footer-contact-us ul li a .fas {
   font-size: 16px;
 }
 footer.camber-footer div.row div.footer-button a:hover {
   text-decoration: none;
-
 }
-
 
 .input-section {
   text-align: center;
@@ -338,9 +326,9 @@ footer.camber-footer div.row div.footer-button a:hover {
 footer.camber-footer div.row .heading {
   font-weight: 600;
   font-size: 21px;
-color: var(--red);
-margin: 2rem 0 1.4rem 0!important;
-text-align: start;
+  color: var(--red);
+  margin: 2rem 0 1.4rem 0 !important;
+  text-align: start;
 }
 .input-section input {
   display: block;
@@ -355,8 +343,6 @@ text-align: start;
 .input-section input::placeholder {
   color: var(--white);
 }
-
-
 
 footer.camber-footer div.row ul {
   list-style: none;
@@ -384,7 +370,6 @@ footer.camber-footer hr {
   border-top: 1px solid var(--red);
 }
 
-
 footer.camber-footer div.hr-below {
   margin: auto inherit;
 }
@@ -398,17 +383,14 @@ footer.camber-footer div.hr-below div.copyright {
 footer.camber-footer .brand-mark {
   text-align: right;
   padding: 0;
-
 }
 footer.camber-footer small span {
   font-size: 14px;
   color: var(--red);
-
 }
 
 footer.camber-footer small a {
   text-decoration: none;
-
 }
 @media only screen and (max-width: 840px) {
   .navbar {
@@ -480,7 +462,7 @@ footer.camber-footer small a {
   }
 
   .about-us-container {
-    margin: 0 ;
+    margin: 0;
     background-size: cover;
     height: auto;
     top: 0;
@@ -507,26 +489,25 @@ footer.camber-footer small a {
   .about-us-container .right-container {
     float: none;
     width: 100%;
-    padding: 1rem 0.5rem 1rem 1.5rem;
+    padding: 1rem 0.5rem 1rem 1.6rem;
     margin: 0;
   }
   .about-us-container .right-container img {
-    width: 92%;
+    width: 100%;
     /* margin-bottom: 10px; */
   }
 
   .col-md-4 {
     padding: 12px 50px;
   }
-  .content{
+  .content {
     padding: 24px 32px;
-
   }
   footer.camber-footer div.content div p {
     text-align: justify;
     font-size: 13px;
   }
-  footer.camber-footer div.row h6{
+  footer.camber-footer div.row h6 {
     font-size: 13px;
   }
   .footer-contact-us {
@@ -535,7 +516,7 @@ footer.camber-footer small a {
   .input-section {
     padding: 24px 32px;
   }
-  .input-section input{
+  .input-section input {
     width: 94% !important;
   }
   footer.camber-footer div.row div.footer-contact-us div p {
@@ -550,13 +531,11 @@ footer.camber-footer small a {
     margin-bottom: 0.3rem;
   }
   footer.camber-footer .brand-mark {
-    text-align: center!important;
-
+    text-align: center !important;
   }
 }
 
 @media only screen and (max-width: 1370px) and (min-width: 840px) {
-  
   .nav-link span {
     padding: 6px;
   }
@@ -565,7 +544,7 @@ footer.camber-footer small a {
   }
   footer.camber-footer div.row div.footer-contact-us div p {
     margin-right: 0rem;
-}
+  }
 }
 :root {
   --black: #000000;
