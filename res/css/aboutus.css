@@ -1,7 +1,10 @@
-@import url("https://fonts.googleapis.com/css?family=Montserrat:400,700,900&display=swap");
-@import url("https://fonts.googleapis.com/css?family=Montserrat:400,700,900&display=swap");
+@font-face {
+  font-family: roboto-regular;
+  src: url(../fonts/Roboto-Regular.ttf) format("truetype");
+}
+
 * {
-  font-family: "Montserrat";
+  font-family: roboto-regular;
   margin: 0;
   padding: 0;
 }
@@ -12,295 +15,20 @@ body {
   box-sizing: border-box;
   scroll-behavior: smooth;
 }
-
-.ml-mr-auto {
-  margin-left: auto;
-  margin-right: auto;
-}
-
-nav.navbar {
+section.aboutus-container {
   position: relative;
-  -webkit-box-shadow: 0 8px 6px -6px black;
-  box-shadow: 0 8px 6px -6px black;
-  background-color: white;
-  border-bottom-left-radius: 10px;
-  border-bottom-right-radius: 10px;
-}
-
-nav.navbar .kz-nav-blur {
-  position: absolute;
-  top: 0;
-  left: 0;
   width: 100%;
-  height: 100%;
-  z-index: -1;
-  background-color: whitesmoke;
-  -webkit-filter: blur(5px);
-  filter: blur(5px);
+  /* overflow: hidden; */
+}
+section.aboutus-container .row p,
+section.formulaStudent-container .row p {
+  margin-bottom: 0.1rem;
+  font-weight: 400;
+  font-size: 20px;
 }
 
-nav.navbar a.navbar-brand img {
-  width: 104px;
-  height: auto;
+@media only screen and (max-width: 840px) {
 }
-
-nav.navbar div ul.navbar-nav li.nav-item {
-  padding: 0px 8px;
+@media only screen and (max-width: 1370px) and (min-width: 840px) {
 }
-
-nav.navbar div ul.navbar-nav a.nav-link {
-  font-weight: 600;
-  position: relative;
-  transition: 0.2s ease;
-  -webkit-transition: 0.2s ease;
-}
-
-nav.navbar div ul.navbar-nav a.nav-link span {
-  position: relative;
-  padding: 4px 0px;
-  z-index: 2;
-}
-
-nav.navbar div ul.navbar-nav a.nav-link span::before {
-  content: "";
-  display: inline-block;
-  position: absolute;
-  width: 0;
-  height: 100%;
-  background-color: #2ab7ca;
-  opacity: 0.5;
-  z-index: 1;
-}
-
-nav.navbar div ul.navbar-nav a.nav-link:hover span::before {
-  content: "";
-  height: 100%;
-  display: inline-block;
-  width: 30%;
-  opacity: 0.5;
-  background-color: #2ab7ca;
-  transition: 0.2s ease;
-  -webkit-transition: 0.2s ease;
-  z-index: 1;
-}
-
-h2.camber-title {
-  font-size: 48px;
-  font-weight: 800;
-  text-align: center;
-  color: black;
-  margin: 30px auto;
-  -webkit-text-fill-color: white;
-  -webkit-text-stroke-width: 1px;
-  -webkit-text-stroke-color: black;
-}
-
-h2.camber-title span {
-  color: black;
-  -webkit-text-fill-color: black;
-}
-
-footer.camber-footer {
-  margin-top: 50px;
-  text-align: center;
-  padding: 20px;
-  padding-bottom: 0px;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(17, 17, 17, 0.801)), to(rgba(10, 10, 10, 0.966))), url("../img/cars/CR_X.jpg");
-  background-image: linear-gradient(to bottom, rgba(17, 17, 17, 0.801), rgba(10, 10, 10, 0.966)), url("../img/cars/CR_X.jpg");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  color: #ffffff;
-}
-
-footer.camber-footer hr {
-  border-top: 1px solid red;
-  margin: auto 100px;
-}
-
-footer.camber-footer div.row h5 {
-  font-weight: 800;
-  font-size: 32px;
-  color: transparent;
-  -webkit-text-fill-color: transparent;
-  -webkit-text-stroke-width: 1px;
-  -webkit-text-stroke-color: white;
-}
-
-footer.camber-footer div.row h5 span {
-  color: white;
-  -webkit-text-fill-color: white;
-  -webkit-text-stroke-width: 0px;
-}
-
-footer.camber-footer div.row h6 {
-  border-bottom: 1px solid red;
-  font-weight: 700;
-}
-
-footer.camber-footer div.row ul {
-  list-style: none;
-}
-
-footer.camber-footer div.row ul li {
-  color: white;
-  opacity: 0.8;
-}
-
-footer.camber-footer div.row ul li a {
-  text-decoration: none;
-  color: white;
-  font-size: 0.9rem;
-}
-
-footer.camber-footer div.row ul li a span:hover {
-  color: red;
-  border-bottom: 1px dashed red;
-}
-
-footer.camber-footer div.row div.footer-nav-links {
-  width: -webkit-fit-content;
-  width: -moz-fit-content;
-  width: fit-content;
-  text-align: left;
-}
-
-footer.camber-footer div.row div.footer-contact-us {
-  width: -webkit-fit-content;
-  width: -moz-fit-content;
-  width: fit-content;
-  text-align: right;
-}
-
-footer.camber-footer div.row div.footer-contact-us ul li a:hover i {
-  color: red;
-}
-
-footer.camber-footer div.row div.footer-contact-us ul li i {
-  padding: 0px 5px;
-}
-
-footer.camber-footer div.row div.footer-contact-us ul li i:hover {
-  color: red;
-}
-
-footer.camber-footer div.row div.social-media-icon {
-  text-align: right;
-  padding: 5px 0px;
-}
-
-footer.camber-footer div.row div.social-media-icon a {
-  text-decoration: none;
-  color: #ffffff;
-  padding: 5px;
-}
-
-footer.camber-footer div.row div.social-media-icon a i {
-  font-size: 24px;
-}
-
-footer.camber-footer div.row div.social-media-icon a i:hover {
-  color: red;
-}
-
-footer.camber-footer div.hr-below {
-  margin: auto 100px;
-}
-
-footer.camber-footer div.hr-below div.copyright {
-  text-align: left;
-}
-
-footer.camber-footer small span {
-  font-size: 14px;
-  color: red;
-}
-
-footer.camber-footer small a {
-  text-decoration: none;
-}
-
-@media (max-width: 576px) {
-  h2.camber-title {
-    font-size: 32px;
-  }
-
-  footer.camber-footer {
-    overflow: hidden;
-    padding: 5px;
-    padding-bottom: 0px;
-  }
-
-  footer.camber-footer hr {
-    margin: auto 10px;
-  }
-
-  footer.camber-footer div.row h5 {
-    font-weight: 700;
-    font-size: 28px;
-  }
-
-  footer.camber-footer div.footer-nav-links {
-    text-align: center !important;
-  }
-
-  footer.camber-footer div.footer-contact-us {
-    text-align: center !important;
-  }
-
-  footer.camber-footer div.footer-contact-us ul li i {
-    padding: 0px 2px;
-    font-size: 8px;
-  }
-
-  footer.camber-footer div.social-media-icon i {
-    font-size: 8px;
-  }
-
-  footer.camber-footer div.hr-below {
-    margin: auto 10px;
-  }
-
-  footer.camber-footer div.copyright {
-    width: -webkit-fit-content;
-    width: -moz-fit-content;
-    width: fit-content;
-  }
-
-  footer.camber-footer div.copyright small {
-    font-size: 9px;
-  }
-
-  footer.camber-footer div.social {
-    width: -webkit-fit-content;
-    width: -moz-fit-content;
-    width: fit-content;
-  }
-}
-section.aboutus {
-  margin-top: 100px;
-}
-
-section.aboutus div.aboutus-row div.aboutus-row-img img {
-  width: 80%;
-  height: auto;
-}
-
-section.contact-form div.contact-form-content #map {
-  width: 100%;
-  height: 100%;
-}
-
-@media (max-width: 576px) {
-  section.contact-form div.contact-form-content #map {
-    width: 100%;
-    height: 300px;
-  }
-
-  section.contact-form div.contact-form-content form {
-    padding: 10px 0px;
-  }
-}
-/*# sourceMappingURL=aboutus.css.map */
-
 /*# sourceMappingURL=aboutus.css.map */
