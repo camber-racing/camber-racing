@@ -2,6 +2,8 @@
   position: relative;
   width: 100%;
   overflow: hidden;
+  background-color: white;
+  margin: 0 auto;
 }
 .carousel-inner img {
   height: 728px;
@@ -13,15 +15,6 @@
   position: absolute;
   border-radius: 50%;
   height: 25%;
-}
-.carousel-item:after {
-  content: "";
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  background: rgba(0, 0, 0, 0.6);
 }
 
 .news-feed-container {
@@ -69,13 +62,13 @@
       rgba(0, 0, 0, 0.5)
     ),
     url(../img/cars/CR_X.jpg);
-  background-size: 100% 90%;
+  background-size: cover;
   height: 90vh;
   background-attachment: scroll;
   background-repeat: no-repeat;
-  position: relative;
+  position: center;
   text-align: center;
-  margin: 8px 0;
+  margin: 0px 0;
 }
 
 .about-us-container .left-container {
