@@ -4,6 +4,7 @@
   overflow: hidden;
   background-color: white;
   margin: 0 auto;
+  height: max-content;
 }
 .carousel-inner img {
   height: 728px;
@@ -19,7 +20,7 @@
 
 .news-feed-container {
   overflow-y: hidden;
-  margin: 8px 8%;
+  margin: 8px 4rem;
 }
 .jumbotron {
   margin: 0;
@@ -57,70 +58,46 @@
 }
 .about-us-container {
   background-image: linear-gradient(
-      to right bottom,
+      to top,
       rgba(0, 0, 0, 0.2),
       rgba(0, 0, 0, 0.5)
     ),
     url(../img/cars/CR_X.jpg);
   background-size: cover;
+  display: flex;
   height: 90vh;
   background-attachment: scroll;
   background-repeat: no-repeat;
   position: center;
   text-align: center;
-  margin: 0px 0;
-}
-
-.about-us-container .left-container {
-  float: left;
-  position: relative;
-  /* text-align: right; */
-  text-align: justify;
-  width: 50%;
-  height: 100%;
-  margin-top: 10px;
-  padding-left: 20%;
-  padding-top: 8%;
-}
-
-.about-us-container .right-container {
-  float: right;
-  text-align: justify;
-  width: 50%;
-  height: 100%;
-  margin-top: 30px;
-  padding: 8% 8% 0 4%;
-}
-
-.about-us-container .right-container img {
-  width: 438px;
-}
-
-.about-us-container .left-container h2.camber-heading {
-  padding: 0 15px;
-  font-size: 40px;
-  font-weight: 600;
-  text-align: start;
+  align-items: center;
   color: var(--white);
-  margin: 30px 0;
+  padding: 8rem;
+}
+
+.left-container {
+  text-align: start;
+  width: 50%;
+}
+
+.right-container {
+  /* max-width: 20px; */
+  text-align: center;
+  position: relative;
+  width: 50%;
+}
+
+.right-container img {
+  width: 75%;
+  max-width: 95%;
 }
 
 .about-us-container .left-container h2.camber-heading span {
   color: var(--red);
 }
 
-.about-us-container .left-container p {
-  height: 50%;
-  padding: 0 15px;
-  font-size: 21px;
-  font-weight: 500;
-  text-align: start;
-  color: white;
-  margin: 30px 0;
-}
-
 h2.social-media {
-  padding: 0 15px;
+  padding: 0 4rem;
   font-size: 40px;
   font-weight: 600;
   text-align: center;
@@ -135,7 +112,28 @@ h2.social-media span {
   padding: 0;
 }
 
-@media only screen and (max-width: 840px) {
+@media only screen and (max-width: 1366px) and (min-width: 1024px) {
+  .left-container {
+    text-align: start;
+    padding: 0rem;
+    margin: 0;
+    /* width: 50%; */
+  }
+
+  .right-container {
+    /* max-width: 20px; */
+    text-align: center;
+    position: relative;
+    width: 100%;
+  }
+
+  .right-container img {
+    width: 100%;
+    max-width: 75%;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
   .carousel-inner img {
     height: 244px;
   }
@@ -162,58 +160,29 @@ h2.social-media span {
     margin: 24px 0;
     font-size: 24px;
   }
-
   .news-option {
     margin: 0;
     padding: 0;
   }
 
   .about-us-container {
-    margin: 0;
-    background-size: cover;
-    height: auto;
-    top: 0;
+    display: flex;
+    flex-flow: column;
+    padding: 1rem;
+    width: 100%;
+  }
+  .left-container {
+    text-align: start;
+    width: 100%;
+  }
+
+  .right-container {
+    text-align: center;
     position: relative;
-    left: 0;
-    transform: none;
+    width: 100%;
   }
 
-  .about-us-container .left-container {
+  .right-container img {
     width: 100%;
-    position: relative;
-    float: none;
-    left: 0;
-    transform: none;
-    margin: 0;
-    padding: 16px;
-  }
-  .about-us-container h2.camber-heading {
-    margin: 4px 0;
-  }
-  .about-us-container .left-container p {
-    margin: 4px 0;
-  }
-  .about-us-container .right-container {
-    float: none;
-    width: 100%;
-    padding: 1rem 0.5rem 1rem 1.6rem;
-    margin: 0;
-  }
-  .about-us-container .right-container img {
-    width: 100%;
-    /* margin-bottom: 10px; */
-  }
-
-  .col-md-4 {
-    padding: 12px 50px;
-  }
-  .content {
-    padding: 24px 32px;
-  }
-}
-
-@media only screen and (max-width: 1370px) and (min-width: 840px) {
-  .about-us-container .right-container img {
-    width: 342px;
   }
 }
