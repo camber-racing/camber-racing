@@ -1,4 +1,4 @@
-const header = `<nav class="navbar navbar-expand-lg navbar-light">
+const header = `<nav class="navbar navbar-expand-md navbar-light">
     <a class="navbar-brand" href="#" id="navbar-brand">
       <img src="res/img/logos/logo-without-bg.png"
         id="navbar-brand-img" />

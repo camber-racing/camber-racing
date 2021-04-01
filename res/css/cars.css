@@ -26,26 +26,39 @@ section.cars-container .landing-heading {
 
 .cars {
   padding: 2rem 4rem;
-  /* display: grid;
-  gap: 4rem;
-  grid-template-columns: repeat(2, 1fr);
-  grid-auto-flow: dense; */
   display: flex;
-  /* flex-flow: row-reverse; */
 }
 
 .cars img {
   display: block;
   object-fit: scale-down;
+  object-position: top;
   width: 45rem;
   max-width: 50vw;
-  height: 40rem;
-  margin: auto;
+  max-height: max-content;
+  height: 30rem;
+  margin: 0 auto;
+  top: 0;
+}
+
+.even img {
+  padding: 0 3rem 0 0;
+}
+.odd img {
   padding: 0 3rem 0 3rem;
 }
 
 .cars li {
-  padding: auto;
+  padding: 0 0 0 1rem;
+}
+
+.cars h3 {
+  padding: 0;
+  margin: 1rem 0 0 0;
+}
+
+.cars div {
+  max-height: max-content;
 }
 
 .column1 {
@@ -55,11 +68,9 @@ section.cars-container .landing-heading {
   grid-column: 2;
 }
 
-.myBorder {
-  border-bottom: rgba(0, 0, 0, 0.2) solid 5px;
-}
 .even {
   flex-flow: row-reverse;
+  background-color: #f0f0f0;
 }
 .odd {
   flex-flow: row;
@@ -67,7 +78,9 @@ section.cars-container .landing-heading {
 
 @media only screen and (max-width: 1024px) {
   section.cars-container .landing-heading {
-    margin: 4.6rem 0 0 0;
+    margin: 5rem auto 0;
+    padding: 0;
+    width: max-content;
   }
 
   .cars {
@@ -75,15 +88,20 @@ section.cars-container .landing-heading {
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
-    padding: 2rem;
+    padding: 1rem 0;
+  }
+  .cars p {
+    padding: 1rem;
   }
   .cars img {
-    /* display: block; */
+    display: block;
     object-fit: scale-down;
-    width: 20rem;
-    max-width: 100%;
-    height: 10rem;
+    max-width: 90vw;
+    max-height: 10rem;
     margin: 0;
-    padding: 0;
+    padding: 0.25rem 0 0;
+  }
+  .cars li {
+    padding: 0 0 0 0.75rem;
   }
 }

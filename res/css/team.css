@@ -27,7 +27,7 @@ nav {
   grid-template-columns: repeat(3, 1fr);
   gap: 1rem;
   padding: 6rem;
-  max-width: 75%;
+  max-width: 75vw;
   margin: 0 auto;
 }
 
@@ -73,8 +73,9 @@ nav {
   .current-team {
     grid-template-columns: repeat(2, 1fr);
     gap: 1rem;
-    padding: 0rem;
-    max-width: 75%;
+    padding: 0 0 0 1rem;
+    /* width: 100%; */
+    max-width: 100%;
     margin: 0 auto;
   }
 
@@ -104,5 +105,11 @@ nav {
     height: 10rem;
     border: solid rgba(0, 0, 0, 0.4) 2px;
     margin: 0.5rem auto;
+  }
+  .current-team .position {
+    margin: 0 0 0 0;
+    font-size: 0.75rem;
+    padding-right: 0rem;
+    text-overflow: clip;
   }
 }
