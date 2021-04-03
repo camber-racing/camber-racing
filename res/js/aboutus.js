@@ -1,70 +1,72 @@
-let staticChart = document.getElementById("staticChart").getContext("2d");
-let staticChartLabels = ["Presentation", "Design", "Cost Analysis"];
-let staticColorHex = ["#FC4D00", "#FF6420", "#FF7D44"];
+const staticChart = document.getElementById("staticChart").getContext("2d");
+const staticChartLabels = ["Presentation", "Design", "Cost Analysis"];
+const staticColorHex = ["#FC4D00", "#FF6420", "#FF7D44"];
 
-let dynamicChart = document.getElementById("dynamicChart").getContext("2d");
-let dynamicChartLabels = [
+const dynamicChart = document.getElementById("dynamicChart").getContext("2d");
+dynamicChartLabels = [
   "Acceleration",
   "Skin-pad",
   "Autocross",
   "Efficiency",
   "Endurance",
 ];
-let dynamicColorHex = ["#4D00FF", "#9900FF", "#E500FF", "#FF00CC", "#FF0080"];
+const dynamicColorHex = ["#4D00FF", "#9900FF", "#E500FF", "#FF00CC", "#FF0080"];
 
-let myChart = new Chart(staticChart, {
+const myChart = new Chart(staticChart, {
   type: "doughnut",
   data: {
+    labels: staticChartLabels,
     datasets: [
       {
-        data: [75, 150, 100],
         backgroundColor: staticColorHex,
+        data: [75, 150, 100],
+        radius: "75%",
       },
     ],
-    labels: staticChartLabels,
   },
   options: {
     responsive: true,
-    hover: {
-      mode: null,
+    plugins: {
+      legend: {
+        display: true,
+        position: "right",
+        labels: {
+          font: {
+            size: 16,
+          },
+        },
+      },
     },
-    legend: {
-      display: true,
-      position: "right",
-
-      labels: {
-        fontSize: 20,
-        fontColor: "#000000",
-      }
-    }
-
   },
 });
 
-let piechart = new Chart(dynamicChart, {
+const dChart = new Chart(dynamicChart, {
   type: "pie",
   data: {
+    labels: dynamicChartLabels,
     datasets: [
       {
-        data: [75, 50, 150, 100, 300],
         backgroundColor: dynamicColorHex,
+        data: [75, 50, 150, 100, 300],
+        radius: "75%",
+        hoverOffset: 10,
+        offest: 40,
       },
     ],
-    labels: dynamicChartLabels,
   },
   options: {
     responsive: true,
-    hover: {
-      mode: null,
-    },
-    legend: {
-      display: true,
-      position: "right",
-
-      labels: {
-        fontSize: 20,
-        fontColor: "#000000",
-      }
+    scales: {},
+    plugins: {
+      legend: {
+        display: true,
+        position: "right",
+        labels: {
+          font: {
+            size: 16,
+          },
+        },
+      },
     },
   },
 });
