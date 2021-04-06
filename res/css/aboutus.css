@@ -43,12 +43,15 @@ img {
   text-decoration: underline;
 }
 
-canvas {
+.formula-student-img {
   max-width: 80vw;
-  height: max-content;
+  /* height: 30rem; */
+  max-height: min-content;
   object-fit: contain;
-  padding: 0 3rem 0 0;
+  padding: 0rem 3rem;
+  width: 37vw;
 }
+
 @media only screen and (max-width: 1366px) and (min-width: 1024px) {
 }
 
@@ -60,7 +63,7 @@ canvas {
     align-items: center;
     padding: 0rem 0rem;
   }
-  .formula-student-img,
+
   .about-us-text,
   .formula-student-text,
   .about-us-img {
@@ -73,5 +76,17 @@ canvas {
     max-height: 20rem;
     object-fit: scale-down;
     object-position: 50% 60%;
+  }
+  canvas {
+    height: max-content;
+    object-fit: contain;
+    padding: 0 0rem 0 0;
+    width: 100%;
+  }
+  .formula-student-img {
+    width: 100vw;
+    padding: 0rem;
+    align-self: center;
+    margin: 0rem;
   }
 }
