@@ -1,3 +1,7 @@
+const queryString = window.location.search;
+const urlParams = new URLSearchParams(queryString);
+const car = urlParams.get("car");
+
 const CR800 = {
   name: `CR800`,
   year: `2010`,

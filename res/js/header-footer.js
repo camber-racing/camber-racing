@@ -19,8 +19,13 @@ const header = `<nav class="navbar navbar-expand-md navbar-light">
         <li class="nav-item">
           <a class="nav-link" href="index.html"><span>Partners</span></a>
         </li>
-        <li class="nav-item">
-          <a class="nav-link" href="cars.html"><span>The Paddock</span></a>
+        <li class="nav-item dropdown show" >
+          <a class="nav-link dropdown-toggle" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span>The Paddock</span></a>
+          <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+            <a class="dropdown-item" href="cars.html?car=CR800">Action</a>
+            <a class="dropdown-item" href="#">Another action</a>
+            <a class="dropdown-item" href="#">Something else here</a>
+           </div>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="team.html"><span>Our Team</span></a>

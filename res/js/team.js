@@ -1,9 +1,313 @@
-const nav = document.querySelector(".nav");
-const currentTeamEle = document.querySelector(".current-team");
+const years = [
+  2021,
+  2020,
+  2019,
+  2018,
+  2017,
+  2016,
+  2015,
+  2014,
+  2013,
+  2012,
+  2011,
+];
 
-currentTeamEle.classList.add("current-team");
+const _2011 = [
+  [`Pushkar Venkat Narayan`, `Team Captain`],
+  [`Tarun Kumar Tripathy`, `Corporate Director`],
+  [`Karthik Mohan`, `Technical Director`],
+  [`Ajay Kumar Singh`, `Powertrain`],
+  [`Akshay Jain`, `Suspension `],
+  [`Aniket Kumar`, `Electrical & Electronics `],
+  [`Baibhab Guru`, `Electrical & Electronics `],
+  [`Preetham Reddy`, `Suspension `],
+  [`Anupam Chakraborty`, `Suspension`],
+  [`Akhilesh Krishnan`, `Brakes `],
+  [`Anand Kumar`, `Brakes/ Driver`],
+  [`Rishabh Dugar`, `Aerodynamics/ Body `],
+  [`Prakanshu Bajpai`, `Chassis `],
+  [`Sudha Ramaswamy`, `Suspension `],
+  [`Ansh Verma`, `Chassis`],
+  [`Archisman Sen`, `Accounts/ Driver`],
+  [`Abhilash Raghunathan`, `Body/ Driver`],
+  [`Mahesh Ramachandran`, `Electrical & Electronics `],
+  [`Rashmi Sharma`, `Electrical & Electronics `],
+  [`Avinash Karthik`, `Fabrication `],
+  [`Sandeep Ganesh`, `Fabrication `],
+  [`Raj Lalwani`, `Fabrication `],
+  [`Kaushik Ramji`, `Fabrication `],
+  [`Poojith Raj Kalluru`, `Fabrication `],
+];
 
-const currentTeam = [
+const _2012 = [
+  [`Preetham Reddy`, `Team Captain`],
+  [`Akhilesh Krishnan`, `Corporate Director`],
+  [`Rishabh Dugar`, `Brand Manager`],
+  [`Anand Kumar`, `Fabrication Head and Technical Incharge`],
+  [`Avinash Karthik`, `Steering Incharge`],
+  [`Ramji Kaushik`, `Chassis Department and Sourcing`],
+  [`Raj Lalwani`, `Designer and Drafter`],
+  [`Arka Chattaraj`, `Engines and Inventory Management`],
+  [`Aman Singh Kakar`, `Suspension Department and Fabricator`],
+  [`Shreyas Sansuddi`, `Chassis Department Member`],
+  [`Roshni Francis`, `Steering Department Member `],
+  [`Poojith Raj`, `Component Sourcing and Fabricator`],
+  [`Phani Chebiyyam`, `Chassis Department Member`],
+  [`Aditya Makineni`, `Suspension Department and Fabricator`],
+  [`Shailee Upadhyay`, `Suspension Department and Fabricator`],
+  [`Rupam Shrivastava`, `Chassis Department Member`],
+  [`Harshin Lalpet`, `Material Procurement and Fabricator`],
+  [`Vrushti Modi`, `Electrical Department`],
+  [`Abhinav Kumar`, `Steering Department Member `],
+  [`Ratna Mitheysh`, `Suspension Department and Fabricator`],
+  [`Rahul Kumar Singh`, `Brakes Department and Fabricator`],
+  [`Shaleen Bahadur`, `Brakes Department and Fabricator`],
+  [`Shubham Sharma`, `Fabricator`],
+  [`Shidhartha De`, `Driver`],
+  [`Vishnu Prasad`, `Driver`],
+];
+
+const _2013 = [
+  [`Phani Chebiyyam`, `Team Captain| Chassis Lead`],
+  [`Aditya Makineni`, `Technical Director | Vehicle Dynamics Lead`],
+  [`Aman Singh Kakar`, `Vehicle Dynamics Engineer`],
+  [`Shailee Upadhyay`, `Vehicle Dynamics Engineer`],
+  [`Roshni Francis`, `Electronics Lead`],
+  [`Shreyas Sansuddi`, `Chassis Lead`],
+  [`Rahul Kumar Singh`, `Brakes Lead`],
+  [`Ratna Mitheysh`, `Vice Captain | Vehicle Dynamics Engineer`],
+  [`Abhinav Kumar`, `Steering Lead | Accounts`],
+  [`Shidhartha De`, `Powertrain Engineer`],
+  [`Harshin Lalpet`, `Chassis & Composites Engineer`],
+  [`Murtaza Khambaty`, `Powertrain Engineer`],
+  [`Rishi Raj Singh`, `Corporate & Marketing Associate`],
+  [`Pavan Teja`, `Suspension Engineer`],
+  [`Vishwaprashanth Kumar`, `Electronics Engineer`],
+  [`Murali Krishnan`, `Powertrain Engineer`],
+  [`Bharath Iyer`, `Corporate & Marketing Associate`],
+  [`Anshul Chaudhry`, `Steering & CAD Engineer`],
+  [`Eeshaan Geel`, `Chassis & CAD Engineer`],
+  [`Pritish Panda`, `Brakes Engineer`],
+  [`Aditya Trivedi`, `Powertrain Engineer`],
+  [`Aman Munjal`, `Electronics Engineer`],
+  [`Gautham K Ram`, `Suspension Engineer`],
+  [`Nilai Suresh`, `Suspension Engineer`],
+  [`Abhishek Kumar `, `Chassis & CAD Engineer`],
+  ,
+];
+
+const _2014 = [
+  [`Ratna Mitheysh`, `Suspension Lead`],
+  [`Abhinav Kumar`, `Steering Lead`],
+  [`Rishi Raj Singh`, `Corporate Director`],
+  [`Rahul Kumar Singh`, `Brakes & Wheel Assembly Lead`],
+  [`Harshin Lalpet`, `Chassis`],
+  [`Murtaza Khambaty`, `Powertrain Lead`],
+  [`Shidhartha De`, `Powertrain Lead `],
+  [`Murali Krishnan`, `Powertrain Engineer`],
+  [`Aditya Trivedi`, `Powertrain Engineer`],
+  [`Vishwaprashanth Kumar`, `Electronics Engineer`],
+  [`Aman Munjal`, `Electronics Engineer`],
+  [`Eeshaan Geel`, `Chassis & CAD Engineer`],
+  [`Abhishek Kumar`, `Chassis & CAD Engineer`],
+  [`Pritish Panda`, `Brakes Engineer`],
+  [`Anshul Chaudhry`, `Steering & CAD Engineer`],
+  [`Gautham K Ram`, `Suspension Engineer`],
+  [`Nilai Suresh`, `Suspension Engineer`],
+  [`Pavan Teja`, `"Suspension Engineer`],
+  [`Bharath Iyer`, `Corporate & Marketing Associate`],
+];
+
+const _2015 = [
+  [`PRASHANTH KUMAR`, `Captain And Electronics Lead`],
+  [`ANSHUL CHAUDHARY`, `Project Manager/Steering And Aero Lead`],
+  [`PRITISH PANDA,`, `Brakes Lead`],
+  [`GAUTHAM K RAM`, `Suspension Lead`],
+  [`NILAI SURESH`, `Driver And Suspension Lead`],
+  [`EESHAAN GEEL`, `Wheel Assembly Lead`],
+  [`ABHISHEK KUMAR`, `Chassis Lead`],
+  [`MURALI KRISHNAN`, `Drivetrain Lead`],
+  [`ADITYA TRIVEDI`, `Powertrain Lead`],
+  [`SALMAN SIDDIQUI`, `Powertrain Engineer`],
+  [`BVN MADHU`, `Suspension Engineer`],
+  [`SHIVAM BHATIA`, `Suspension Engineer`],
+  [`KAUSTABH RO`, `Wheel Assembly Engineer`],
+  [`AARADHYA NAGA`, `Senior Corporate Executive`],
+  [`VAIBHAV KOTNALA`, `Steering Engineer`],
+  [`VAIBHAV LALWANI`, `Drivetrain Engineer`],
+  [`ROHAN DAT`, `Chassis Engineer`],
+  [`RONI AYAN DE`, `Suspension Engineer`],
+  [`ANIL KUMAR CHAVAL`, `Powertrain Engineer`],
+  [`AKBAR ALI BAI`, `Brakes Engineer`],
+];
+
+const _2016 = [
+  [`BVN Madhu`, `Team Captain `],
+  [`Kaustabh Roy`, `Project Manager`],
+  [`Aaradhya Nagar`, `Corporate Director`],
+  [`Shivam Bhatia`, `Technical Director`],
+  [`Salman Siddiqui`, `Technical Director`],
+  [`Rohan Date`, `Chassis Lead`],
+  [`Vaibhav Kotnala `, `Steering Lead`],
+  [`Vaibhav Lalwani `, `Drivetrain Lead`],
+  [`Ronak Hemani `, `Vehicle Dynamics Engineer`],
+  [`Divyansh Tyagi `, `Vehicle Dynamics Engineer`],
+  [`Roni Ayan Deb `, `Vehicle Dynamics Engineer`],
+  [`Anil Kumar `, `Powertrain Engineer`],
+  [`Akbar Ali Baig `, `Brakes/ Aerodynamics Engineer`],
+  [`Uday Leekha `, `Brakes Engineer`],
+  [`Rahul Jaiswal `, `Drivetrain Engineer`],
+  [`Akhil Linga `, `Powertrain Engineer`],
+  [`V.V. Praveen `, `Powertrain Engineer`],
+  [`Deepak Reddy `, `Electrical Engineer`],
+  [`Pradeep Kumar `, `Vehicle Dynamics Engineer`],
+  [`Tarun Kumar `, `Drivetrain Engineer`],
+  [`Atharva Kadam `, `Chassis Engineer`],
+  [`Saiduth Ramesh `, `Powertrain/ Aerodynamics Engineer`],
+  [`Priyanth Kumar`, `Electrical Engineer`],
+  [`Sai Santosh `, `Electrical Engineer`],
+  [`Chirag Samdaria `, `Corporate Associate`],
+];
+
+const _2017 = [
+  [`Anil Kumar `, `Team Captain `],
+  [`Ronak Hemani `, `Project Manager`],
+  [`Akhil Linga`, `Chief Powertrain Engineer`],
+  [`Roni Ayan Deb`, `Chief Vehicle Dynamics Engineer`],
+  [`Rahul Jaiswal`, `Vehicle Testing Lead`],
+  [`Divyansh tyagi`, `Cost Report Lead`],
+  [`Akbar Ali Baig`, `Business Plan Lead`],
+  [`PRADEEP KUMAR`, `Manufacturing Lead  VD `],
+  [`VV PRAVEEN`, `Manufacturing Lead  Powertrain `],
+  [`MRIGANKA KUMAR`, `Sponsorship Manager`],
+  [`UDAY LEEKHA`, `Inventory And Pits Control Manager`],
+  [`DEEPAK REDDY`, `Logistics`],
+  [`KRISHNA BHARGAV`, `Website And App Devoloper`],
+  [`ADITYA CHACKO ABRAHAM`, `Content Management Associate`],
+  [`ADYASHA NANDA`, `Business Plan Associate`],
+  [`AKSHAY KUMAR`, `Transmissions System`],
+  [`ANIRUDH CHUNDAWAT`, `Pit Design And Fab Bay Maintanence`],
+  [`ATHARVA KADAM`, `Frame`],
+  [`DHRUV MEHTA`, `Engine Electronics`],
+  // [`Arunav Borah`, ``],
+  [`GOPAL KRISHNA DWIVEDI`, `Intake`],
+  [`HARSHIT GAMBHIR`, `Driver Console`],
+  [`JUNAID SINGH`, `"Ride And Roll Rate`],
+  [`KSHITIJ SONI`, `Steering Systems`],
+  [`KUNAL KAKKAR`, `Wheel Assembly`],
+  [`MOBASHIR AFZAL`, `Fab Bay Maintanence`],
+  [`NAVNEET KUMAR`, `Vehicle Part Testing`],
+  [`PRANEET AYYAGARI`, `Branding And Publicity Associate`],
+  [`SAIDUTH RAMESH`, `Aero Pack Design`],
+  [`SHAWN SIMEON`, `Media`],
+  [`SHREYA MANGLAM`, `Pit Design And Fab Bay Maintanence`],
+  [`VARUN JAIN`, `DAQ  Vehicle Testing `],
+];
+
+const _2018 = [
+  [`SAIDUTH RAMESH`, `TEAM CAPTAIN`],
+  [`ATHARVA KADAM`, `PROJECT MANAGER & COST REPORT LEAD`],
+  [`ADYASHA NANDA`, `CORPORATE DIRECTOR & BUISNESS PLAN LEAD`],
+  [`KSHITIJ SONI`, `CHIEF VEHICLE DYNAMICS ENGINEER`],
+  [`AKSHAY KUMAR`, `CHIEF POWERTRAIN ENGINEER`],
+  [`DHRUV MEHTA`, `ELECTRICAL & ELECTRONICS LEAD`],
+  [`PRANEET AYYAGARI`, `FINANCE MANAGER`],
+  [`GOPAL DWIVEDI`, `MANUFACTURING LEAD`],
+  [`ANIRUDH REDDY`, `DRIVER TRAINING LEAD`],
+  [`HARSHIT GAMBHIR`, `ELECTRICAL & DRIVERLESS LEAD`],
+  [`VARUN JAIN`, `CHIEF VEHICLE TESTING ENGINEER`],
+  [`ARUNAV BOHRA`, `CFD LEAD`],
+  [`KUNAL KAKKAR`, `WHEEL ASSEMBLY`],
+  [`JUNAID SINGH`, `TIRES & RIDE & ROLL RATE`],
+  [`K. GAUTAM`, `KINEMATICS`],
+  [`PRADYUMN PANDEY`, `FRAME AND ERGONOMICS`],
+  [`ANKUR SINGH`, `R & R RATE & VEHICLE PART TESTING`],
+  [`S. ARAVIND`, `BRAKES & VEHICLE PART TESTING`],
+  [`KUNAL PANDEY`, `BRAKES`],
+  [`DARPAN YADAV`, `STEERING & TIRES`],
+  [`VINITH KISHAN`, `AERO DESIGN`],
+  [`APARAJITO GANGULI`, `COMPOSITES`],
+  [`YOHANN BHUMGARA`, `COMPOSITES`],
+  [`AMAN MAHESHWARI`, `COOLING SYSTEM`],
+  [`SHIKHAR SEHGAL`, `INTAKE`],
+  [`ABHISHEK NANDA`, `EXHAUST`],
+  [`KANWARPAL SINGH`, `ENGINE MODS & CONTROL SYSTEM`],
+  [`ABHINAV ROY`, `ENGINE ELECTRONICS`],
+  [`MD FAHIM`, `TRANSMISSION`],
+  [`ADITYA ABRAHAM`, `SENIOR CORPORATE EXCECUTIVE`],
+  [`AROMAL JACOB`, `CORPORATE EXCECUTIVE`],
+  [`SAI KIRAN`, `MEDIA EXCECUTIVE`],
+  [`VISHNU RAJEEV`, `CORPORATE EXCECUTIVE`],
+  [`KARTHIK GANESH`, `CORPORATE EXCECUTIVE`],
+  [`AMBARISH PRADEEP`, `C.F.D.`],
+  [`HRISHAV PAUL`, `MACHINING CODER`],
+  [`APARAJITA SINGH`, `DRIVERLESS`],
+  [`PRAKHAR DIXIT`, `DRIVERLESS`],
+];
+
+const _2019 = [
+  [`Kunal Kakkar`, `Team Captain`],
+  [`Aman Maheshwari`, `Project Manager`],
+  [`Junaid Singh`, `Corporate Director`],
+  [`Ankur Singh`, `Technical Director -VD`],
+  [`Abhishek Nanda`, `Technical Director - Powertrain`],
+  [`Md Fahim`, `Media & PR Lead`],
+  [`Kanwarpal Singh Sekhon`, `Research & Development Lead`],
+  [`Aravind S`, `Vehicle Testing Lead`],
+  [`Darpan Yadav`, `Manufacturing Lead`],
+  [`Pradyumn Pandey`, `Finance Manager `],
+  [`Tenzin`, `Driverless Lead`],
+  [`Aparajito Ganguli `, `Powertrain Engineer - Intake System`],
+  [`Sourav Pattnaik`, `Powertrain Engineer - Cooling System`],
+  [`Harshmeet Singh`, `Powertrain Engineer - Exhaust System`],
+  [`Harvinder Singh`, `Powertrain Engineer - Engine Tuning & Mods`],
+  [`Gautam Kavuri`, `Vehicle Dynamicist - Suspension`],
+  [`Satvik Vatsa`, `Vehicle Dynamicist - Wheel Assembly`],
+  [`Sparsh Agarwal`, `Vehicle Dynamicist - Suspension`],
+  [`Ayush Singh`, `Vehicle Dynamicist - Chassis`],
+  [`Yohann Bhumgara`, `Vehicle Dynamicist - Composites & Manufacturing`],
+  [`Ambarish Pradeep`, `Vehicle Dynamicist - Aerodynamics `],
+  [`Abhinav Roy`, `Electrical & Electronics Engineer`],
+  [`Prasannjeet Singh`, `Corporate Executive`],
+  [`Bishal Sikdar`, `Corporate Executive`],
+  [`Kshitij Singh`, `Vehicle Dynamics Associate - Chassis`],
+  [`Rituraj Das`, `Poertrain Associate - Engine Mods`],
+  [`Saliq Shah`, `Powertain Associate - Engine mods`],
+  [`Ankit Kumar Sahu`, `Vehicle Dynamics Associate - Aerodynamics`],
+  [`Subodh Dangi`, `Vehicle Dynamics Associate - Suspension`],
+  [`Sudha Sindhuja Nayani`, `Corporate Executive`],
+  [`Suresh kumar`, `Vehicle Dynamics Associate - Brakes`],
+  [`Udit Mini`, `Electrical & Electronics Associate`],
+  [`Shashwat Geel`, `Vehicle Dynamics Associate - Steering`],
+  ,
+];
+
+const _2020 = [
+  [`Gautam Kavuri`, `Team Captain`],
+  [`Abhinav Roy`, `Project Manager/ Electrical Lead`],
+  [`Aparajito Ganguly`, `Corporate Lead`],
+  [`Yohann Bhumgara`, `R&D and Testing Lead`],
+  [`Sourav Pattnaik`, `Technical Director`],
+  [`Ambarish Pradeep`, `Aerodynamics Lead`],
+  [`Harshmeet Singh`, `Manufacturing Lead`],
+  [`Harvinder Singh`, `Finance Director`],
+  [`Kshitij Singh`, `Vehicle Dynamicist - Chassis`],
+  [`Shashwat Geel`, `Vehicle Dynamicist - Steering`],
+  [`Subodh Dangi `, `Vehicle Dynamicist - Suspension`],
+  [`Suresh Kumar`, `Vehicle Dynamicist - Brakes`],
+  [`Saliq Shamim Shah`, `Powertrain Engineer - Intake`],
+  [`Bishal Sikdar `, `Corporate Executive`],
+  [`Sudha Sindhuja Nayani`, `Corporate Executive`],
+  [`Aditya Agrawal`, `Vehicle Dynamics Associate - Aerodynamics`],
+  [`Rasesh Lagdev`, `Composites Associate`],
+  [`Abraham K Mathew`, `Powertrain Associate - Intake`],
+  [`Hariesh Sekar`, `Electrical and Electronics Associate`],
+  [`Mohit Galani`, `Powertrain Associate - Cooling System`],
+  [`Pranjal Saxena`, `Powertrain Associate - Drivetrain`],
+  [`Jayaditya Reddy J`, `Vehicle Dynamics Associate - Steering`],
+];
+
+const _2021 = [
   [`Kshitij Singh`, `Captain/Chassis Lead`],
   [`Subodh Dangi `, `Project Manager/Suspension Lead`],
   [`Shashwat Geel`, `Techinal Lead - Vehicle Dynamics/Steering Lead`],
@@ -30,357 +334,8 @@ const currentTeam = [
   [`Harin Bhatt`, `Manufacturing`],
 ];
 
-const years = [
-  2011,
-  2012,
-  2013,
-  2014,
-  2015,
-  2016,
-  2017,
-  2018,
-  2019,
-  2020,
-  2021,
-];
-
-const _2011 = [
-  `/res/img/Team-Camber/team2011/abhilash%20raghunathan.jpg`,
-  `/res/img/Team-Camber/team2011/ajay%20singh.jpg`,
-  `/res/img/Team-Camber/team2011/akhilesh%20krishnan.jpg`,
-  `/res/img/Team-Camber/team2011/akshay%20jain.jpg`,
-  `/res/img/Team-Camber/team2011/anand%20kumar.jpg`,
-  `/res/img/Team-Camber/team2011/aniket%20kumar.jpg`,
-  `/res/img/Team-Camber/team2011/ansh%20verma.jpg`,
-  `/res/img/Team-Camber/team2011/anupam%20chakraborty.jpg`,
-  `/res/img/Team-Camber/team2011/archisman.jpg`,
-  `/res/img/Team-Camber/team2011/avinash%20karthik.jpg`,
-  `/res/img/Team-Camber/team2011/baibhab%20guru.jpg`,
-  `/res/img/Team-Camber/team2011/karthik.jpg`,
-  `/res/img/Team-Camber/team2011/kartik%20mohan.jpg`,
-  `/res/img/Team-Camber/team2011/kaushik%20ramji.jpg`,
-  `/res/img/Team-Camber/team2011/mahesh%20ramchandran.jpg`,
-  `/res/img/Team-Camber/team2011/poojith%20raj.jpg`,
-  `/res/img/Team-Camber/team2011/prakanshu%20bajpai.jpg`,
-  `/res/img/Team-Camber/team2011/pritham%20reddy.jpg`,
-  `/res/img/Team-Camber/team2011/pushkar%20venkat.jpg`,
-  `/res/img/Team-Camber/team2011/raj%20lalwani.jpg`,
-  `/res/img/Team-Camber/team2011/rashmi%20sharma.jpg`,
-  `/res/img/Team-Camber/team2011/rishabh%20dugar.jpg`,
-  `/res/img/Team-Camber/team2011/sandeep%20ganesh.jpg`,
-  `/res/img/Team-Camber/team2011/sriram.jpg`,
-  `/res/img/Team-Camber/team2011/sudha%20ramaswamy.jpg`,
-  `/res/img/Team-Camber/team2011/tarun%20tripathy.jpg`,
-];
-
-const _2012 = [
-  `/res/img/Team-Camber/team2012/abhinav%20kumar.jpg`,
-  `/res/img/Team-Camber/team2012/aditya%20mekineni.jpg`,
-  `/res/img/Team-Camber/team2012/akhilesh%20krishnan.jpg`,
-  `/res/img/Team-Camber/team2012/aman%20singh.jpg`,
-  `/res/img/Team-Camber/team2012/anand%20kumar.jpg`,
-  `/res/img/Team-Camber/team2012/arka%20chattaraj.jpg`,
-  `/res/img/Team-Camber/team2012/avinash%20karthik.jpg`,
-  `/res/img/Team-Camber/team2012/harshin%20lalpet.jpg`,
-  `/res/img/Team-Camber/team2012/kaushik%20ramji.jpg`,
-  `/res/img/Team-Camber/team2012/phani%20chebiyyam.jpg`,
-  `/res/img/Team-Camber/team2012/poojith%20kallaru.jpg`,
-  `/res/img/Team-Camber/team2012/poojith%20raj.jpg`,
-  `/res/img/Team-Camber/team2012/preetam%20reddy.jpg`,
-  `/res/img/Team-Camber/team2012/rahul.jpg`,
-  `/res/img/Team-Camber/team2012/raj%20lalwani.jpg`,
-  `/res/img/Team-Camber/team2012/ratna.jpg`,
-  `/res/img/Team-Camber/team2012/rishabh%20dugar.jpg`,
-  `/res/img/Team-Camber/team2012/roshni%20francis.jpg`,
-  `/res/img/Team-Camber/team2012/rupam%20srivastava.jpg`,
-  `/res/img/Team-Camber/team2012/shailee%20upadhyay.jpg`,
-  `/res/img/Team-Camber/team2012/shaleen%20bahadur.jpg`,
-  `/res/img/Team-Camber/team2012/shubham%20sharma.jpg`,
-  `/res/img/Team-Camber/team2012/siddhartha.jpg`,
-  `/res/img/Team-Camber/team2012/vishnu%20prasad.jpg`,
-  `/res/img/Team-Camber/team2012/vrushti%20modi.jpg`,
-];
-
-const _2013 = [
-  `/res/img/Team-Camber/team2013/14.jpg`,
-  `/res/img/Team-Camber/team2013/5.jpg`,
-  `/res/img/Team-Camber/team2013/8.jpg`,
-  `/res/img/Team-Camber/team2013/Aaradhya.jpg`,
-  `/res/img/Team-Camber/team2013/Abhinav%20Kumar.jpg`,
-  `/res/img/Team-Camber/team2013/Abhishek%20Kumar.jpg`,
-  `/res/img/Team-Camber/team2013/aditya%20makineni.jpg`,
-  `/res/img/Team-Camber/team2013/Aditya%20Trivedi.jpg`,
-  `/res/img/Team-Camber/team2013/aman%20munjal.jpg`,
-  `/res/img/Team-Camber/team2013/Aman%20Singh.jpg`,
-  `/res/img/Team-Camber/team2013/Anshul%20Chaudhary.jpg`,
-  `/res/img/Team-Camber/team2013/bharath%20iyer.jpg`,
-  `/res/img/Team-Camber/team2013/Eeshan%20Geel.jpg`,
-  `/res/img/Team-Camber/team2013/Gautam.jpg`,
-  `/res/img/Team-Camber/team2013/Harshin%20Lalpet.jpg`,
-  `/res/img/Team-Camber/team2013/Murali.jpg`,
-  `/res/img/Team-Camber/team2013/murtaza%20khambaty.jpg`,
-  `/res/img/Team-Camber/team2013/new10.jpg`,
-  `/res/img/Team-Camber/team2013/Nilai.jpg`,
-  `/res/img/Team-Camber/team2013/pavan%20theja.jpg`,
-  `/res/img/Team-Camber/team2013/phani%20chebiyyam.jpg`,
-  `/res/img/Team-Camber/team2013/Pritish%20Panda.jpg`,
-  `/res/img/Team-Camber/team2013/rahul.jpg`,
-  `/res/img/Team-Camber/team2013/ratna.jpg`,
-  `/res/img/Team-Camber/team2013/rishi%20raj%20singh.jpg`,
-  `/res/img/Team-Camber/team2013/Roshni%20Francis.jpg`,
-  `/res/img/Team-Camber/team2013/Shailee%20Upadhyay.jpg`,
-  `/res/img/Team-Camber/team2013/shreyas%20sansuddi%20(2).jpg`,
-  `/res/img/Team-Camber/team2013/Siddhartha%20De.jpg`,
-  `/res/img/Team-Camber/team2013/Vishwaprashanth%20kumar.jpg`,
-];
-
-const _2014 = [
-  `/res/img/Team-Camber/team2014/Abhinav%20Kumar.jpg`,
-  `/res/img/Team-Camber/team2014/Abhishek%20Kumar.jpg`,
-  `/res/img/Team-Camber/team2014/Aditya%20Trivedi.jpg`,
-  `/res/img/Team-Camber/team2014/Aman%20Munjal.jpg`,
-  `/res/img/Team-Camber/team2014/Anshul.jpg`,
-  `/res/img/Team-Camber/team2014/bharath%20iyer.jpg`,
-  `/res/img/Team-Camber/team2014/Eeshan%20Geel.jpg`,
-  `/res/img/Team-Camber/team2014/Gautam.jpg`,
-  `/res/img/Team-Camber/team2014/Harshin%20Lalpet.jpg`,
-  `/res/img/Team-Camber/team2014/Murali.jpg`,
-  `/res/img/Team-Camber/team2014/murtaza.jpg`,
-  `/res/img/Team-Camber/team2014/Nilai%20Suresh.jpg`,
-  `/res/img/Team-Camber/team2014/Pavan%20Theja.jpg`,
-  `/res/img/Team-Camber/team2014/Pritish%20Panda.jpg`,
-  `/res/img/Team-Camber/team2014/Rahul%20kumar.jpg`,
-  `/res/img/Team-Camber/team2014/Ratna.jpg`,
-  `/res/img/Team-Camber/team2014/rishi%20raj%20singh.jpg`,
-  `/res/img/Team-Camber/team2014/Siddhartha.jpg`,
-  `/res/img/Team-Camber/team2014/Vishwaprashanth%20Kumar.jpg`,
-];
-
-const _2015 = [
-  `/res/img/Team-Camber/team2015/aaradhya%20nagar.jpg`,
-  `/res/img/Team-Camber/team2015/Abhishek%20Kumar.jpg`,
-  `/res/img/Team-Camber/team2015/Aditya%20Trivedi.jpg`,
-  `/res/img/Team-Camber/team2015/akbar.jpg`,
-  `/res/img/Team-Camber/team2015/anil.jpg`,
-  `/res/img/Team-Camber/team2015/Anshul%20Chaudhary.jpg`,
-  `/res/img/Team-Camber/team2015/Divyansh.jpg`,
-  `/res/img/Team-Camber/team2015/Eeshan%20Geel.jpg`,
-  `/res/img/Team-Camber/team2015/Gautam.jpg`,
-  `/res/img/Team-Camber/team2015/husain.jpg`,
-  `/res/img/Team-Camber/team2015/kaustabh.jpg`,
-  `/res/img/Team-Camber/team2015/lalwani.jpg`,
-  `/res/img/Team-Camber/team2015/madhu.jpg`,
-  `/res/img/Team-Camber/team2015/Murali.jpg`,
-  `/res/img/Team-Camber/team2015/Nilai.jpg`,
-  `/res/img/Team-Camber/team2015/prashanth.jpg`,
-  `/res/img/Team-Camber/team2015/Pritish.jpg`,
-  `/res/img/Team-Camber/team2015/rohan%20date.jpg`,
-  `/res/img/Team-Camber/team2015/roni.jpg`,
-  `/res/img/Team-Camber/team2015/salman.jpg`,
-  `/res/img/Team-Camber/team2015/shivam.jpg`,
-  `/res/img/Team-Camber/team2015/vaibhav%20kotnala.jpg`,
-];
-
-const _2016 = [
-  `/res/img/Team-Camber/team2016/aaradhya.jpg`,
-  `/res/img/Team-Camber/team2016/akbar.jpg`,
-  `/res/img/Team-Camber/team2016/akhil.jpg`,
-  `/res/img/Team-Camber/team2016/anil.jpg`,
-  `/res/img/Team-Camber/team2016/atharva.jpg`,
-  `/res/img/Team-Camber/team2016/Chirag%20Samdaria.jpg`,
-  `/res/img/Team-Camber/team2016/deepak%20reddy.jpg`,
-  `/res/img/Team-Camber/team2016/Divyansh.jpg`,
-  `/res/img/Team-Camber/team2016/Kaustabh.jpg`,
-  `/res/img/Team-Camber/team2016/madhu.jpg`,
-  `/res/img/Team-Camber/team2016/Mriganka.jpg`,
-  `/res/img/Team-Camber/team2016/pradeep.jpg`,
-  `/res/img/Team-Camber/team2016/Priyanth%20Kumar.jpg`,
-  `/res/img/Team-Camber/team2016/Rahul.jpg`,
-  `/res/img/Team-Camber/team2016/rohan.jpg`,
-  `/res/img/Team-Camber/team2016/ronak.jpg`,
-  `/res/img/Team-Camber/team2016/roni.jpg`,
-  `/res/img/Team-Camber/team2016/Sai%20Santosh.jpg`,
-  `/res/img/Team-Camber/team2016/saiduth.jpg`,
-  `/res/img/Team-Camber/team2016/salman.jpg`,
-  `/res/img/Team-Camber/team2016/shivam.jpg`,
-  `/res/img/Team-Camber/team2016/tarun%20kumar.jpg`,
-  `/res/img/Team-Camber/team2016/uday.jpg`,
-  `/res/img/Team-Camber/team2016/vaibhav%20kotnala.jpg`,
-  `/res/img/Team-Camber/team2016/vaibhav%20lalwani.jpg`,
-  `/res/img/Team-Camber/team2016/vv%20praveen.jpg`,
-];
-
-const _2017 = [
-  `/res/img/Team-Camber/team2017/aditya.jpg`,
-  `/res/img/Team-Camber/team2017/adyasha.jpg`,
-  `/res/img/Team-Camber/team2017/akbar.jpg`,
-  `/res/img/Team-Camber/team2017/akhil.jpg`,
-  `/res/img/Team-Camber/team2017/akshay.jpg`,
-  `/res/img/Team-Camber/team2017/anil.jpg`,
-  `/res/img/Team-Camber/team2017/atharva.jpg`,
-  `/res/img/Team-Camber/team2017/chundawat.jpg`,
-  `/res/img/Team-Camber/team2017/deepak%20reddy.jpg`,
-  `/res/img/Team-Camber/team2017/dhruv%20mehta.jpg`,
-  `/res/img/Team-Camber/team2017/Divyansh.jpg`,
-  `/res/img/Team-Camber/team2017/gopal.jpg`,
-  `/res/img/Team-Camber/team2017/harshit.jpg`,
-  `/res/img/Team-Camber/team2017/junaid.jpg`,
-  `/res/img/Team-Camber/team2017/kakkar.jpg`,
-  `/res/img/Team-Camber/team2017/krishna.jpg`,
-  `/res/img/Team-Camber/team2017/kshitij%20soni.jpg`,
-  `/res/img/Team-Camber/team2017/mobashir%20afzal.jpg`,
-  `/res/img/Team-Camber/team2017/Mriganka.jpg`,
-  `/res/img/Team-Camber/team2017/navneet.jpg`,
-  `/res/img/Team-Camber/team2017/pradeep.jpg`,
-  `/res/img/Team-Camber/team2017/praneet.jpg`,
-  `/res/img/Team-Camber/team2017/rahul.jpg`,
-  `/res/img/Team-Camber/team2017/ronak.jpg`,
-  `/res/img/Team-Camber/team2017/roni.jpg`,
-  `/res/img/Team-Camber/team2017/saiduth.jpg`,
-  `/res/img/Team-Camber/team2017/shawn.jpg`,
-  `/res/img/Team-Camber/team2017/shreya.jpg`,
-  `/res/img/Team-Camber/team2017/uday.jpg`,
-  `/res/img/Team-Camber/team2017/varun.jpg`,
-];
-
-const _2018 = [
-  `/res/img/Team-Camber/team2018/abhinav%20roy.JPG`,
-  `/res/img/Team-Camber/team2018/abhishek%20nanda.JPG`,
-  `/res/img/Team-Camber/team2018/aditya%20chacko.JPG`,
-  `/res/img/Team-Camber/team2018/adyasha%20nanda.JPG`,
-  `/res/img/Team-Camber/team2018/akshay%20kumar.JPG`,
-  `/res/img/Team-Camber/team2018/aman%20maheshwari.JPG`,
-  `/res/img/Team-Camber/team2018/ambarish%20pradeep.JPG`,
-  `/res/img/Team-Camber/team2018/anirudh%20reddy.JPG`,
-  `/res/img/Team-Camber/team2018/ankur%20singh.JPG`,
-  `/res/img/Team-Camber/team2018/aparajita%20singh.JPG`,
-  `/res/img/Team-Camber/team2018/aparajito%20ganguli.JPG`,
-  `/res/img/Team-Camber/team2018/arunav%20borah.JPG`,
-  `/res/img/Team-Camber/team2018/atharva%20kadam.JPG`,
-  `/res/img/Team-Camber/team2018/darpan%20yadav.JPG`,
-  `/res/img/Team-Camber/team2018/dhruv%20mehta.JPG`,
-  `/res/img/Team-Camber/team2018/g%20karthik.JPG`,
-  `/res/img/Team-Camber/team2018/gautam%20kavuri.JPG`,
-  `/res/img/Team-Camber/team2018/gopal%20dwivedi.JPG`,
-  `/res/img/Team-Camber/team2018/harshit%20gambhir.JPG`,
-  `/res/img/Team-Camber/team2018/hrishav%20paul.JPG`,
-  `/res/img/Team-Camber/team2018/junaid%20singh.JPG`,
-  `/res/img/Team-Camber/team2018/kanwarpal%20singh.JPG`,
-  `/res/img/Team-Camber/team2018/kshitij%20soni.JPG`,
-  `/res/img/Team-Camber/team2018/kunal%20kakkar.JPG`,
-  `/res/img/Team-Camber/team2018/kunal%20pandey.JPG`,
-  `/res/img/Team-Camber/team2018/md.%20fahim.JPG`,
-  `/res/img/Team-Camber/team2018/pradyumn%20pandey.JPG`,
-  `/res/img/Team-Camber/team2018/prakhar%20dixit.JPG`,
-  `/res/img/Team-Camber/team2018/praneet%20ayyagari.JPG`,
-  `/res/img/Team-Camber/team2018/s%20arvind.JPG`,
-  `/res/img/Team-Camber/team2018/sai%20kiran.JPG`,
-  `/res/img/Team-Camber/team2018/saiduth%20ramesh.JPG`,
-  `/res/img/Team-Camber/team2018/shikhar%20sehgal.JPG`,
-  `/res/img/Team-Camber/team2018/varun%20jain.JPG`,
-  `/res/img/Team-Camber/team2018/vinith%20kishan.JPG`,
-  `/res/img/Team-Camber/team2018/vishnu%20rajeev.JPG`,
-  `/res/img/Team-Camber/team2018/yohann%20bhumgara.JPG`,
-];
-
-const _2019 = [
-  `/res/img/Team-Camber/team2019/aayush%20kumar%20singh.jpg`,
-  `/res/img/Team-Camber/team2019/abhinav%20roy.jpg`,
-  `/res/img/Team-Camber/team2019/Abhishek%20nanda.jpg`,
-  `/res/img/Team-Camber/team2019/aman%20maheshwari.jpg`,
-  `/res/img/Team-Camber/team2019/ambareesh%20pradeep.jpg`,
-  `/res/img/Team-Camber/team2019/ankit%20kr%20sahu.jpg`,
-  `/res/img/Team-Camber/team2019/annkur%20singh.jpg`,
-  `/res/img/Team-Camber/team2019/aparjito%20ganguli.jpg`,
-  `/res/img/Team-Camber/team2019/aravind%20s.jpg`,
-  `/res/img/Team-Camber/team2019/bishal%20sikdar.jpg`,
-  `/res/img/Team-Camber/team2019/Darpan%20yadav.jpg`,
-  `/res/img/Team-Camber/team2019/gautam%20kavuri.jpg`,
-  `/res/img/Team-Camber/team2019/harshmeet%20singh.jpg`,
-  `/res/img/Team-Camber/team2019/harvinde%20singh.jpg`,
-  `/res/img/Team-Camber/team2019/junaid%20singh.jpg`,
-  `/res/img/Team-Camber/team2019/karwarpal%20singh.jpg`,
-  `/res/img/Team-Camber/team2019/kshitij%20singh.jpg`,
-  `/res/img/Team-Camber/team2019/kunal%20kakkar.jpg`,
-  `/res/img/Team-Camber/team2019/md%20Fahim.jpg`,
-  `/res/img/Team-Camber/team2019/pradyumn%20pandey.jpg`,
-  `/res/img/Team-Camber/team2019/prasanjeet%20das.jpg`,
-  `/res/img/Team-Camber/team2019/rituraj%20das.jpg`,
-  `/res/img/Team-Camber/team2019/saliq%20shah.jpg`,
-  `/res/img/Team-Camber/team2019/satvik%20vatsa.jpg`,
-  `/res/img/Team-Camber/team2019/shashwat%20geel.jpg`,
-  `/res/img/Team-Camber/team2019/sourav%20pattnaik.jpg`,
-  `/res/img/Team-Camber/team2019/sparsh%20agarwal.jpg`,
-  `/res/img/Team-Camber/team2019/subodh%20dangi.jpg`,
-  `/res/img/Team-Camber/team2019/sudha%20sindhuja.jpg`,
-  `/res/img/Team-Camber/team2019/suresh%20kumar.jpg`,
-  `/res/img/Team-Camber/team2019/tenzin.jpg`,
-  `/res/img/Team-Camber/team2019/udit%20mini.jpg`,
-  `/res/img/Team-Camber/team2019/yohann%20bhumgara.jpg`,
-];
-
-const _2020 = [
-  `/res/img/Team-Camber/team2020/abhniav%20roy.jpg`,
-  `/res/img/Team-Camber/team2020/abraham%20mathew.jpg`,
-  `/res/img/Team-Camber/team2020/aditya%20agrawal.jpg`,
-  `/res/img/Team-Camber/team2020/aditya%20reddy.jpg`,
-  `/res/img/Team-Camber/team2020/ambareesh%20pradeep.jpg`,
-  `/res/img/Team-Camber/team2020/aparjito%20ganguli.jpg`,
-  `/res/img/Team-Camber/team2020/bishal%20sikdar.jpg`,
-  `/res/img/Team-Camber/team2020/gautam%20kavuri.jpg`,
-  `/res/img/Team-Camber/team2020/hariesh%20s.jpg`,
-  `/res/img/Team-Camber/team2020/harshmeet%20singh.jpg`,
-  `/res/img/Team-Camber/team2020/harvinde%20singh.jpg`,
-  `/res/img/Team-Camber/team2020/kshitij%20singh.jpg`,
-  `/res/img/Team-Camber/team2020/mohit%20galani.jpg`,
-  `/res/img/Team-Camber/team2020/pranjal%20saxena.jpg`,
-  `/res/img/Team-Camber/team2020/rasesh%20lagdev.jpg`,
-  `/res/img/Team-Camber/team2020/saliq%20shah.jpg`,
-  `/res/img/Team-Camber/team2020/shashwat%20geel.jpg`,
-  `/res/img/Team-Camber/team2020/sourav%20pattnaik.jpg`,
-  `/res/img/Team-Camber/team2020/subodh%20dangi.jpg`,
-  `/res/img/Team-Camber/team2020/sudha%20sindhuja.jpg`,
-  `/res/img/Team-Camber/team2020/suresh%20kumar.jpg`,
-  `/res/img/Team-Camber/team2020/yohann%20bhumgara.jpg`,
-];
-
-const _2021 = [
-  `/res/img/Team-Camber/team2021/Abraham.png`,
-  `/res/img/Team-Camber/team2021/Bishal.png`,
-  `/res/img/Team-Camber/team2021/Hariesh.png`,
-  `/res/img/Team-Camber/team2021/Jayaditya.png`,
-  `/res/img/Team-Camber/team2021/Kshitij.png`,
-  `/res/img/Team-Camber/team2021/Pranjal.png`,
-  `/res/img/Team-Camber/team2021/Rasesh.png`,
-  `/res/img/Team-Camber/team2021/Saliq.png`,
-  `/res/img/Team-Camber/team2021/Shashwat.png`,
-  `/res/img/Team-Camber/team2021/Subodh.png`,
-  `/res/img/Team-Camber/team2021/Sudha.png`,
-  `/res/img/Team-Camber/team2021/Suresh.png`,
-];
-
-currentTeam.forEach((member) => {
-  const memberbox = document.createElement("div");
-  const name = document.createElement("span");
-  const position = document.createElement("span");
-  const image = document.createElement("img");
-  position.classList.add("position");
-  name.classList.add("name");
-
-  image.src = `./res/img/Team-Camber/team2021/${member[0].substr(
-    0,
-    member[0].indexOf(" ")
-  )}.png`;
-
-  name.innerHTML = "<br />" + member[0] + " <br />";
-  position.innerHTML = member[1] + " <br />";
-
-  memberbox.appendChild(image);
-  memberbox.appendChild(name);
-  memberbox.appendChild(position);
-
-  currentTeamEle.appendChild(memberbox);
-});
+const nav = document.querySelector(".nav");
+const currentTeamEle = document.querySelector(".current-team");
 
 years.forEach((year) => {
   const span = document.createElement("span");
@@ -390,16 +345,15 @@ years.forEach((year) => {
 });
 
 const yearElements = document.querySelectorAll(".nav span");
-let currentyear = 2011;
+let currentyear = 2021;
 let folder = `./res/img/Team-Camber/team${currentyear}`;
-let mainDiv = document.createElement("div");
-mainDiv.classList.add("all-div");
+
+yearElements[0].classList.add("active");
 
 const selectYear = (year) => {
   year.classList.add("active");
   currentyear = year.innerText;
   folder = `./res/img/Team-Camber/team${currentyear}`;
-  document.createElement("div");
   updatePhtots();
   yearElements.forEach((y) => {
     if (y != year) {
@@ -408,11 +362,8 @@ const selectYear = (year) => {
   });
 };
 
-yearElements[0].classList.add("active");
-
 yearElements.forEach((year) => {
   year.addEventListener("click", (event) => {
-    mainDiv.innerHTML = "";
     selectYear(year);
   });
 });
@@ -432,14 +383,40 @@ const allmembers = [
 ];
 
 const updatePhtots = () => {
-  allmembers[currentyear - 2011].forEach((mem) => {
+  currentTeamEle.innerHTML = null;
+
+  allmembers[currentyear - 2011].forEach((member) => {
+    const memberbox = document.createElement("div");
     const image = document.createElement("img");
+    const name = document.createElement("p");
+    const position = document.createElement("p");
+
     image.classList.add("all-years");
-    image.src = "./" + mem;
-    mainDiv.appendChild(image);
+    position.classList.add("position");
+    name.classList.add("name");
+
+    name.innerHTML = "<br />" + member[0] + " <br />";
+    position.innerHTML = member[1] + " <br />";
+
+    let photoFileName = member[0].toLowerCase().trim();
+
+    if ((currentyear >= 2015 && currentyear <= 2017) || currentyear == 2021) {
+      photoFileName = photoFileName.substring(0, photoFileName.indexOf(" "));
+    }
+
+    let extension = ".jpg";
+    if (currentyear == 2021) {
+      extension = ".png";
+    }
+    const url = `./res/img/Team-Camber/team${currentyear}/${photoFileName}${extension}`;
+    image.src = url;
+
+    memberbox.appendChild(image);
+    memberbox.appendChild(name);
+    memberbox.appendChild(position);
+
+    currentTeamEle.appendChild(memberbox);
   });
 };
 
-const photos = document.querySelector(".photos");
-photos.appendChild(mainDiv);
 updatePhtots();
