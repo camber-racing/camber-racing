@@ -10,21 +10,20 @@
 }
 
 .landing-heading {
-  margin: 5rem 0 0 8rem;
+  margin: 2rem 0 0 1rem;
 }
 
-nav {
+nav.year-nav {
   padding: 1rem 0;
   margin: 0 auto;
   justify-content: center;
 }
-.nav-pills .nav-link.active {
+.year-nav.nav-pills .nav-link.active {
   background-color: var(--red);
   border-radius: 0;
-  margin: 0.2rem;
 }
 
-.nav-pills .nav-link:hover {
+.year-nav.nav-pills .nav-link:hover {
   cursor: pointer;
   color: black;
   border: var(--red) 0.1rem solid;
@@ -39,6 +38,7 @@ nav {
   max-width: 75vw;
   margin: 0 auto;
   justify-items: center;
+  text-transform: capitalize;
 }
 
 .current-team div {
@@ -50,6 +50,7 @@ nav {
   color: var(--red);
   margin: 0;
   padding: 0;
+  text-transform: initial;
 }
 
 .current-team .position {
@@ -69,9 +70,12 @@ nav {
   padding: 0px;
 }
 
-@media only screen and (max-width: 1024px) {
+@media only screen and (max-width: 1024px) and (min-width: 512px) {
   .landing-heading {
     margin: 4.6rem 0 0 0;
+  }
+  .year-nav .nav-link {
+    padding: 0.5rem 1rem;
   }
   .current-team {
     grid-template-columns: repeat(2, 1fr);

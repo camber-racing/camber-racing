@@ -3,6 +3,7 @@ const urlParams = new URLSearchParams(queryString);
 const car = urlParams.get("car");
 
 const CR800 = {
+  id: 0,
   name: `CR800`,
   year: `2010`,
 
@@ -24,6 +25,7 @@ const CR800 = {
 };
 
 const LJM01 = {
+  id: 1,
   name: `LJM_01`,
   year: `2011`,
   desc: `LJM01 was the successor for the first car and prototype CR800. If CR800 meant embarking upon the way of professionalism and success, LJM01 was surely an important future for achieving this feat. It is a prized possession of our team as each and every inch of the car was made to near to perfection on a very tight schedule. The design departments fastidious approach allowed the team to come up with new or more innovative and alternative ways to manufacture and build the car from scratch rather than connecting the shortcoming observed in the CR800.
@@ -52,6 +54,7 @@ const LJM01 = {
 };
 
 const Beast = {
+  id: 2,
   name: `The Beast`,
   year: `2012`,
   desc: `With our first outing done, and setting our eyes at the Championship of the coming season, we started off, determined to bounce back. And thus came into existence, our next car, redefining performance and perfection- The BEAST!
@@ -82,6 +85,7 @@ This polar white race vehicle impressed everyone at the event with its amazing p
   noOfPics: 2,
 };
 const CR14 = {
+  id: 3,
   name: `CR14`,
   year: `2014`,
   desc: `The learning from the Beast were carried forward to our next vehicle, the CR14. With a major change in the powertrain of the vehicle shifting from 800cc to a 610cc engine capacity limit, the main target to make a light and compact vehicle with a high power to weight ratio was achieved in the CR14. The team, for the first time incorporated the use of Carbon fibre in the vehicle as one of the measures to reduce the weight of the vehicle. The CR14 was a major step forward for the team after the Beat.
@@ -111,6 +115,7 @@ const CR14 = {
 };
 
 const CR15 = {
+  id: 4,
   name: `CR15`,
   year: `2015`,
 
@@ -145,6 +150,7 @@ const CR15 = {
 };
 
 const CR16 = {
+  id: 5,
   name: `CR16`,
   year: `2016-17`,
   desc: `Having participated in FSG 15, the team went all out to put their learnings to practice. CR-16 was a major step up from the previous cars, with both its performance and stunning looks. Weighing in at 195kgs, this car was also equipped with the team’s first Aero kit.`,
@@ -176,6 +182,7 @@ const CR16 = {
 };
 
 const CR18 = {
+  id: 6,
   name: `CR18`,
   year: `2018`,
   desc: `CR-18 was built upon the idea of performance and speed and was the team’s first turbo charged car. The car also featured a fully in house manufactured Aero kit. It was the fastest car at Supra 18, clocking 5.4 seconds in the acceleration event.`,
@@ -200,6 +207,7 @@ const CR18 = {
   noOfPics: 1,
 };
 const CRX = {
+  id: 7,
   name: `CR-X`,
   year: `2019`,
   desc: `The 10th edition of team saw the built of a masterpiece namely ‘CR-X’. It was not only one of the lightest cars in the event but also fastest among the ‘single cylinder’ engines. The team clocked one of the best acceleration times, 5.038 seconds at Formula Bharat 2019.`,
@@ -225,10 +233,11 @@ const CRX = {
   noOfPics: 1,
 };
 
-const carlist = [CR800, LJM01, Beast, CR14, CR15, CR16, CR18, CRX];
+const carlist = { CR800, LJM01, Beast, CR14, CR15, CR16, CR18, CRX };
 const mainDiv = document.getElementById(`car-list`);
 
-carlist.map((car, id) => {
+// carlist.map((car, id) => {
+function renderCar(car) {
   const eachCar = document.createElement("div");
 
   eachCar.classList.add("cars");
@@ -237,7 +246,7 @@ carlist.map((car, id) => {
   const photo = [];
   for (let i = 0; i < car.noOfPics; i++) {
     photo[i] = document.createElement("img");
-    photo[i].src = `./res/img/carList/${id + 1}-${i + 1}.jpg`;
+    photo[i].src = `./res/img/carList/${car.id + 1}-${i + 1}.jpg`;
     photoDiv.appendChild(photo[i]);
   }
 
@@ -273,7 +282,7 @@ carlist.map((car, id) => {
   name.innerHTML = car.name + `&nbsp; (${car.year})`;
   desc.innerHTML = car.desc;
 
-  if (id % 2 == 0) {
+  if (car.id % 2 == 0) {
     eachCar.classList.add("even");
   } else {
     eachCar.classList.add("odd");
@@ -289,4 +298,7 @@ carlist.map((car, id) => {
 
   eachCar.classList.add("myBorder");
   mainDiv.appendChild(eachCar);
-});
+}
+
+renderCar(carlist[car]);
+// console.log(carlist[car]);

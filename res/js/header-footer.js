@@ -1,3 +1,13 @@
+const carMenu = [
+  "CR800",
+  "LJM01",
+  "Beast",
+  "CR14",
+  "CR15",
+  "CR16",
+  "CR18",
+  "CRX",
+];
 const header = `<nav class="navbar navbar-expand-md navbar-light">
     <a class="navbar-brand" href="#" id="navbar-brand">
       <img src="res/img/logos/logo-without-bg.png"
@@ -17,14 +27,11 @@ const header = `<nav class="navbar navbar-expand-md navbar-light">
           <a class="nav-link" href="./aboutus.html"><span>About Us</span></a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="index.html"><span>Partners</span></a>
+          <a class="nav-link" href="partners.html"><span>Partners</span></a>
         </li>
         <li class="nav-item dropdown show" >
           <a class="nav-link dropdown-toggle" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span>The Paddock</span></a>
-          <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-            <a class="dropdown-item" href="cars.html?car=CR800">Action</a>
-            <a class="dropdown-item" href="#">Another action</a>
-            <a class="dropdown-item" href="#">Something else here</a>
+          <div class="dropdown-menu dropdown-carlist" aria-labelledby="dropdownMenuLink">
            </div>
         </li>
         <li class="nav-item">
@@ -46,11 +53,11 @@ const footer = `
         <img src="res/img/logos/logo-without-bg.png " />
 
         <div class="social-media-icon footer-nav-links">
-          <a href="#"><i class="fab fa-facebook"></i></a>
-          <a href="#"><i class="fab fa-instagram"></i></a>
-          <a href="#"><i class="fab fa-twitter"></i></a>
-          <a href="#"><i class="fab fa-youtube"></i></a>
-          <a href="#"><i class="fab fa-linkedin"></i></a>
+          <a href="https://www.facebook.com/camberracing/" target="_blank"><i class="fab fa-facebook"></i></a>
+          <a href="https://www.instagram.com/camberracing/" target="_blank"><i class="fab fa-instagram"></i></a>
+          <a href="https://twitter.com/camber_racing" target="_blank"><i class="fab fa-twitter"></i></a>
+          <a href="https://www.youtube.com/channel/UC_UDIR7rodwCFUY5iEZ8F7A" target="_blank"><i class="fab fa-youtube"></i></a>
+          <a href="#" target="_blank"><i class="fab fa-linkedin"></i></a>
         </div>
         <div class="ml-mr-auto footer-newsletter-button">
           <div class=" px-2 py-2 ">
@@ -60,18 +67,8 @@ const footer = `
             </a>
           </div>
         </div>
-
-
       </div>
-
-
-
       <div class="col-md-1"></div>
-
-
-
-
-
       <div class="footer-contact-us text-left  col-md-4">
         <h6 class="heading pl-3">Address</h6>
         <h6 class="pl-3">Camber Racing</h6>
@@ -88,10 +85,10 @@ const footer = `
         <div class="pl-3">
           <ul>
             <li>
-              <a href="#"><i class="fas fa-envelope"><span>Mail: captain.camberracing@gmail.com </span></i></a>
+              <a href="#"><i class="fas fa-envelope"> <span>Mail: captain.camberracing@gmail.com </span></i></a>
             </li>
             <li>
-              <a href="#"><i class="fas fa-phone"><span>Mob: +91 8318 7383 22</span></i></a>
+              <a href="#"><i class="fas fa-phone"> <span>Mob: +91 81849 85356 </span></i></a>
             </li>
           </ul>
         </div>
@@ -137,6 +134,17 @@ const footer = `
 
 const headerEle = document.querySelector("header");
 const footerEle = document.querySelector("footer");
+window.onload = function () {
+  const dropdownCarList = document.querySelector(".dropdown-carlist");
+
+  carMenu.forEach((car) => {
+    const carLink = document.createElement("a");
+    carLink.classList.add("dropdown-item");
+    carLink.href = `cars.html?car=${car}`;
+    carLink.innerText = car;
+    dropdownCarList.appendChild(carLink);
+  });
+};
 
 headerEle.innerHTML = header;
 footerEle.innerHTML = footer;
