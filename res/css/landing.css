@@ -65,6 +65,28 @@ body {
   clip-path: polygon(10% 0%, 100% 0%, 90% 100%, 0% 100%);
   background-color: var(--red);
 }
+
+.dropdown-carlist.show {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  margin: 0;
+  padding: 0;
+}
+
+.dropdown:hover {
+  cursor: pointer;
+}
+
+.dropdown-carlist .dropdown-item {
+  background-color: var(--black);
+  color: var(--white);
+  margin: 0;
+  padding: 0.2rem 3rem;
+}
+.dropdown-carlist .dropdown-item:hover {
+  background-color: var(--red);
+  /* padding: 0.3rem 3.3rem; */
+}
 .carousel-indicators {
   z-index: 1;
 }
@@ -127,15 +149,15 @@ footer.camber-footer div.row h6 {
 footer.camber-footer div.row div.social-media-icon {
   text-align: center;
   padding: 5px 0px;
-  color: var(--grey);
-  background-color: var(--white);
+  color: var(--white);
+  background-color: var(--black);
   margin: 16px auto;
   width: 200px;
 }
 
 footer.camber-footer div.row div.social-media-icon a {
   text-decoration: none;
-  color: var(--grey);
+  color: var(--white);
   padding: 5px;
 }
 
@@ -248,7 +270,40 @@ footer.camber-footer small span {
 footer.camber-footer small a {
   text-decoration: none;
 }
-@media only screen and (max-width: 840px) {
+
+@media only screen and (max-width: 1024px) and (min-width: 768px) {
+  .navbar-brand {
+    padding: 0;
+    width: 7rem;
+    height: 5rem;
+  }
+  .navbar-brand img {
+    width: 6rem;
+    height: auto;
+    margin: auto;
+  }
+  .nav-link {
+    padding: 0;
+    margin: 0;
+  }
+  .nav-link span {
+    /* padding: 2px; */
+    margin: 0;
+    /* padding: 0; */
+    font-size: 0.8rem;
+    height: 100%;
+  }
+  .footer-contact-us,
+  .input-section {
+    padding: 24px 8px;
+  }
+
+  footer.camber-footer div.row div.footer-contact-us div p {
+    margin-right: 0rem;
+  }
+}
+
+@media only screen and (max-width: 768px) {
   .navbar {
     height: 56px;
     padding: 0;
@@ -264,7 +319,7 @@ footer.camber-footer small a {
   }
   .navbar-toggler {
     z-index: 9;
-    margin: 4px 8px 4px 85%;
+    margin: 4px 2px 4px 85%;
     padding: 4px;
     font-size: 1rem;
     line-height: 1;
@@ -272,18 +327,29 @@ footer.camber-footer small a {
     border: 1px solid transparent;
     border-radius: 0.25rem;
   }
-  .nav-link {
-    padding: 8px;
+  ul.navbar-nav {
+    background-color: black;
+  }
+  .navbar .nav-link {
+    /* padding: 4px; */
+    font-size: 0.9rem;
   }
 
-  .navbar-nav {
+  .navbar .navbar-nav {
     background: var(--grey);
   }
 
-  .nav-link span:hover {
-    padding: 8px;
+  .navbar .nav-link span {
+    width: 100vw;
+    margin: auto;
+    padding: 0.5rem 1rem;
+  }
+
+  .navbar .nav-item:hover {
     clip-path: none;
-    background-color: var(--grey);
+    width: 100vw;
+
+    background-color: var(--red);
   }
 
   footer.camber-footer div.content div p {
@@ -294,7 +360,7 @@ footer.camber-footer small a {
     font-size: 13px;
   }
   .footer-contact-us {
-    padding: 24px 32px;
+    padding: 24px 8px;
   }
   .input-section {
     padding: 24px 32px;
@@ -318,15 +384,6 @@ footer.camber-footer small a {
   }
 }
 
-@media only screen and (max-width: 1370px) and (min-width: 840px) {
-  .nav-link span {
-    padding: 6px;
-  }
-
-  footer.camber-footer div.row div.footer-contact-us div p {
-    margin-right: 0rem;
-  }
-}
 :root {
   --black: #000000;
   --grey: #1e1e1e;

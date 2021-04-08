@@ -1,0 +1,41 @@
+@font-face {
+  font-family: roboto-regular;
+  src: url(../fonts/Roboto-Regular.ttf) format("truetype");
+}
+
+* {
+  font-family: roboto-regular;
+  margin: 0;
+  padding: 0;
+}
+
+.landing-heading {
+  margin: 2rem 0 0 1rem;
+}
+.partners {
+  margin: 0 auto;
+  width: 90vw;
+  padding-top: 6rem;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-around;
+  /* overflow-x: scroll; */
+}
+
+.partners::-webkit-scrollbar {
+  display: none;
+}
+
+.partners img {
+  display: inline-block;
+  object-fit: scale-down;
+  width: 12rem;
+  padding: 2rem;
+  margin: auto 0;
+  transition: all 0.3s cubic-bezier(0.7, 0, 0.3, 1);
+}
+.partners img:hover {
+  padding: 0;
+  margin: 0;
+}
