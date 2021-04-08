@@ -2,6 +2,9 @@ const queryString = window.location.search;
 const urlParams = new URLSearchParams(queryString);
 const car = urlParams.get("car");
 
+//Object of each car
+//format:- id, name, year, description(desc), specifications(specs[]), noOfPics of car
+
 const CR800 = {
   id: 0,
   name: `CR800`,
@@ -233,25 +236,29 @@ const CRX = {
   noOfPics: 1,
 };
 
+//Object to iterate through each car
 const carlist = { CR800, LJM01, Beast, CR14, CR15, CR16, CR18, CRX };
+
+//Div in which the car will be displayed
 const mainDiv = document.getElementById(`car-list`);
 
-// carlist.map((car, id) => {
 function renderCar(car) {
+  //Div containing the car image and details
   const eachCar = document.createElement("div");
-
   eachCar.classList.add("cars");
 
   const photoDiv = document.createElement("div");
   const photo = [];
+
+  //Create image component for each of the pics of the car
   for (let i = 0; i < car.noOfPics; i++) {
     photo[i] = document.createElement("img");
+    //image naming format:- (id of car + 1) '-' (imageNumber + 1)
     photo[i].src = `./res/img/carList/${car.id + 1}-${i + 1}.jpg`;
     photoDiv.appendChild(photo[i]);
   }
 
   const content = document.createElement("div");
-
   const name = document.createElement("h1");
   const desc = document.createElement("p");
   const achievementsList = document.createElement("div");
@@ -282,6 +289,7 @@ function renderCar(car) {
   name.innerHTML = car.name + `&nbsp; (${car.year})`;
   desc.innerHTML = car.desc;
 
+  //style car differently in even and odd index
   if (car.id % 2 == 0) {
     eachCar.classList.add("even");
   } else {
@@ -301,4 +309,3 @@ function renderCar(car) {
 }
 
 renderCar(carlist[car]);
-// console.log(carlist[car]);

@@ -1,3 +1,4 @@
+//years to be displayed in the navbar selector
 const years = [
   2021,
   2020,
@@ -11,6 +12,8 @@ const years = [
   2012,
   2011,
 ];
+
+//members from each year with position
 
 const _2011 = [
   [`Pushkar Venkat Narayan`, `Team Captain`],
@@ -334,9 +337,11 @@ const _2021 = [
   [`Harin Bhatt`, `Manufacturing`],
 ];
 
+//selecting navbar and div to display the current team
 const nav = document.querySelector(".nav");
 const currentTeamEle = document.querySelector(".current-team");
 
+//making links for each year in navbar
 years.forEach((year) => {
   const span = document.createElement("span");
   span.classList.add("nav-link");
@@ -344,6 +349,7 @@ years.forEach((year) => {
   nav.appendChild(span);
 });
 
+// select all span in navbar
 const yearElements = document.querySelectorAll(".nav span");
 let currentyear = 2021;
 let folder = `./res/img/Team-Camber/team${currentyear}`;

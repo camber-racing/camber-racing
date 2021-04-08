@@ -10,12 +10,12 @@
 }
 
 .landing-heading {
-  margin: 2rem 0 0 1rem;
+  margin: 4rem 0 0 1rem;
 }
 
 nav.year-nav {
   padding: 1rem 0;
-  margin: 0 auto;
+  margin: 0.25rem auto;
   justify-content: center;
 }
 .year-nav.nav-pills .nav-link.active {
@@ -76,6 +76,7 @@ nav.year-nav {
   }
   .year-nav .nav-link {
     padding: 0.5rem 1rem;
+    margin: 0.25rem;
   }
   .current-team {
     grid-template-columns: repeat(2, 1fr);
