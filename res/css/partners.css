@@ -36,5 +36,5 @@
   transition: all 0.5s cubic-bezier(0.7, 0, 0.3, 1);
 }
 .partners img:hover {
-  transform: scale(1.75);
+  transform: scale(1.25);
 }

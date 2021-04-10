@@ -71,11 +71,9 @@ section.cars-container .landing-heading {
 
 .even {
   flex-flow: row-reverse;
-  background-color: #f0f0f0;
 }
 .odd {
   flex-flow: row;
-  background-color: #f0f0f0;
 }
 
 @media only screen and (max-width: 1024px) {
