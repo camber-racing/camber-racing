@@ -25,9 +25,8 @@ nav.year-nav {
 
 .year-nav.nav-pills .nav-link:hover {
   cursor: pointer;
-  color: black;
-  border: var(--red) 0.1rem solid;
   border-radius: 0;
+  transform: scale(1.25);
 }
 
 .current-team {
