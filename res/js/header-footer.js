@@ -46,18 +46,14 @@ const header = `<nav class="navbar navbar-expand-md navbar-light">
 
 const footer = `
   <footer class="camber-footer container-fluid" id="contact">
-    <div class="row text-center mb-2">
-      <div class="content col-md-3">
+    <div class="footer-main text-center mb-2">
+      <div class="footer-col content ">
         <h5 class="ml-mr-auto">Camber Racing</h5>
-
-        <img src="res/img/logos/logo-without-bg.png " />
-
         <div class="social-media-icon footer-nav-links">
-          <a href="https://www.facebook.com/camberracing/" target="_blank"><i class="fab fa-facebook"></i></a>
-          <a href="https://www.instagram.com/camberracing/" target="_blank"><i class="fab fa-instagram"></i></a>
-          <a href="https://twitter.com/camber_racing" target="_blank"><i class="fab fa-twitter"></i></a>
-          <a href="https://www.youtube.com/channel/UC_UDIR7rodwCFUY5iEZ8F7A" target="_blank"><i class="fab fa-youtube"></i></a>
-          <a href="#" target="_blank"><i class="fab fa-linkedin"></i></a>
+          <a href="https://www.facebook.com/camberracing/" target="_blank"><i class="fab fa-facebook-square" style="color:#3b5998;"></i></a>
+          <a href="https://www.instagram.com/camberracing/" target="_blank"><i class="fab fa-instagram-square" style="color:#2f2f2f;"></i></a>
+          <a href="https://www.youtube.com/channel/UC_UDIR7rodwCFUY5iEZ8F7A" target="_blank"><i class="fab fa-youtube-square" style="color:#b72727;"></i></a>
+          <a href="#" target="_blank"><i class="fab fa-linkedin" style="color:#0d78b0;"></i></a>
         </div>
         <div class="ml-mr-auto footer-newsletter-button">
           <div class=" px-2 py-2 ">
@@ -68,8 +64,9 @@ const footer = `
           </div>
         </div>
       </div>
-      <div class="col-md-1"></div>
-      <div class="footer-contact-us text-left  col-md-4">
+      <div class=></div>
+      <div class="footer-contact-us text-left ">
+      <div>
         <h6 class="heading pl-3">Address</h6>
         <h6 class="pl-3">Camber Racing</h6>
 
@@ -80,34 +77,37 @@ const footer = `
             Technology, Kattankulathur Tamil Nadu - 603203
           </p>
         </div>
+      </div>
+      <div>
         <h6 class="heading mb-3 pl-3">Contact Us</h6>
         <h6 class="pl-3">Kshitij Singh</h6>
         <div class="pl-3">
           <ul>
             <li>
-              <a href="#"><i class="fas fa-envelope"> <span>Mail: captain.camberracing@gmail.com </span></i></a>
+              <span>Mail: captain.camberracing@gmail.com </span></i></a>
             </li>
             <li>
-              <a href="#"><i class="fas fa-phone"> <span>Mob: +91 81849 85356 </span></i></a>
+              <span>Mob: +91 81849 85356 </span></i></a>
             </li>
           </ul>
+      </div>
         </div>
 
 
       </div>
 
-      <div class="input-section col-md-4 ">
+      <div class="input-section ">
         <h6 class="heading mb-3  pl-3">GET IN TOUCH</h6>
 
         <div>
 
-          <input class="my-3 w-75 mx-2 py-1 pl-3 " type="text" placeholder="Name" />
-          <input class="my-3 w-75 ml-2 py-1 pl-3" type="text" placeholder="Email Address" />
-          <input class="my-3 w-75 ml-2 py-1 pl-3" type="text" placeholder="Company Name" />
-          <input class="my-3 w-75 ml-2 py-4 pl-3 text-height-1" type="text" placeholder="Message" />
+          <input class="my-3 ml-2 py-1 pl-3" type="text" placeholder="Name" />
+          <input class="my-3 ml-2 py-1 pl-3" type="text" placeholder="Email Address" />
+          <input class="my-3 ml-2 py-1 pl-3" type="text" placeholder="Company Name" />
+          <input class="my-3 ml-2 py-4 pl-3 text-height-1" type="text"  placeholder="Message" rows="4" cols="50"/>
         </div>
-        <div class="w-25 ml-2 footer-send-button">
-          <div class=" px-2 py-2 align-items-center justify-content-center">
+        <div class="ml-2 footer-send-button">
+          <div class=" py-2 align-items-center justify-content-center">
             <a href="#">
               <h6>Send</h6>
               </i>
