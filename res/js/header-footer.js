@@ -144,6 +144,12 @@ window.onload = function () {
     carLink.innerText = car;
     dropdownCarList.appendChild(carLink);
   });
+
+  if ($(window).width() >= 768) {
+    $(".dropdown").hover(function () {
+      $(".dropdown-toggle", this).trigger("click");
+    });
+  }
 };
 
 headerEle.innerHTML = header;
