@@ -13,7 +13,7 @@ dynamicChartLabels = [
 const dynamicColorHex = ["#4D00FF", "#9900FF", "#E500FF", "#FF00CC", "#FF0080"];
 
 const myChart = new Chart(staticChart, {
-  type: "doughnut",
+  type: "pie",
   data: {
     labels: staticChartLabels,
     datasets: [
@@ -21,6 +21,8 @@ const myChart = new Chart(staticChart, {
         backgroundColor: staticColorHex,
         data: [75, 150, 100],
         radius: "75%",
+        hoverOffset: 10,
+        offest: 40,
       },
     ],
   },

@@ -326,12 +326,7 @@ const _2021 = [
   [`Hariesh Sekar`, `Electrical and Electronics Engineer`],
   [`Pranjal Saxena`, `Drivetrain Engineer`],
   [`Jayaditya Reddy J`, `Steering Engineer`],
-  [
-    `Abhishek Malhotra`,
-    `Corporate & Media Executive/ Vehicle Dynamics Engineer`,
-  ],
   [`Sidharth V Menon`, `Corporate Executive`],
-  [`Prince Kumar`, `Vehicle Dynamics Engineer`],
   [`Nitinshan Fredrick W`, `Vehicle Dynamics Engineer`],
   [`Sriram R`, `Vehicle Dynamics Engineer`],
   [`Harin Bhatt`, `Manufacturing`],
