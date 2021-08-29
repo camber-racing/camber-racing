@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="utf-8" />
-    <link rel="icon" href="/res/img/logos/logo-icon.png" />
+    <link rel="icon" href="/res/img/logos/logo.png" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <title>Camber Racing SRM | About Us</title>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -18,6 +18,7 @@
       integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
       crossorigin="anonymous"
     />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
 
     <!--CSS Links-->
 
@@ -51,9 +52,9 @@
 
     <section class="about-us">
       <div class="about-us-text">
-        <h2 class="camber-title">ABOUT <span>US</span></h2>
+        <h2 class="camber-title" data-aos="fade-up">ABOUT <span>US</span></h2>
         <p class="text-justify">
-          Camber Raacing is the Formula Student combustion team of SRM IST,
+          Camber Racing is the Formula Student combustion team of SRM IST,
           Chennai. The team was founded in 2009 when a group of young engineers
           decided to turn their dreams into reality and went on to make the
           first prototype, "CR800". Since then, there has been no looking back.
@@ -88,34 +89,54 @@
     />
     <section class="formula-student">
       <div class="formula-student-img">
-        <h4>Static Events</h4>
-        <canvas id="staticChart"></canvas>
-        <h4>Dynamic Events</h4>
-        <canvas id="dynamicChart"></canvas>
+        <div>
+          <h4>Static Events</h4>
+          <canvas id="staticChart"></canvas>
+        </div>
+        <div>
+          <h4>Dynamic Events</h4>
+          <canvas id="dynamicChart"></canvas>
+        </div>
       </div>
       <div class="formula-student-text">
-        <h2 class="">Formula <span>Student</span></h2>
+        <h2 class="" data-aos="fade-up">Formula <span>Student</span></h2>
         <p class="text-justify">
-          Camber Racing is the Formula Student combustion team of SRM IST,
-          Chennai. The team was founded in 2009 when a group of young engineers
-          decided to turn their dreams into reality and went on to make the
-          first prototype, "CR800". Since then, there has been no looking back.
-          Nine cars, 26 awards and 2 times National Champions.
+          Formula Student is the largest student design engineering competition
+          sanctioned by the Society of Automobile Engineers (SAE). Founded in
+          1998 in the United States of America, it now has several competitions
+          in various countries around the globe throughout the year. This
+          competition has an objective to enable the student to design and
+          fabricate an “Open Wheeled Weekend Racer” meeting certain standards
+          and rules. The best team is not the one with the fastest car, but
+          rather the one with cost-efficient manufacturing and feasible
+          financial statements and sales pitches.
         </p>
-        <br />
         <p class="text-justify">
-          The team comprises of passionate Undergraduate students from various
-          diciplines and gives them a platform to apply and test their skills to
-          the fullest. The team has been participating in various competitions,
-          namely Formula Student Germany, Formula Bharat and Supra SAE India
-          under the Combustion class for 10 glorious years.
+          The Competition has been divided into 2 sets of events, Dynamic and
+          Static. The dynamic events include all the on-track bouts like
+          Skid-Pad, Acceleration, Autocross and Endurance. The static events
+          include a business plan and marketing strategy which tests cost
+          analysis presentation.
         </p>
-        <br />
         <p class="text-justify">
-          Our teams goal is to develop individuals who are not only skilled in
-          designing and engineering a race car, but also to help them gain
-          experience in team work, project management, resource planning which
-          makes them better engineers for the future. Hence, our team's motto,
+          Formula Student challenges the team members to go the extra mile in
+          their education by enriching it with the real-life experience of what
+          it takes to build and manufacture an industry-ready racecar while
+          considering the economic aspects of the automotive industry. Teams
+          operate under the assumption that they are a manufacturer developing a
+          prototype to be evaluated for production. The target audience is the
+          non-professional Weekend-Racer. The racecar must be equipped with
+          characteristics such as acceleration, braking and handling.
+        </p>
+        <p class="text-justify">
+          Teams face the challenge of composing a complete package consisting of
+          a well-constructed racecar and a sales plan that best matches the
+          given criteria. The decision is made by a jury of experts from the
+          motorsport, automotive and supplier industries. The jury will judge
+          every team's car and sales plan based on construction, cost planning
+          and sales presentation. The rest of the judging will be done out on
+          the track, where the students demonstrate in several performance tests
+          how well their self-built racecars fare in the real environment.
         </p>
         <br />
         <p><b>Building people, not just Cars!</b></p>
@@ -161,5 +182,9 @@
     <script src="./res/js/aboutus.js"></script>
     <!-- add animation to navbar -->
     <script src="res/js/landing.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init({ duration: 1200 });
+    </script>
   </body>
 </html>

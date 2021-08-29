@@ -23,18 +23,24 @@ img {
 .about-us,
 .formula-student {
   display: flex;
-  flex-flow: row;
+  flex-flow: column;
   padding: 4rem;
 }
+.formula-student-img {
+  display: flex;
+  flex-flow: row;
+  justify-content: space-around;
+}
 
-.formula-student-img,
 .about-us-text,
-.formula-student-text,
 .about-us-img {
   width: 50%;
   height: max-content;
 }
-
+.formula-student-img,
+.formula-student-text {
+  width: 100%;
+}
 .formula-student h4 {
   align-self: center;
   max-width: max-content;
@@ -49,7 +55,6 @@ img {
   max-height: min-content;
   object-fit: contain;
   padding: 0rem 3rem;
-  width: 37vw;
 }
 
 @media only screen and (max-width: 1366px) and (min-width: 1024px) {

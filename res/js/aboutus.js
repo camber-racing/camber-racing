@@ -5,7 +5,7 @@ const staticColorHex = ["#FC4D00", "#FF6420", "#FF7D44"];
 const dynamicChart = document.getElementById("dynamicChart").getContext("2d");
 dynamicChartLabels = [
   "Acceleration",
-  "Skin-pad",
+  "Skid-pad",
   "Autocross",
   "Efficiency",
   "Endurance",
