@@ -68,6 +68,10 @@ nav.year-nav {
   margin: auto;
   padding: 0px;
 }
+.team-title {
+  margin-top: 6rem !important;
+  margin-left: 3rem !important;
+}
 
 @media only screen and (max-width: 1024px) and (min-width: 512px) {
   .landing-heading {

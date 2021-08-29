@@ -50,19 +50,24 @@ const footer = `
       <div class="footer-col content ">
         <h5 class="ml-mr-auto">Camber Racing</h5>
         <div class="social-media-icon footer-nav-links">
-          <a href="https://www.facebook.com/camberracing/" target="_blank"><i class="fab fa-facebook-square" style="color:#3b5998;"></i></a>
-          <a href="https://www.instagram.com/camberracing/" target="_blank"><i class="fab fa-instagram-square" style="color:#2f2f2f;"></i></a>
-          <a href="https://www.youtube.com/channel/UC_UDIR7rodwCFUY5iEZ8F7A" target="_blank"><i class="fab fa-youtube-square" style="color:#b72727;"></i></a>
-          <a href="#" target="_blank"><i class="fab fa-linkedin" style="color:#0d78b0;"></i></a>
+          <a href="https://www.facebook.com/camberracing/" target="_blank"><i class="fab fa-facebook"></i></a>
+          <a href="https://www.instagram.com/camberracing/" target="_blank"><i class="fab fa-instagram"></i></a>
+          <a href="https://www.youtube.com/channel/UC_UDIR7rodwCFUY5iEZ8F7A" target="_blank"><i class="fab fa-youtube" ></i></a>
+          <a href="#" target="_blank"><i class="fab fa-linkedin" ></i></a>
         </div>
+        ${
+          /*
         <div class="ml-mr-auto footer-newsletter-button">
           <div class=" px-2 py-2 ">
             <a href="#">
-              <h6>Subscribe to our Newsletter! <i class="fas fa-play"></i></h6>
+              
+								<h6>Subscribe to our Newsletter! <i class="fas fa-play"></i></h6> 
+							
               </i>
             </a>
           </div>
-        </div>
+        </div>*/ ""
+        }
       </div>
       <div class=></div>
       <div class="footer-contact-us text-left ">

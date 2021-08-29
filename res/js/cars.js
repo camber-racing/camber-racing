@@ -85,7 +85,7 @@ This polar white race vehicle impressed everyone at the event with its amazing p
     `Brake: 4 outboard brake disks`,
     `Steering gear: Customized steering rack system by Sona Group`,
   ],
-  noOfPics: 2,
+  noOfPics: 1,
 };
 const CR14 = {
   id: 3,
