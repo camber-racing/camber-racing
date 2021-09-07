@@ -12,7 +12,12 @@ const header = `<nav class="navbar navbar-expand-md navbar-light">
     <a class="navbar-brand" href="#" id="navbar-brand">
       <img src="res/img/logos/logo-without-bg.png"
         id="navbar-brand-img" />
+       </a>
+    <a class="navbar-brand navbar-sponsor" href="#" id="navbar-brand">
+      <img src="res/img/sponsors/SRM IST.png"
+        id="navbar-brand-img" />
     </a>
+     
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
       aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
@@ -21,24 +26,48 @@ const header = `<nav class="navbar navbar-expand-md navbar-light">
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav ml-auto">
         <li class="nav-item active">
-          <a class="nav-link" href="index.html"><span>Home</span></a>
+          <a class="nav-link header-link" href="index.html"><span>Home</span></a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="./aboutus.html"><span>About Us</span></a>
+          <a class="nav-link header-link" href="./aboutus.html"><span>About Us</span></a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="partners.html"><span>Partners</span></a>
+          <a class="nav-link header-link" href="partners.html"><span>Partners</span></a>
         </li>
         <li class="nav-item dropdown show" >
-          <a class="nav-link dropdown-toggle" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span>The Paddock</span></a>
-          <div class="dropdown-menu dropdown-carlist" aria-labelledby="dropdownMenuLink">
+          <a class="nav-link header-link dropdown-toggle" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span>The Paddock</span></a>
+           <div class="dropdown-menu dropdown-carlist" aria-labelledby="dropdownMenuLink">
+          <a class="dropdown-item" href="cars.html?car=CR800">
+            CR800
+          </a>
+          <a class="dropdown-item" href="cars.html?car=LJM01">
+             LJM01
+          </a>
+          <a class="dropdown-item" href="cars.html?car=Beast">
+             Beast
+          </a>
+          <a class="dropdown-item" href="cars.html?car=CR14">
+            CR14
+          </a>
+          <a class="dropdown-item" href="cars.html?car=CR15">
+            CR15
+          </a>
+          <a class="dropdown-item" href="cars.html?car=CR16">
+           CR16
+          </a>
+          <a class="dropdown-item" href="cars.html?car=CR18">
+            CR18
+          </a>
+          <a class="dropdown-item" href="cars.html?car=CRX">
+            CRX
+          </a>
            </div>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="team.html"><span>Our Team</span></a>
+          <a class="nav-link header-link" href="team.html"><span>Our Team</span></a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#contact"><span>Contact Us</span></a>
+          <a class="nav-link header-link" href="#contact"><span>Contact Us</span></a>
         </li>
       </ul>
     </div>
@@ -85,14 +114,14 @@ const footer = `
       </div>
       <div>
         <h6 class="heading mb-3 pl-3">Contact Us</h6>
-        <h6 class="pl-3">Kshitij Singh</h6>
+        <h6 class="pl-3">Aditya Reddy</h6>
         <div class="pl-3">
           <ul>
             <li>
               <span>Mail: captain.camberracing@gmail.com </span></i></a>
             </li>
             <li>
-              <span>Mob: +91 81849 85356 </span></i></a>
+              <span>Mob: +91 81849 85356</span></i></a>
             </li>
           </ul>
       </div>
@@ -109,7 +138,7 @@ const footer = `
           <input class="my-3 ml-2 py-1 pl-3" type="text" placeholder="Name" />
           <input class="my-3 ml-2 py-1 pl-3" type="text" placeholder="Email Address" />
           <input class="my-3 ml-2 py-1 pl-3" type="text" placeholder="Company Name" />
-          <input class="my-3 ml-2 py-4 pl-3 text-height-1" type="text"  placeholder="Message" rows="4" cols="50"/>
+          <textarea class="my-3 ml-2 py-4 pl-3 text-height-1" placeholder="Message" rows="4" cols="50"></textarea>
         </div>
         <div class="ml-2 footer-send-button">
           <div class=" py-2 align-items-center justify-content-center">
@@ -137,18 +166,29 @@ const footer = `
 
   </footer>`;
 
+//const goToTop = `<a class="go-to-top" href="#""><i class="fas fa-arrow-up"></i></a>`;
+const goToTop = document.createElement("a");
+goToTop.classList.add("go-to-top");
+goToTop.href = "#";
+
+const iconTop = document.createElement("i");
+iconTop.classList.add("fas");
+iconTop.classList.add("fa-arrow-up");
+goToTop.appendChild(iconTop);
+
 const headerEle = document.querySelector("header");
 const footerEle = document.querySelector("footer");
+const body = document.querySelector("body");
 window.onload = function () {
-  const dropdownCarList = document.querySelector(".dropdown-carlist");
+  // const dropdownCarList = document.querySelector(".dropdown-carlist");
 
-  carMenu.forEach((car) => {
-    const carLink = document.createElement("a");
-    carLink.classList.add("dropdown-item");
-    carLink.href = `cars.html?car=${car}`;
-    carLink.innerText = car;
-    dropdownCarList.appendChild(carLink);
-  });
+  // carMenu.forEach((car) => {
+  //   const carLink = document.createElement("a");
+  //   carLink.classList.add("dropdown-item");
+  //   carLink.href = `cars.html?car=${car}`;
+  //   carLink.innerText = car;
+  //   dropdownCarList.appendChild(carLink);
+  // });
 
   if ($(window).width() >= 768) {
     $(".dropdown").hover(function () {
@@ -159,3 +199,4 @@ window.onload = function () {
 
 headerEle.innerHTML = header;
 footerEle.innerHTML = footer;
+body.appendChild(goToTop);

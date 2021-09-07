@@ -29,7 +29,7 @@ const CR800 = {
 
 const LJM01 = {
   id: 1,
-  name: `LJM_01`,
+  name: `LJM 01`,
   year: `2011`,
   desc: `LJM01 was the successor for the first car and prototype CR800. If CR800 meant embarking upon the way of professionalism and success, LJM01 was surely an important future for achieving this feat. It is a prized possession of our team as each and every inch of the car was made to near to perfection on a very tight schedule. The design departments fastidious approach allowed the team to come up with new or more innovative and alternative ways to manufacture and build the car from scratch rather than connecting the shortcoming observed in the CR800.
     The car had outdone a lot of the other teams in the racing season for 2011 for SUPRASAE. The marketing efforts that we put in for the season also meant that we were one of the best branded teams at the competition.`,

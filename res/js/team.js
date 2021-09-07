@@ -1,16 +1,6 @@
 //years to be displayed in the navbar selector
 const years = [
-  2021,
-  2020,
-  2019,
-  2018,
-  2017,
-  2016,
-  2015,
-  2014,
-  2013,
-  2012,
-  2011,
+  2021, 2020, 2019, 2018, 2017, 2016, 2015, 2014, 2013, 2012, 2011,
 ];
 
 //members from each year with position
@@ -328,8 +318,6 @@ const _2021 = [
   [`Jayaditya Reddy J`, `Steering Engineer`],
   [`Sidharth V Menon`, `Corporate Executive`],
   [`Nitinshan Fredrick W`, `Vehicle Dynamics Engineer`],
-  [`Sriram R`, `Vehicle Dynamics Engineer`],
-  [`Harin Bhatt`, `Manufacturing`],
 ];
 
 //selecting navbar and div to display the current team
