@@ -23,19 +23,25 @@ img {
 .about-us,
 .formula-student {
   display: flex;
-  flex-flow: column;
   padding: 4rem;
+}
+.formula-student {
+  flex-flow: column;
 }
 .formula-student-img {
   display: flex;
   flex-flow: row;
   justify-content: space-around;
+  margin-top: 3rem;
+  max-width: 100vw;
 }
 
 .about-us-text,
 .about-us-img {
   width: 50%;
   height: max-content;
+  padding: 3rem;
+  margin: auto 0;
 }
 .formula-student-img,
 .formula-student-text {
@@ -93,5 +99,6 @@ img {
     padding: 0rem;
     align-self: center;
     margin: 0rem;
+    flex-flow: column;
   }
 }

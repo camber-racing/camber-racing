@@ -70,13 +70,19 @@
   background-size: cover;
   display: flex;
   height: 90vh;
-  background-attachment: scroll;
-  background-repeat: no-repeat;
-  position: center;
   text-align: center;
   align-items: center;
   color: var(--white);
   padding: 8rem;
+
+  /* Full height */
+  height: 100%;
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .left-container {
@@ -94,6 +100,10 @@
 .right-container img {
   width: 75%;
   max-width: 95%;
+  width: 470px;
+  height: 400px;
+  object-position: 10% 50%;
+  object-fit: cover;
 }
 
 .about-us-container .left-container h2.camber-heading span {
