@@ -133,22 +133,22 @@ const footer = `
       <div class="input-section ">
         <h6 class="heading mb-3  pl-3">GET IN TOUCH</h6>
 
-        <div>
+        <form action="https://formspree.io/f/mwkaajzv" method="POST">
 
           <input class="my-3 ml-2 py-1 pl-3" type="text" placeholder="Name" />
-          <input class="my-3 ml-2 py-1 pl-3" type="text" placeholder="Email Address" />
+          <input class="my-3 ml-2 py-1 pl-3" type="email" placeholder="Email Address" name="_replyto" />
           <input class="my-3 ml-2 py-1 pl-3" type="text" placeholder="Company Name" />
-          <textarea class="my-3 ml-2 py-4 pl-3 text-height-1" placeholder="Message" rows="4" cols="50"></textarea>
-        </div>
-        <div class="ml-2 footer-send-button">
+          <textarea class="my-3 ml-2 py-4 pl-3 text-height-1" placeholder="Message" rows="4" cols="50" name="message"></textarea>
+          <div class="ml-2 footer-send-button">
           <div class=" py-2 align-items-center justify-content-center">
-            <a href="#">
+            <button type="submit" style="background-color:transparent; outline:none; border:none">
               <h6>Send</h6>
               </i>
-            </a>
+            </button>
           </div>
-
         </div>
+        </form>
+        
 
       </div>
     </div>
