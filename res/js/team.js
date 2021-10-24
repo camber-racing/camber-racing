@@ -1,6 +1,6 @@
 //years to be displayed in the navbar selector
 const years = [
-  2021, 2020, 2019, 2018, 2017, 2016, 2015, 2014, 2013, 2012, 2011,
+  2022, 2021, 2020, 2019, 2018, 2017, 2016, 2015, 2014, 2013, 2012, 2011,
 ];
 
 //members from each year with position
@@ -320,6 +320,15 @@ const _2021 = [
   [`Nitinshan Fredrick W`, `Vehicle Dynamics Engineer`],
 ];
 
+const _2022 = [
+  ["Jayaditya Reddy J ", " Team Captain"],
+  ["Pranjal Saxena ", " Project Manager"],
+  ["Abraham K Mathew ", " Technical Director, Finance Manager"],
+  ["Sidharth V Menon ", " Corporate Manager, Media Lead"],
+  ["Nitinshan Fredrick W ", " Manufacturing Lead"],
+  ["Hariesh Sekar ", " Electrical And Electronics Lead"],
+];
+
 //selecting navbar and div to display the current team
 const nav = document.querySelector(".nav");
 const currentTeamEle = document.querySelector(".current-team");
@@ -334,7 +343,7 @@ years.forEach((year) => {
 
 // select all span in navbar
 const yearElements = document.querySelectorAll(".nav span");
-let currentyear = 2021;
+let currentyear = 2022;
 let folder = `./res/img/Team-Camber/team${currentyear}`;
 
 yearElements[0].classList.add("active");
@@ -369,6 +378,7 @@ const allmembers = [
   _2019,
   _2020,
   _2021,
+  _2022,
 ];
 
 const updatePhtots = () => {
@@ -389,7 +399,7 @@ const updatePhtots = () => {
 
     let photoFileName = member[0].toLowerCase().trim();
 
-    if ((currentyear >= 2015 && currentyear <= 2017) || currentyear == 2021) {
+    if ((currentyear >= 2015 && currentyear <= 2017) || currentyear >= 2021) {
       photoFileName = photoFileName.substring(0, photoFileName.indexOf(" "));
     }
 
@@ -403,7 +413,7 @@ const updatePhtots = () => {
     }
 
     let extension = ".jpg";
-    if (currentyear == 2021) {
+    if (currentyear >= 2021) {
       extension = ".png";
     }
     const url = `./res/img/Team-Camber/team${currentyear}/${photoFileName}${extension}`;
