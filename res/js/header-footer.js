@@ -114,14 +114,14 @@ const footer = `
       </div>
       <div>
         <h6 class="heading mb-3 pl-3">Contact Us</h6>
-        <h6 class="pl-3">Aditya Reddy</h6>
+        <h6 class="pl-3">Athul Jebi</h6>
         <div class="pl-3">
           <ul>
             <li>
               <span>Mail: captain.camberracing@gmail.com </span></i></a>
             </li>
             <li>
-              <span>Mob: +91 81849 85356</span></i></a>
+              <span>Mob: +91 90618 19327</span></i></a>
             </li>
           </ul>
       </div>

@@ -1,5 +1,6 @@
 const partnersDiv = document.querySelector(".partners");
 const sponsors = [
+  ["QuillBot","https://quillbot.com/"],
   ["Altair", "https://www.altair.com/"],
   ["Ansys", "https://www.ansys.com/en-in"],
   ["ASAP Hardware", "https://www.asaphardwaresolutions.com/"],
