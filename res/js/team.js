@@ -1,6 +1,6 @@
 //years to be displayed in the navbar selector
 const years = [
-  2022, 2021, 2020, 2019, 2018, 2017, 2016, 2015, 2014, 2013, 2012, 2011,
+  2023, 2022, 2021, 2020, 2019, 2018, 2017, 2016, 2015, 2014, 2013, 2012, 2011,
 ];
 
 //members from each year with position
@@ -329,6 +329,20 @@ const _2022 = [
   ["Hariesh Sekar ", " Electrical And Electronics Lead"],
 ];
 
+const _2023 = [
+  ["Ashwin Ganeshan ", " Team Captain"],
+  ["Athul Jebi ", " Project Manager"],
+  ["Athul K B ", " Technical Director, Finance Manager"],
+  ["Dattatreya Nagireggdy ", " Corporate Manager, Media Lead"],
+  ["David Amruth ", " Manufacturing Lead"],
+  ["Glenn Paul Aby ", " Electrical And Electronics Lead"],
+  ["Pareekshith Indeever ", " Corporate Manager, Media Lead"],
+  ["Polepalle Hashwanth ", " Manufacturing Lead"],
+  ["Riya Srivastava ", " Electrical And Electronics Lead"],
+  ["Ujjwal Parwani ", " Manufacturing Lead"],
+  ["Vrishab Davey ", " Electrical And Electronics Lead"],
+];
+
 //selecting navbar and div to display the current team
 const nav = document.querySelector(".nav");
 const currentTeamEle = document.querySelector(".current-team");
@@ -343,7 +357,7 @@ years.forEach((year) => {
 
 // select all span in navbar
 const yearElements = document.querySelectorAll(".nav span");
-let currentyear = 2022;
+let currentyear = 2023;
 let folder = `./res/img/Team-Camber/team${currentyear}`;
 
 yearElements[0].classList.add("active");
@@ -379,6 +393,7 @@ const allmembers = [
   _2020,
   _2021,
   _2022,
+  _2023,
 ];
 
 const updatePhtots = () => {
@@ -416,6 +431,16 @@ const updatePhtots = () => {
     if (currentyear >= 2021) {
       extension = ".png";
     }
+
+    if (currentyear === 2023 && member[0].includes("Athul")) {
+      let commonName = "athul";
+      if (member[0].includes("Jebi")) {
+        photoFileName = commonName + " Jebi";
+      } else {
+        photoFileName = commonName + " K";
+      }
+    }
+
     const url = `./res/img/Team-Camber/team${currentyear}/${photoFileName}${extension}`;
     image.src = url;
 
